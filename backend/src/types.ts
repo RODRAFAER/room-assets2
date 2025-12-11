@@ -88,3 +88,60 @@ export const Health = T.Object({
   })
 })
 export type Health = Static<typeof Health>
+
+export const Room = T.Object({
+  id: T.String({
+    description: 'Уникальный идентификатор аудитории'
+  }),
+  code: T.String({
+    description: 'Номер аудитории'
+  }),
+  name: T.String({
+    description: 'Полное название аудитории'
+  }),
+  capacity: T.Integer({
+    description: 'Вместимость аудитории'
+  }),
+  equipment: T.Array(T.String(), {
+    description: 'Список оборудования'
+  }),
+  status: T.Enum([
+    'AVAILABLE',
+    'BOOKED',
+    'MAINTENANCE'],
+    {
+      description: 'Текущий статус аудитории'
+    }
+  )
+})
+export type Room = Static<typeof Room>
+
+export const Booking = T.Object(
+  {
+    id: T.String({
+      description: 'Уникальный идентификатор бронирования'
+    }),
+    startTime: T.String({
+      format: 'date-time',
+      description: 'Время начала в формате ISO 8601'
+    }),
+    endTime: T.String({
+      format: 'date-time',
+      description: 'Время окончания в формате ISO 8601'
+    }),
+    room: T.Object({
+      id: T.String(),
+      code: T.String(),
+      name: T.String(),
+    }),
+    user: T.Object({
+      id: T.String(),
+      name: T.String({
+        description: 'Имя пользователя, сделавшего бронирование'
+      }),
+    }),
+    createdAt: T.String({
+      format: 'date-time'
+    }),
+})
+export type Booking = Static<typeof Booking>

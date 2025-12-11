@@ -7,7 +7,7 @@ import { STATUS_CODES } from 'node:http'
 import prismaPlugin from './plugins/prisma.js'
 import { Type as T } from 'typebox'
 import type { TypeBoxTypeProvider } from '@fastify/type-provider-typebox'
-import { ValidationProblem, ProblemDetails, User, Health } from './types.js'
+import { ValidationProblem, ProblemDetails, User, Health, Room, Booking } from './types.js'
 
 // Этот модуль собирает все настройки Fastify: плагины инфраструктуры, обработчики ошибок и маршруты API.
 
@@ -154,6 +154,116 @@ export async function buildApp() {
     async (_req, _reply) => {
       // Prisma автоматически превращает результат в Promise; Fastify вернет массив как JSON.
       return app.prisma.user.findMany({ select: { id: true, email: true } })
+    }
+  )
+
+  app.get(
+    '/api/rooms',
+    {
+      schema: {
+        operationId: 'listRooms',
+        tags: ['Rooms'],
+        summary: 'Возвращает список аудиторий',
+        description: 'Получаем полный список аудиторий с их статусом и оборудованием.',
+        response: {
+          200: {
+            description: 'Список аудиторий',
+            content: { 'application/json': {schema: T.Array(Room)}}
+          },
+          429: { description: 'Too Many Requests'},
+          500: { description: 'Internal Server Error'}
+        }
+      }
+    },
+    async (_req, _reply) => {
+      return app.prisma.room.findMany()
+    }
+  )
+
+  app.get(
+    '/api/bookings',
+    {
+      schema: {
+        operationId: 'listBookings',
+        tags: ['Bookings'],
+        summary: 'Возвращает список всех бронироваий',
+        response: {
+          200: {
+            description: 'Список бронирований',
+            content: {'application/json': { schema: T.Array(Booking)}}
+          },
+          429: { description: 'Too Many Requests'},
+          500: { description: 'Internal Server Error'}
+        }
+      }
+    },
+    async (_req, _reply) => {
+      return app.prisma.booking.findMany({
+        include: {
+          room: {
+            select: {
+              id: true,
+              code: true,
+              name: true
+            }
+          },
+          user: {
+            select: {
+              id: true,
+              name: true
+            }
+          },
+        },
+        orderBy: { startTime: 'asc'}
+      })
+    }
+  )
+
+  app.post(
+    '/api/bookings',
+    {
+      schema: {
+        operationId: 'createBooking',
+        tags: ['Bookings'],
+        summary: 'Создает новое бронирование',
+        body: {
+          type: 'object',
+          properties: {
+            roomId: {type: 'string'},
+            startTime: {type: 'string', format: 'date-time'},
+            endTime: {type: 'string', format: 'date-time'},
+          },
+          required: ['roomId', 'startTime', 'endTime'],
+        },
+        response: {
+          201: {
+            description: 'Бронирование создано',
+            content: { 'application/json': {schema: Booking}}
+          },
+          429: { description: 'Too Many Requests'},
+          500: { description: 'Internal Server Error'}
+        }
+      }
+    },
+    async (req, reply) => {
+      const {roomId, startTime, endTime} = req.body
+
+      const userId = "some-user-id";
+
+      const newBooking = await app.prisma.booking.create({
+        data: {
+          startTime: new Date(startTime),
+          endTime: new Date(endTime),
+          room: { connect: {id: roomId}},
+          user: { connect: {id: userId}},
+        },
+        include: {
+          room: {select: {id:true, code: true, name: true}},
+          user: {select: {id: true, name: true}},
+        }
+      })
+
+      reply.code(201).send(newBooking)
     }
   )
 
