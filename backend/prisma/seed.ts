@@ -1,8 +1,10 @@
+// backend/prisma/seed.ts
 import { PrismaClient } from '../src/generated/prisma/client.js';
 
 const prisma = new PrismaClient();
 
-async function main() {
+// Используем более современную и надежную конструкцию для запуска асинхронного кода
+async function seedDatabase() {
   console.log('Start seeding...');
 
   // Создаем пользователей
@@ -61,11 +63,12 @@ async function main() {
   console.log('Seeding finished.');
 }
 
-main()
-  .catch((e) => {
-    console.error(e);
-    process.exit(1);
-  })
-  .finally(async () => {
-    await prisma.$disconnect();
-  });
+// Основной блок выполнения, который правильно обрабатывает ошибки и отключается от БД
+try {
+  await seedDatabase();
+} catch (e) {
+  console.error('Seeding failed:', e);
+  process.exit(1);
+} finally {
+  await prisma.$disconnect();
+}
