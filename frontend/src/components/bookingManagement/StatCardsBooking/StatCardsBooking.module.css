@@ -1,0 +1,56 @@
+.cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 16px;
+    margin-bottom: 32px; 
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #eef0f3;
+    border-radius: 12px;
+    padding: 16px;
+    position: relative; 
+    overflow: hidden; 
+    text-align: left;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.value {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 10px;
+    margin-bottom: -10px;
+}
+
+.label {
+    font-size: 14px;
+    color: #64748b;
+    margin: 10px;
+    font-size: 20px
+}
+
+.iconBox {
+    position: start; 
+    width: 64px;
+    height: 64px;
+    border-radius: 25%;
+    display: grid;
+    place-items: center; 
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.statusCard {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    border-radius: 999px;
+    position: absolute;
+    top: 2em;
+    right: 2em;
+    opacity: 0.8;
+    font-weight: 500;
+}

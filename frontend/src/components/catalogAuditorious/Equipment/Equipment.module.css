@@ -1,0 +1,57 @@
+.equipmentContainer {
+    display: flex;
+    background-color: #fff;
+    border-radius: 12px;
+    flex-direction: column;
+    padding-left: 2em;
+}
+
+.title {
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 24px;
+    color: black;
+    font-weight: 700;
+}
+
+.bodyRow {
+    margin-bottom: 1.5em;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.equipment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iconBox {
+    border-radius: 15%;
+    width: 64px;
+    height: 64px;
+    display: grid;
+    place-items: center;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.value {
+    margin-top: 0.5em;
+    margin-bottom: -0.2em;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+}
+
+.name {
+    font-size: 12px;
+    font-weight: 300;
+    color: grey;
+}

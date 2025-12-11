@@ -1,0 +1,7 @@
+.workloadStats {
+    display: grid;
+    border: none;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-bottom: 2em;
+}

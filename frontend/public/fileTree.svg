@@ -1,0 +1,1319 @@
+<svg width="1000" height="8375" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Arial', sans-serif; font-size: 18px; font-weight: bold; fill: #2c3e50; }
+      .subtitle { font-family: 'Arial', sans-serif; font-size: 12px; fill: #7f8c8d; }
+      .folder-text { font-family: 'Consolas', 'Courier New', monospace; font-size: 14px; fill: #27ae60; font-weight: bold; }
+      .file-text { font-family: 'Consolas', 'Courier New', monospace; font-size: 14px; fill: #3498db; }
+      .icon { font-family: 'Arial', sans-serif; font-size: 16px; }
+      .line { stroke: #bdc3c7; stroke-width: 1.5; }
+      .background { fill: #c8c8c878; }
+      .header-bg { fill: #ecf0f1; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="8375" class="background"/>
+
+  <!-- Tree Structure -->
+    <line x1="15" y1="80" x2="25" y2="80" class="line"/>
+    <text x="30" y="85" class="icon">📁</text>
+    <text x="55" y="85" class="folder-text">backend/</text>
+    <line x1="45" y1="100" x2="45" y2="110" class="line"/>
+    <line x1="45" y1="110" x2="55" y2="110" class="line"/>
+    <text x="60" y="115" class="icon">📁</text>
+    <text x="85" y="115" class="folder-text">prisma/</text>
+    <line x1="75" y1="130" x2="75" y2="140" class="line"/>
+    <line x1="75" y1="140" x2="85" y2="140" class="line"/>
+    <text x="90" y="145" class="icon">📁</text>
+    <text x="115" y="145" class="folder-text">migrations/</text>
+    <line x1="105" y1="160" x2="105" y2="170" class="line"/>
+    <line x1="105" y1="170" x2="115" y2="170" class="line"/>
+    <text x="120" y="175" class="icon">📁</text>
+    <text x="145" y="175" class="folder-text">20251209180045_init/</text>
+    <line x1="135" y1="190" x2="135" y2="200" class="line"/>
+    <line x1="135" y1="200" x2="145" y2="200" class="line"/>
+    <text x="150" y="205" class="icon">📄</text>
+    <text x="175" y="205" class="file-text">migration.sql</text>
+    <line x1="105" y1="260" x2="105" y2="270" class="line"/>
+    <line x1="105" y1="270" x2="115" y2="270" class="line"/>
+    <text x="120" y="275" class="icon">⚙️</text>
+    <text x="145" y="275" class="file-text">migration_lock.toml</text>
+    <line x1="75" y1="330" x2="75" y2="340" class="line"/>
+    <line x1="75" y1="340" x2="85" y2="340" class="line"/>
+    <text x="90" y="345" class="icon">📄</text>
+    <text x="115" y="345" class="file-text">schema.prisma</text>
+    <line x1="45" y1="400" x2="45" y2="410" class="line"/>
+    <line x1="45" y1="410" x2="55" y2="410" class="line"/>
+    <text x="60" y="415" class="icon">📁</text>
+    <text x="85" y="415" class="folder-text">src/</text>
+    <line x1="75" y1="430" x2="75" y2="440" class="line"/>
+    <line x1="75" y1="440" x2="85" y2="440" class="line"/>
+    <text x="90" y="445" class="icon">📁</text>
+    <text x="115" y="445" class="folder-text">plugins/</text>
+    <line x1="105" y1="460" x2="105" y2="470" class="line"/>
+    <line x1="105" y1="470" x2="115" y2="470" class="line"/>
+    <text x="120" y="475" class="icon">📄</text>
+    <text x="145" y="475" class="file-text">prisma.ts</text>
+    <line x1="75" y1="530" x2="75" y2="540" class="line"/>
+    <line x1="75" y1="540" x2="85" y2="540" class="line"/>
+    <text x="90" y="545" class="icon">📄</text>
+    <text x="115" y="545" class="file-text">app.ts</text>
+    <line x1="75" y1="565" x2="75" y2="575" class="line"/>
+    <line x1="75" y1="575" x2="85" y2="575" class="line"/>
+    <text x="90" y="580" class="icon">📄</text>
+    <text x="115" y="580" class="file-text">server.ts</text>
+    <line x1="75" y1="600" x2="75" y2="610" class="line"/>
+    <line x1="75" y1="610" x2="85" y2="610" class="line"/>
+    <text x="90" y="615" class="icon">📄</text>
+    <text x="115" y="615" class="file-text">types.ts</text>
+    <line x1="45" y1="670" x2="45" y2="680" class="line"/>
+    <line x1="45" y1="680" x2="55" y2="680" class="line"/>
+    <text x="60" y="685" class="icon">⚙️</text>
+    <text x="85" y="685" class="file-text">.gitignore</text>
+    <line x1="45" y1="705" x2="45" y2="715" class="line"/>
+    <line x1="45" y1="715" x2="55" y2="715" class="line"/>
+    <text x="60" y="720" class="icon">🐳</text>
+    <text x="85" y="720" class="file-text">Dockerfile</text>
+    <line x1="45" y1="740" x2="45" y2="750" class="line"/>
+    <line x1="45" y1="750" x2="55" y2="750" class="line"/>
+    <text x="60" y="755" class="icon">⚙️</text>
+    <text x="85" y="755" class="file-text">package-lock.json</text>
+    <line x1="45" y1="775" x2="45" y2="785" class="line"/>
+    <line x1="45" y1="785" x2="55" y2="785" class="line"/>
+    <text x="60" y="790" class="icon">⚙️</text>
+    <text x="85" y="790" class="file-text">package.json</text>
+    <line x1="45" y1="810" x2="45" y2="820" class="line"/>
+    <line x1="45" y1="820" x2="55" y2="820" class="line"/>
+    <text x="60" y="825" class="icon">📄</text>
+    <text x="85" y="825" class="file-text">prisma.config.ts</text>
+    <line x1="45" y1="845" x2="45" y2="855" class="line"/>
+    <line x1="45" y1="855" x2="55" y2="855" class="line"/>
+    <text x="60" y="860" class="icon">⚙️</text>
+    <text x="85" y="860" class="file-text">tsconfig.json</text>
+    <line x1="15" y1="925" x2="25" y2="925" class="line"/>
+    <text x="30" y="930" class="icon">📁</text>
+    <text x="55" y="930" class="folder-text">frontend/</text>
+    <line x1="45" y1="945" x2="45" y2="955" class="line"/>
+    <line x1="45" y1="955" x2="55" y2="955" class="line"/>
+    <text x="60" y="960" class="icon">📁</text>
+    <text x="85" y="960" class="folder-text">nginx/</text>
+    <line x1="75" y1="975" x2="75" y2="985" class="line"/>
+    <line x1="75" y1="985" x2="85" y2="985" class="line"/>
+    <text x="90" y="990" class="icon">⚙️</text>
+    <text x="115" y="990" class="file-text">nginx.conf</text>
+    <line x1="45" y1="1045" x2="45" y2="1055" class="line"/>
+    <line x1="45" y1="1055" x2="55" y2="1055" class="line"/>
+    <text x="60" y="1060" class="icon">📁</text>
+    <text x="85" y="1060" class="folder-text">public/</text>
+    <line x1="75" y1="1075" x2="75" y2="1085" class="line"/>
+    <line x1="75" y1="1085" x2="85" y2="1085" class="line"/>
+    <text x="90" y="1090" class="icon">📄</text>
+    <text x="115" y="1090" class="file-text">mockServiceWorker.js</text>
+    <line x1="75" y1="1110" x2="75" y2="1120" class="line"/>
+    <line x1="75" y1="1120" x2="85" y2="1120" class="line"/>
+    <text x="90" y="1125" class="icon">🖼️</text>
+    <text x="115" y="1125" class="file-text">vite.svg</text>
+    <line x1="45" y1="1180" x2="45" y2="1190" class="line"/>
+    <line x1="45" y1="1190" x2="55" y2="1190" class="line"/>
+    <text x="60" y="1195" class="icon">📁</text>
+    <text x="85" y="1195" class="folder-text">src/</text>
+    <line x1="75" y1="1210" x2="75" y2="1220" class="line"/>
+    <line x1="75" y1="1220" x2="85" y2="1220" class="line"/>
+    <text x="90" y="1225" class="icon">📁</text>
+    <text x="115" y="1225" class="folder-text">api/</text>
+    <line x1="105" y1="1240" x2="105" y2="1250" class="line"/>
+    <line x1="105" y1="1250" x2="115" y2="1250" class="line"/>
+    <text x="120" y="1255" class="icon">📄</text>
+    <text x="145" y="1255" class="file-text">http.ts</text>
+    <line x1="105" y1="1275" x2="105" y2="1285" class="line"/>
+    <line x1="105" y1="1285" x2="115" y2="1285" class="line"/>
+    <text x="120" y="1290" class="icon">📄</text>
+    <text x="145" y="1290" class="file-text">roomsApi.ts</text>
+    <line x1="75" y1="1345" x2="75" y2="1355" class="line"/>
+    <line x1="75" y1="1355" x2="85" y2="1355" class="line"/>
+    <text x="90" y="1360" class="icon">📁</text>
+    <text x="115" y="1360" class="folder-text">assets/</text>
+    <line x1="105" y1="1375" x2="105" y2="1385" class="line"/>
+    <line x1="105" y1="1385" x2="115" y2="1385" class="line"/>
+    <text x="120" y="1390" class="icon">🖼️</text>
+    <text x="145" y="1390" class="file-text">react.svg</text>
+    <line x1="75" y1="1445" x2="75" y2="1455" class="line"/>
+    <line x1="75" y1="1455" x2="85" y2="1455" class="line"/>
+    <text x="90" y="1460" class="icon">📁</text>
+    <text x="115" y="1460" class="folder-text">components/</text>
+    <line x1="105" y1="1475" x2="105" y2="1485" class="line"/>
+    <line x1="105" y1="1485" x2="115" y2="1485" class="line"/>
+    <text x="120" y="1490" class="icon">📁</text>
+    <text x="145" y="1490" class="folder-text">Footer/</text>
+    <line x1="135" y1="1505" x2="135" y2="1515" class="line"/>
+    <line x1="135" y1="1515" x2="145" y2="1515" class="line"/>
+    <text x="150" y="1520" class="icon">🎨</text>
+    <text x="175" y="1520" class="file-text">Bottom.module.css</text>
+    <line x1="135" y1="1540" x2="135" y2="1550" class="line"/>
+    <line x1="135" y1="1550" x2="145" y2="1550" class="line"/>
+    <text x="150" y="1555" class="icon">📄</text>
+    <text x="175" y="1555" class="file-text">Bottom.tsx</text>
+    <line x1="135" y1="1575" x2="135" y2="1585" class="line"/>
+    <line x1="135" y1="1585" x2="145" y2="1585" class="line"/>
+    <text x="150" y="1590" class="icon">📄</text>
+    <text x="175" y="1590" class="file-text">index.ts</text>
+    <line x1="105" y1="1645" x2="105" y2="1655" class="line"/>
+    <line x1="105" y1="1655" x2="115" y2="1655" class="line"/>
+    <text x="120" y="1660" class="icon">📁</text>
+    <text x="145" y="1660" class="folder-text">Header/</text>
+    <line x1="135" y1="1675" x2="135" y2="1685" class="line"/>
+    <line x1="135" y1="1685" x2="145" y2="1685" class="line"/>
+    <text x="150" y="1690" class="icon">🎨</text>
+    <text x="175" y="1690" class="file-text">Header.module.css</text>
+    <line x1="135" y1="1710" x2="135" y2="1720" class="line"/>
+    <line x1="135" y1="1720" x2="145" y2="1720" class="line"/>
+    <text x="150" y="1725" class="icon">📄</text>
+    <text x="175" y="1725" class="file-text">Header.tsx</text>
+    <line x1="135" y1="1745" x2="135" y2="1755" class="line"/>
+    <line x1="135" y1="1755" x2="145" y2="1755" class="line"/>
+    <text x="150" y="1760" class="icon">📄</text>
+    <text x="175" y="1760" class="file-text">header.config.ts</text>
+    <line x1="135" y1="1780" x2="135" y2="1790" class="line"/>
+    <line x1="135" y1="1790" x2="145" y2="1790" class="line"/>
+    <text x="150" y="1795" class="icon">📄</text>
+    <text x="175" y="1795" class="file-text">header.types.ts</text>
+    <line x1="135" y1="1815" x2="135" y2="1825" class="line"/>
+    <line x1="135" y1="1825" x2="145" y2="1825" class="line"/>
+    <text x="150" y="1830" class="icon">📄</text>
+    <text x="175" y="1830" class="file-text">header.utils.ts</text>
+    <line x1="135" y1="1850" x2="135" y2="1860" class="line"/>
+    <line x1="135" y1="1860" x2="145" y2="1860" class="line"/>
+    <text x="150" y="1865" class="icon">📄</text>
+    <text x="175" y="1865" class="file-text">index.ts</text>
+    <line x1="105" y1="1920" x2="105" y2="1930" class="line"/>
+    <line x1="105" y1="1930" x2="115" y2="1930" class="line"/>
+    <text x="120" y="1935" class="icon">📁</text>
+    <text x="145" y="1935" class="folder-text">bookingManagement/</text>
+    <line x1="135" y1="1950" x2="135" y2="1960" class="line"/>
+    <line x1="135" y1="1960" x2="145" y2="1960" class="line"/>
+    <text x="150" y="1965" class="icon">📁</text>
+    <text x="175" y="1965" class="folder-text">BodyHeaderBooking/</text>
+    <line x1="165" y1="1980" x2="165" y2="1990" class="line"/>
+    <line x1="165" y1="1990" x2="175" y2="1990" class="line"/>
+    <text x="180" y="1995" class="icon">🎨</text>
+    <text x="205" y="1995" class="file-text">BodyHeaderBooking.module.css</text>
+    <line x1="165" y1="2015" x2="165" y2="2025" class="line"/>
+    <line x1="165" y1="2025" x2="175" y2="2025" class="line"/>
+    <text x="180" y="2030" class="icon">📄</text>
+    <text x="205" y="2030" class="file-text">BodyHeaderBooking.tsx</text>
+    <line x1="165" y1="2050" x2="165" y2="2060" class="line"/>
+    <line x1="165" y1="2060" x2="175" y2="2060" class="line"/>
+    <text x="180" y="2065" class="icon">📄</text>
+    <text x="205" y="2065" class="file-text">index.ts</text>
+    <line x1="135" y1="2120" x2="135" y2="2130" class="line"/>
+    <line x1="135" y1="2130" x2="145" y2="2130" class="line"/>
+    <text x="150" y="2135" class="icon">📁</text>
+    <text x="175" y="2135" class="folder-text">BookingEmploymentGrid/</text>
+    <line x1="165" y1="2150" x2="165" y2="2160" class="line"/>
+    <line x1="165" y1="2160" x2="175" y2="2160" class="line"/>
+    <text x="180" y="2165" class="icon">📄</text>
+    <text x="205" y="2165" class="file-text">BookingEmploymentGrid.config.ts</text>
+    <line x1="165" y1="2185" x2="165" y2="2195" class="line"/>
+    <line x1="165" y1="2195" x2="175" y2="2195" class="line"/>
+    <text x="180" y="2200" class="icon">🎨</text>
+    <text x="205" y="2200" class="file-text">BookingEmploymentGrid.module.css</text>
+    <line x1="165" y1="2220" x2="165" y2="2230" class="line"/>
+    <line x1="165" y1="2230" x2="175" y2="2230" class="line"/>
+    <text x="180" y="2235" class="icon">📄</text>
+    <text x="205" y="2235" class="file-text">BookingEmploymentGrid.tsx</text>
+    <line x1="165" y1="2255" x2="165" y2="2265" class="line"/>
+    <line x1="165" y1="2265" x2="175" y2="2265" class="line"/>
+    <text x="180" y="2270" class="icon">📄</text>
+    <text x="205" y="2270" class="file-text">BookingEmploymentGrid.types.ts</text>
+    <line x1="165" y1="2290" x2="165" y2="2300" class="line"/>
+    <line x1="165" y1="2300" x2="175" y2="2300" class="line"/>
+    <text x="180" y="2305" class="icon">📄</text>
+    <text x="205" y="2305" class="file-text">index.ts</text>
+    <line x1="135" y1="2360" x2="135" y2="2370" class="line"/>
+    <line x1="135" y1="2370" x2="145" y2="2370" class="line"/>
+    <text x="150" y="2375" class="icon">📁</text>
+    <text x="175" y="2375" class="folder-text">BookingFilters/</text>
+    <line x1="165" y1="2390" x2="165" y2="2400" class="line"/>
+    <line x1="165" y1="2400" x2="175" y2="2400" class="line"/>
+    <text x="180" y="2405" class="icon">📄</text>
+    <text x="205" y="2405" class="file-text">BookingFilters.config.ts</text>
+    <line x1="165" y1="2425" x2="165" y2="2435" class="line"/>
+    <line x1="165" y1="2435" x2="175" y2="2435" class="line"/>
+    <text x="180" y="2440" class="icon">🎨</text>
+    <text x="205" y="2440" class="file-text">BookingFilters.module.css</text>
+    <line x1="165" y1="2460" x2="165" y2="2470" class="line"/>
+    <line x1="165" y1="2470" x2="175" y2="2470" class="line"/>
+    <text x="180" y="2475" class="icon">📄</text>
+    <text x="205" y="2475" class="file-text">BookingFilters.tsx</text>
+    <line x1="165" y1="2495" x2="165" y2="2505" class="line"/>
+    <line x1="165" y1="2505" x2="175" y2="2505" class="line"/>
+    <text x="180" y="2510" class="icon">📄</text>
+    <text x="205" y="2510" class="file-text">BookingFilters.types.ts</text>
+    <line x1="165" y1="2530" x2="165" y2="2540" class="line"/>
+    <line x1="165" y1="2540" x2="175" y2="2540" class="line"/>
+    <text x="180" y="2545" class="icon">📄</text>
+    <text x="205" y="2545" class="file-text">index.ts</text>
+    <line x1="135" y1="2600" x2="135" y2="2610" class="line"/>
+    <line x1="135" y1="2610" x2="145" y2="2610" class="line"/>
+    <text x="150" y="2615" class="icon">📁</text>
+    <text x="175" y="2615" class="folder-text">LastUpdatesBooking/</text>
+    <line x1="165" y1="2630" x2="165" y2="2640" class="line"/>
+    <line x1="165" y1="2640" x2="175" y2="2640" class="line"/>
+    <text x="180" y="2645" class="icon">📄</text>
+    <text x="205" y="2645" class="file-text">LastUpdatesBooking.config.ts</text>
+    <line x1="165" y1="2665" x2="165" y2="2675" class="line"/>
+    <line x1="165" y1="2675" x2="175" y2="2675" class="line"/>
+    <text x="180" y="2680" class="icon">🎨</text>
+    <text x="205" y="2680" class="file-text">LastUpdatesBooking.module.css</text>
+    <line x1="165" y1="2700" x2="165" y2="2710" class="line"/>
+    <line x1="165" y1="2710" x2="175" y2="2710" class="line"/>
+    <text x="180" y="2715" class="icon">📄</text>
+    <text x="205" y="2715" class="file-text">LastUpdatesBooking.tsx</text>
+    <line x1="165" y1="2735" x2="165" y2="2745" class="line"/>
+    <line x1="165" y1="2745" x2="175" y2="2745" class="line"/>
+    <text x="180" y="2750" class="icon">📄</text>
+    <text x="205" y="2750" class="file-text">LastUpdatesBooking.types.ts</text>
+    <line x1="165" y1="2770" x2="165" y2="2780" class="line"/>
+    <line x1="165" y1="2780" x2="175" y2="2780" class="line"/>
+    <text x="180" y="2785" class="icon">📄</text>
+    <text x="205" y="2785" class="file-text">index.ts</text>
+    <line x1="135" y1="2840" x2="135" y2="2850" class="line"/>
+    <line x1="135" y1="2850" x2="145" y2="2850" class="line"/>
+    <text x="150" y="2855" class="icon">📁</text>
+    <text x="175" y="2855" class="folder-text">QuickActionsBooking/</text>
+    <line x1="165" y1="2870" x2="165" y2="2880" class="line"/>
+    <line x1="165" y1="2880" x2="175" y2="2880" class="line"/>
+    <text x="180" y="2885" class="icon">📄</text>
+    <text x="205" y="2885" class="file-text">QuickActionsBooking.config.ts</text>
+    <line x1="165" y1="2905" x2="165" y2="2915" class="line"/>
+    <line x1="165" y1="2915" x2="175" y2="2915" class="line"/>
+    <text x="180" y="2920" class="icon">🎨</text>
+    <text x="205" y="2920" class="file-text">QuickActionsBooking.module.css</text>
+    <line x1="165" y1="2940" x2="165" y2="2950" class="line"/>
+    <line x1="165" y1="2950" x2="175" y2="2950" class="line"/>
+    <text x="180" y="2955" class="icon">📄</text>
+    <text x="205" y="2955" class="file-text">QuickActionsBooking.tsx</text>
+    <line x1="165" y1="2975" x2="165" y2="2985" class="line"/>
+    <line x1="165" y1="2985" x2="175" y2="2985" class="line"/>
+    <text x="180" y="2990" class="icon">📄</text>
+    <text x="205" y="2990" class="file-text">QuickActionsBooking.types.ts</text>
+    <line x1="165" y1="3010" x2="165" y2="3020" class="line"/>
+    <line x1="165" y1="3020" x2="175" y2="3020" class="line"/>
+    <text x="180" y="3025" class="icon">📄</text>
+    <text x="205" y="3025" class="file-text">index.ts</text>
+    <line x1="135" y1="3080" x2="135" y2="3090" class="line"/>
+    <line x1="135" y1="3090" x2="145" y2="3090" class="line"/>
+    <text x="150" y="3095" class="icon">📁</text>
+    <text x="175" y="3095" class="folder-text">RoomWorkload/</text>
+    <line x1="165" y1="3110" x2="165" y2="3120" class="line"/>
+    <line x1="165" y1="3120" x2="175" y2="3120" class="line"/>
+    <text x="180" y="3125" class="icon">🎨</text>
+    <text x="205" y="3125" class="file-text">RoomWorkload.module.css</text>
+    <line x1="165" y1="3145" x2="165" y2="3155" class="line"/>
+    <line x1="165" y1="3155" x2="175" y2="3155" class="line"/>
+    <text x="180" y="3160" class="icon">📄</text>
+    <text x="205" y="3160" class="file-text">RoomWorkload.tsx</text>
+    <line x1="165" y1="3180" x2="165" y2="3190" class="line"/>
+    <line x1="165" y1="3190" x2="175" y2="3190" class="line"/>
+    <text x="180" y="3195" class="icon">📄</text>
+    <text x="205" y="3195" class="file-text">index.ts</text>
+    <line x1="135" y1="3250" x2="135" y2="3260" class="line"/>
+    <line x1="135" y1="3260" x2="145" y2="3260" class="line"/>
+    <text x="150" y="3265" class="icon">📁</text>
+    <text x="175" y="3265" class="folder-text">StatCardsBooking/</text>
+    <line x1="165" y1="3280" x2="165" y2="3290" class="line"/>
+    <line x1="165" y1="3290" x2="175" y2="3290" class="line"/>
+    <text x="180" y="3295" class="icon">📄</text>
+    <text x="205" y="3295" class="file-text">StatCardsBooking.config.ts</text>
+    <line x1="165" y1="3315" x2="165" y2="3325" class="line"/>
+    <line x1="165" y1="3325" x2="175" y2="3325" class="line"/>
+    <text x="180" y="3330" class="icon">🎨</text>
+    <text x="205" y="3330" class="file-text">StatCardsBooking.module.css</text>
+    <line x1="165" y1="3350" x2="165" y2="3360" class="line"/>
+    <line x1="165" y1="3360" x2="175" y2="3360" class="line"/>
+    <text x="180" y="3365" class="icon">📄</text>
+    <text x="205" y="3365" class="file-text">StatCardsBooking.tsx</text>
+    <line x1="165" y1="3385" x2="165" y2="3395" class="line"/>
+    <line x1="165" y1="3395" x2="175" y2="3395" class="line"/>
+    <text x="180" y="3400" class="icon">📄</text>
+    <text x="205" y="3400" class="file-text">StatCardsBooking.types.ts</text>
+    <line x1="165" y1="3420" x2="165" y2="3430" class="line"/>
+    <line x1="165" y1="3430" x2="175" y2="3430" class="line"/>
+    <text x="180" y="3435" class="icon">📄</text>
+    <text x="205" y="3435" class="file-text">index.ts</text>
+    <line x1="135" y1="3490" x2="135" y2="3500" class="line"/>
+    <line x1="135" y1="3500" x2="145" y2="3500" class="line"/>
+    <text x="150" y="3505" class="icon">📁</text>
+    <text x="175" y="3505" class="folder-text">StatsOnTime/</text>
+    <line x1="165" y1="3520" x2="165" y2="3530" class="line"/>
+    <line x1="165" y1="3530" x2="175" y2="3530" class="line"/>
+    <text x="180" y="3535" class="icon">🎨</text>
+    <text x="205" y="3535" class="file-text">StatsOnTime.module.css</text>
+    <line x1="165" y1="3555" x2="165" y2="3565" class="line"/>
+    <line x1="165" y1="3565" x2="175" y2="3565" class="line"/>
+    <text x="180" y="3570" class="icon">📄</text>
+    <text x="205" y="3570" class="file-text">StatsOnTime.tsx</text>
+    <line x1="165" y1="3590" x2="165" y2="3600" class="line"/>
+    <line x1="165" y1="3600" x2="175" y2="3600" class="line"/>
+    <text x="180" y="3605" class="icon">📄</text>
+    <text x="205" y="3605" class="file-text">index.ts</text>
+    <line x1="135" y1="3660" x2="135" y2="3670" class="line"/>
+    <line x1="135" y1="3670" x2="145" y2="3670" class="line"/>
+    <text x="150" y="3675" class="icon">📁</text>
+    <text x="175" y="3675" class="folder-text">UpcomingEvents/</text>
+    <line x1="165" y1="3690" x2="165" y2="3700" class="line"/>
+    <line x1="165" y1="3700" x2="175" y2="3700" class="line"/>
+    <text x="180" y="3705" class="icon">📄</text>
+    <text x="205" y="3705" class="file-text">UpcomingEvents.config.ts</text>
+    <line x1="165" y1="3725" x2="165" y2="3735" class="line"/>
+    <line x1="165" y1="3735" x2="175" y2="3735" class="line"/>
+    <text x="180" y="3740" class="icon">🎨</text>
+    <text x="205" y="3740" class="file-text">UpcomingEvents.module.css</text>
+    <line x1="165" y1="3760" x2="165" y2="3770" class="line"/>
+    <line x1="165" y1="3770" x2="175" y2="3770" class="line"/>
+    <text x="180" y="3775" class="icon">📄</text>
+    <text x="205" y="3775" class="file-text">UpcomingEvents.tsx</text>
+    <line x1="165" y1="3795" x2="165" y2="3805" class="line"/>
+    <line x1="165" y1="3805" x2="175" y2="3805" class="line"/>
+    <text x="180" y="3810" class="icon">📄</text>
+    <text x="205" y="3810" class="file-text">UpcomingEvents.types.ts</text>
+    <line x1="165" y1="3830" x2="165" y2="3840" class="line"/>
+    <line x1="165" y1="3840" x2="175" y2="3840" class="line"/>
+    <text x="180" y="3845" class="icon">📄</text>
+    <text x="205" y="3845" class="file-text">index.ts</text>
+    <line x1="135" y1="3900" x2="135" y2="3910" class="line"/>
+    <line x1="135" y1="3910" x2="145" y2="3910" class="line"/>
+    <text x="150" y="3915" class="icon">📁</text>
+    <text x="175" y="3915" class="folder-text">WorkloadStats/</text>
+    <line x1="165" y1="3930" x2="165" y2="3940" class="line"/>
+    <line x1="165" y1="3940" x2="175" y2="3940" class="line"/>
+    <text x="180" y="3945" class="icon">🎨</text>
+    <text x="205" y="3945" class="file-text">WorkloadStats.module.css</text>
+    <line x1="165" y1="3965" x2="165" y2="3975" class="line"/>
+    <line x1="165" y1="3975" x2="175" y2="3975" class="line"/>
+    <text x="180" y="3980" class="icon">📄</text>
+    <text x="205" y="3980" class="file-text">WorkloadStats.tsx</text>
+    <line x1="165" y1="4000" x2="165" y2="4010" class="line"/>
+    <line x1="165" y1="4010" x2="175" y2="4010" class="line"/>
+    <text x="180" y="4015" class="icon">📄</text>
+    <text x="205" y="4015" class="file-text">index.ts</text>
+    <line x1="105" y1="4105" x2="105" y2="4115" class="line"/>
+    <line x1="105" y1="4115" x2="115" y2="4115" class="line"/>
+    <text x="120" y="4120" class="icon">📁</text>
+    <text x="145" y="4120" class="folder-text">catalogAuditorious/</text>
+    <line x1="135" y1="4135" x2="135" y2="4145" class="line"/>
+    <line x1="135" y1="4145" x2="145" y2="4145" class="line"/>
+    <text x="150" y="4150" class="icon">📁</text>
+    <text x="175" y="4150" class="folder-text">BodyFilters/</text>
+    <line x1="165" y1="4165" x2="165" y2="4175" class="line"/>
+    <line x1="165" y1="4175" x2="175" y2="4175" class="line"/>
+    <text x="180" y="4180" class="icon">📄</text>
+    <text x="205" y="4180" class="file-text">BodyFilters.config.ts</text>
+    <line x1="165" y1="4200" x2="165" y2="4210" class="line"/>
+    <line x1="165" y1="4210" x2="175" y2="4210" class="line"/>
+    <text x="180" y="4215" class="icon">🎨</text>
+    <text x="205" y="4215" class="file-text">BodyFilters.module.css</text>
+    <line x1="165" y1="4235" x2="165" y2="4245" class="line"/>
+    <line x1="165" y1="4245" x2="175" y2="4245" class="line"/>
+    <text x="180" y="4250" class="icon">📄</text>
+    <text x="205" y="4250" class="file-text">BodyFilters.tsx</text>
+    <line x1="165" y1="4270" x2="165" y2="4280" class="line"/>
+    <line x1="165" y1="4280" x2="175" y2="4280" class="line"/>
+    <text x="180" y="4285" class="icon">📄</text>
+    <text x="205" y="4285" class="file-text">BodyFilters.types.ts</text>
+    <line x1="165" y1="4305" x2="165" y2="4315" class="line"/>
+    <line x1="165" y1="4315" x2="175" y2="4315" class="line"/>
+    <text x="180" y="4320" class="icon">📄</text>
+    <text x="205" y="4320" class="file-text">index.ts</text>
+    <line x1="135" y1="4375" x2="135" y2="4385" class="line"/>
+    <line x1="135" y1="4385" x2="145" y2="4385" class="line"/>
+    <text x="150" y="4390" class="icon">📁</text>
+    <text x="175" y="4390" class="folder-text">BodyHeader/</text>
+    <line x1="165" y1="4405" x2="165" y2="4415" class="line"/>
+    <line x1="165" y1="4415" x2="175" y2="4415" class="line"/>
+    <text x="180" y="4420" class="icon">📄</text>
+    <text x="205" y="4420" class="file-text">BodyHeader.tsx</text>
+    <line x1="165" y1="4440" x2="165" y2="4450" class="line"/>
+    <line x1="165" y1="4450" x2="175" y2="4450" class="line"/>
+    <text x="180" y="4455" class="icon">🎨</text>
+    <text x="205" y="4455" class="file-text">bodyheader.module.css</text>
+    <line x1="165" y1="4475" x2="165" y2="4485" class="line"/>
+    <line x1="165" y1="4485" x2="175" y2="4485" class="line"/>
+    <text x="180" y="4490" class="icon">📄</text>
+    <text x="205" y="4490" class="file-text">index.ts</text>
+    <line x1="135" y1="4545" x2="135" y2="4555" class="line"/>
+    <line x1="135" y1="4555" x2="145" y2="4555" class="line"/>
+    <text x="150" y="4560" class="icon">📁</text>
+    <text x="175" y="4560" class="folder-text">Button/</text>
+    <line x1="165" y1="4575" x2="165" y2="4585" class="line"/>
+    <line x1="165" y1="4585" x2="175" y2="4585" class="line"/>
+    <text x="180" y="4590" class="icon">🎨</text>
+    <text x="205" y="4590" class="file-text">Button.module.css</text>
+    <line x1="165" y1="4610" x2="165" y2="4620" class="line"/>
+    <line x1="165" y1="4620" x2="175" y2="4620" class="line"/>
+    <text x="180" y="4625" class="icon">📄</text>
+    <text x="205" y="4625" class="file-text">Button.tsx</text>
+    <line x1="165" y1="4645" x2="165" y2="4655" class="line"/>
+    <line x1="165" y1="4655" x2="175" y2="4655" class="line"/>
+    <text x="180" y="4660" class="icon">📄</text>
+    <text x="205" y="4660" class="file-text">index.ts</text>
+    <line x1="135" y1="4715" x2="135" y2="4725" class="line"/>
+    <line x1="135" y1="4725" x2="145" y2="4725" class="line"/>
+    <text x="150" y="4730" class="icon">📁</text>
+    <text x="175" y="4730" class="folder-text">Equipment/</text>
+    <line x1="165" y1="4745" x2="165" y2="4755" class="line"/>
+    <line x1="165" y1="4755" x2="175" y2="4755" class="line"/>
+    <text x="180" y="4760" class="icon">🎨</text>
+    <text x="205" y="4760" class="file-text">Equipment.module.css</text>
+    <line x1="165" y1="4780" x2="165" y2="4790" class="line"/>
+    <line x1="165" y1="4790" x2="175" y2="4790" class="line"/>
+    <text x="180" y="4795" class="icon">📄</text>
+    <text x="205" y="4795" class="file-text">Equipment.tsx</text>
+    <line x1="165" y1="4815" x2="165" y2="4825" class="line"/>
+    <line x1="165" y1="4825" x2="175" y2="4825" class="line"/>
+    <text x="180" y="4830" class="icon">📄</text>
+    <text x="205" y="4830" class="file-text">equipment.config.ts</text>
+    <line x1="165" y1="4850" x2="165" y2="4860" class="line"/>
+    <line x1="165" y1="4860" x2="175" y2="4860" class="line"/>
+    <text x="180" y="4865" class="icon">📄</text>
+    <text x="205" y="4865" class="file-text">equipment.types.ts</text>
+    <line x1="165" y1="4885" x2="165" y2="4895" class="line"/>
+    <line x1="165" y1="4895" x2="175" y2="4895" class="line"/>
+    <text x="180" y="4900" class="icon">📄</text>
+    <text x="205" y="4900" class="file-text">index.ts</text>
+    <line x1="135" y1="4955" x2="135" y2="4965" class="line"/>
+    <line x1="135" y1="4965" x2="145" y2="4965" class="line"/>
+    <text x="150" y="4970" class="icon">📁</text>
+    <text x="175" y="4970" class="folder-text">LastUpdates/</text>
+    <line x1="165" y1="4985" x2="165" y2="4995" class="line"/>
+    <line x1="165" y1="4995" x2="175" y2="4995" class="line"/>
+    <text x="180" y="5000" class="icon">🎨</text>
+    <text x="205" y="5000" class="file-text">LastUpdates.module.css</text>
+    <line x1="165" y1="5020" x2="165" y2="5030" class="line"/>
+    <line x1="165" y1="5030" x2="175" y2="5030" class="line"/>
+    <text x="180" y="5035" class="icon">📄</text>
+    <text x="205" y="5035" class="file-text">LastUpdates.tsx</text>
+    <line x1="165" y1="5055" x2="165" y2="5065" class="line"/>
+    <line x1="165" y1="5065" x2="175" y2="5065" class="line"/>
+    <text x="180" y="5070" class="icon">📄</text>
+    <text x="205" y="5070" class="file-text">index.ts</text>
+    <line x1="165" y1="5090" x2="165" y2="5100" class="line"/>
+    <line x1="165" y1="5100" x2="175" y2="5100" class="line"/>
+    <text x="180" y="5105" class="icon">📄</text>
+    <text x="205" y="5105" class="file-text">lastupdates.config.ts</text>
+    <line x1="165" y1="5125" x2="165" y2="5135" class="line"/>
+    <line x1="165" y1="5135" x2="175" y2="5135" class="line"/>
+    <text x="180" y="5140" class="icon">📄</text>
+    <text x="205" y="5140" class="file-text">lastupdates.types.ts</text>
+    <line x1="135" y1="5195" x2="135" y2="5205" class="line"/>
+    <line x1="135" y1="5205" x2="145" y2="5205" class="line"/>
+    <text x="150" y="5210" class="icon">📁</text>
+    <text x="175" y="5210" class="folder-text">QuickActions/</text>
+    <line x1="165" y1="5225" x2="165" y2="5235" class="line"/>
+    <line x1="165" y1="5235" x2="175" y2="5235" class="line"/>
+    <text x="180" y="5240" class="icon">📄</text>
+    <text x="205" y="5240" class="file-text">QuickAction.tsx</text>
+    <line x1="165" y1="5260" x2="165" y2="5270" class="line"/>
+    <line x1="165" y1="5270" x2="175" y2="5270" class="line"/>
+    <text x="180" y="5275" class="icon">🎨</text>
+    <text x="205" y="5275" class="file-text">QuickActions.module.css</text>
+    <line x1="165" y1="5295" x2="165" y2="5305" class="line"/>
+    <line x1="165" y1="5305" x2="175" y2="5305" class="line"/>
+    <text x="180" y="5310" class="icon">📄</text>
+    <text x="205" y="5310" class="file-text">index.ts</text>
+    <line x1="165" y1="5330" x2="165" y2="5340" class="line"/>
+    <line x1="165" y1="5340" x2="175" y2="5340" class="line"/>
+    <text x="180" y="5345" class="icon">📄</text>
+    <text x="205" y="5345" class="file-text">quickaction.config.ts</text>
+    <line x1="165" y1="5365" x2="165" y2="5375" class="line"/>
+    <line x1="165" y1="5375" x2="175" y2="5375" class="line"/>
+    <text x="180" y="5380" class="icon">📄</text>
+    <text x="205" y="5380" class="file-text">quickaction.types.ts</text>
+    <line x1="135" y1="5435" x2="135" y2="5445" class="line"/>
+    <line x1="135" y1="5445" x2="145" y2="5445" class="line"/>
+    <text x="150" y="5450" class="icon">📁</text>
+    <text x="175" y="5450" class="folder-text">RoomsSchema/</text>
+    <line x1="165" y1="5465" x2="165" y2="5475" class="line"/>
+    <line x1="165" y1="5475" x2="175" y2="5475" class="line"/>
+    <text x="180" y="5480" class="icon">🎨</text>
+    <text x="205" y="5480" class="file-text">RoomsSchema.module.css</text>
+    <line x1="165" y1="5500" x2="165" y2="5510" class="line"/>
+    <line x1="165" y1="5510" x2="175" y2="5510" class="line"/>
+    <text x="180" y="5515" class="icon">📄</text>
+    <text x="205" y="5515" class="file-text">RoomsSchema.tsx</text>
+    <line x1="165" y1="5535" x2="165" y2="5545" class="line"/>
+    <line x1="165" y1="5545" x2="175" y2="5545" class="line"/>
+    <text x="180" y="5550" class="icon">📄</text>
+    <text x="205" y="5550" class="file-text">index.ts</text>
+    <line x1="165" y1="5570" x2="165" y2="5580" class="line"/>
+    <line x1="165" y1="5580" x2="175" y2="5580" class="line"/>
+    <text x="180" y="5585" class="icon">📄</text>
+    <text x="205" y="5585" class="file-text">roomschema.config.ts</text>
+    <line x1="165" y1="5605" x2="165" y2="5615" class="line"/>
+    <line x1="165" y1="5615" x2="175" y2="5615" class="line"/>
+    <text x="180" y="5620" class="icon">📄</text>
+    <text x="205" y="5620" class="file-text">roomsschema.types.ts</text>
+    <line x1="135" y1="5675" x2="135" y2="5685" class="line"/>
+    <line x1="135" y1="5685" x2="145" y2="5685" class="line"/>
+    <text x="150" y="5690" class="icon">📁</text>
+    <text x="175" y="5690" class="folder-text">RoomsTable/</text>
+    <line x1="165" y1="5705" x2="165" y2="5715" class="line"/>
+    <line x1="165" y1="5715" x2="175" y2="5715" class="line"/>
+    <text x="180" y="5720" class="icon">📄</text>
+    <text x="205" y="5720" class="file-text">RoomsTable.tsx</text>
+    <line x1="135" y1="5775" x2="135" y2="5785" class="line"/>
+    <line x1="135" y1="5785" x2="145" y2="5785" class="line"/>
+    <text x="150" y="5790" class="icon">📁</text>
+    <text x="175" y="5790" class="folder-text">StatCards/</text>
+    <line x1="165" y1="5805" x2="165" y2="5815" class="line"/>
+    <line x1="165" y1="5815" x2="175" y2="5815" class="line"/>
+    <text x="180" y="5820" class="icon">📄</text>
+    <text x="205" y="5820" class="file-text">StatCards.config.ts</text>
+    <line x1="165" y1="5840" x2="165" y2="5850" class="line"/>
+    <line x1="165" y1="5850" x2="175" y2="5850" class="line"/>
+    <text x="180" y="5855" class="icon">🎨</text>
+    <text x="205" y="5855" class="file-text">StatCards.module.css</text>
+    <line x1="165" y1="5875" x2="165" y2="5885" class="line"/>
+    <line x1="165" y1="5885" x2="175" y2="5885" class="line"/>
+    <text x="180" y="5890" class="icon">📄</text>
+    <text x="205" y="5890" class="file-text">StatCards.tsx</text>
+    <line x1="165" y1="5910" x2="165" y2="5920" class="line"/>
+    <line x1="165" y1="5920" x2="175" y2="5920" class="line"/>
+    <text x="180" y="5925" class="icon">📄</text>
+    <text x="205" y="5925" class="file-text">StatCards.types.ts</text>
+    <line x1="165" y1="5945" x2="165" y2="5955" class="line"/>
+    <line x1="165" y1="5955" x2="175" y2="5955" class="line"/>
+    <text x="180" y="5960" class="icon">📄</text>
+    <text x="205" y="5960" class="file-text">index.ts</text>
+    <line x1="75" y1="6085" x2="75" y2="6095" class="line"/>
+    <line x1="75" y1="6095" x2="85" y2="6095" class="line"/>
+    <text x="90" y="6100" class="icon">📁</text>
+    <text x="115" y="6100" class="folder-text">context/</text>
+    <line x1="105" y1="6115" x2="105" y2="6125" class="line"/>
+    <line x1="105" y1="6125" x2="115" y2="6125" class="line"/>
+    <text x="120" y="6130" class="icon">📄</text>
+    <text x="145" y="6130" class="file-text">auth.tsx</text>
+    <line x1="75" y1="6185" x2="75" y2="6195" class="line"/>
+    <line x1="75" y1="6195" x2="85" y2="6195" class="line"/>
+    <text x="90" y="6200" class="icon">📁</text>
+    <text x="115" y="6200" class="folder-text">mocks/</text>
+    <line x1="105" y1="6215" x2="105" y2="6225" class="line"/>
+    <line x1="105" y1="6225" x2="115" y2="6225" class="line"/>
+    <text x="120" y="6230" class="icon">📄</text>
+    <text x="145" y="6230" class="file-text">browser.ts</text>
+    <line x1="105" y1="6250" x2="105" y2="6260" class="line"/>
+    <line x1="105" y1="6260" x2="115" y2="6260" class="line"/>
+    <text x="120" y="6265" class="icon">📄</text>
+    <text x="145" y="6265" class="file-text">data.ts</text>
+    <line x1="105" y1="6285" x2="105" y2="6295" class="line"/>
+    <line x1="105" y1="6295" x2="115" y2="6295" class="line"/>
+    <text x="120" y="6300" class="icon">📄</text>
+    <text x="145" y="6300" class="file-text">handlers.ts</text>
+    <line x1="75" y1="6355" x2="75" y2="6365" class="line"/>
+    <line x1="75" y1="6365" x2="85" y2="6365" class="line"/>
+    <text x="90" y="6370" class="icon">📁</text>
+    <text x="115" y="6370" class="folder-text">pages/</text>
+    <line x1="105" y1="6385" x2="105" y2="6395" class="line"/>
+    <line x1="105" y1="6395" x2="115" y2="6395" class="line"/>
+    <text x="120" y="6400" class="icon">📄</text>
+    <text x="145" y="6400" class="file-text">AuditoriumCataloguePage.tsx</text>
+    <line x1="105" y1="6420" x2="105" y2="6430" class="line"/>
+    <line x1="105" y1="6430" x2="115" y2="6430" class="line"/>
+    <text x="120" y="6435" class="icon">📄</text>
+    <text x="145" y="6435" class="file-text">BookingManagementPage.tsx</text>
+    <line x1="105" y1="6455" x2="105" y2="6465" class="line"/>
+    <line x1="105" y1="6465" x2="115" y2="6465" class="line"/>
+    <text x="120" y="6470" class="icon">📄</text>
+    <text x="145" y="6470" class="file-text">Settings.tsx</text>
+    <line x1="75" y1="6525" x2="75" y2="6535" class="line"/>
+    <line x1="75" y1="6535" x2="85" y2="6535" class="line"/>
+    <text x="90" y="6540" class="icon">🎨</text>
+    <text x="115" y="6540" class="file-text">App.css</text>
+    <line x1="75" y1="6560" x2="75" y2="6570" class="line"/>
+    <line x1="75" y1="6570" x2="85" y2="6570" class="line"/>
+    <text x="90" y="6575" class="icon">📄</text>
+    <text x="115" y="6575" class="file-text">App.tsx</text>
+    <line x1="75" y1="6595" x2="75" y2="6605" class="line"/>
+    <line x1="75" y1="6605" x2="85" y2="6605" class="line"/>
+    <text x="90" y="6610" class="icon">📄</text>
+    <text x="115" y="6610" class="file-text">config.ts</text>
+    <line x1="75" y1="6630" x2="75" y2="6640" class="line"/>
+    <line x1="75" y1="6640" x2="85" y2="6640" class="line"/>
+    <text x="90" y="6645" class="icon">🎨</text>
+    <text x="115" y="6645" class="file-text">index.css</text>
+    <line x1="75" y1="6665" x2="75" y2="6675" class="line"/>
+    <line x1="75" y1="6675" x2="85" y2="6675" class="line"/>
+    <text x="90" y="6680" class="icon">📄</text>
+    <text x="115" y="6680" class="file-text">main.tsx</text>
+    <line x1="45" y1="6735" x2="45" y2="6745" class="line"/>
+    <line x1="45" y1="6745" x2="55" y2="6745" class="line"/>
+    <text x="60" y="6750" class="icon">⚙️</text>
+    <text x="85" y="6750" class="file-text">.gitignore</text>
+    <line x1="45" y1="6770" x2="45" y2="6780" class="line"/>
+    <line x1="45" y1="6780" x2="55" y2="6780" class="line"/>
+    <text x="60" y="6785" class="icon">🐳</text>
+    <text x="85" y="6785" class="file-text">Dockerfile</text>
+    <line x1="45" y1="6805" x2="45" y2="6815" class="line"/>
+    <line x1="45" y1="6815" x2="55" y2="6815" class="line"/>
+    <text x="60" y="6820" class="icon">📝</text>
+    <text x="85" y="6820" class="file-text">README.md</text>
+    <line x1="45" y1="6840" x2="45" y2="6850" class="line"/>
+    <line x1="45" y1="6850" x2="55" y2="6850" class="line"/>
+    <text x="60" y="6855" class="icon">⚙️</text>
+    <text x="85" y="6855" class="file-text">compose.base.yml</text>
+    <line x1="45" y1="6875" x2="45" y2="6885" class="line"/>
+    <line x1="45" y1="6885" x2="55" y2="6885" class="line"/>
+    <text x="60" y="6890" class="icon">⚙️</text>
+    <text x="85" y="6890" class="file-text">compose.dev.yml</text>
+    <line x1="45" y1="6910" x2="45" y2="6920" class="line"/>
+    <line x1="45" y1="6920" x2="55" y2="6920" class="line"/>
+    <text x="60" y="6925" class="icon">⚙️</text>
+    <text x="85" y="6925" class="file-text">compose.prod.yml</text>
+    <line x1="45" y1="6945" x2="45" y2="6955" class="line"/>
+    <line x1="45" y1="6955" x2="55" y2="6955" class="line"/>
+    <text x="60" y="6960" class="icon">⚙️</text>
+    <text x="85" y="6960" class="file-text">docker-compose.dev.yml</text>
+    <line x1="45" y1="6980" x2="45" y2="6990" class="line"/>
+    <line x1="45" y1="6990" x2="55" y2="6990" class="line"/>
+    <text x="60" y="6995" class="icon">⚙️</text>
+    <text x="85" y="6995" class="file-text">docker-compose.yml</text>
+    <line x1="45" y1="7015" x2="45" y2="7025" class="line"/>
+    <line x1="45" y1="7025" x2="55" y2="7025" class="line"/>
+    <text x="60" y="7030" class="icon">📄</text>
+    <text x="85" y="7030" class="file-text">eslint.config.js</text>
+    <line x1="45" y1="7050" x2="45" y2="7060" class="line"/>
+    <line x1="45" y1="7060" x2="55" y2="7060" class="line"/>
+    <text x="60" y="7065" class="icon">🌐</text>
+    <text x="85" y="7065" class="file-text">index.html</text>
+    <line x1="45" y1="7085" x2="45" y2="7095" class="line"/>
+    <line x1="45" y1="7095" x2="55" y2="7095" class="line"/>
+    <text x="60" y="7100" class="icon">⚙️</text>
+    <text x="85" y="7100" class="file-text">package-lock.json</text>
+    <line x1="45" y1="7120" x2="45" y2="7130" class="line"/>
+    <line x1="45" y1="7130" x2="55" y2="7130" class="line"/>
+    <text x="60" y="7135" class="icon">⚙️</text>
+    <text x="85" y="7135" class="file-text">package.json</text>
+    <line x1="45" y1="7155" x2="45" y2="7165" class="line"/>
+    <line x1="45" y1="7165" x2="55" y2="7165" class="line"/>
+    <text x="60" y="7170" class="icon">⚙️</text>
+    <text x="85" y="7170" class="file-text">tsconfig.app.json</text>
+    <line x1="45" y1="7190" x2="45" y2="7200" class="line"/>
+    <line x1="45" y1="7200" x2="55" y2="7200" class="line"/>
+    <text x="60" y="7205" class="icon">⚙️</text>
+    <text x="85" y="7205" class="file-text">tsconfig.json</text>
+    <line x1="45" y1="7225" x2="45" y2="7235" class="line"/>
+    <line x1="45" y1="7235" x2="55" y2="7235" class="line"/>
+    <text x="60" y="7240" class="icon">⚙️</text>
+    <text x="85" y="7240" class="file-text">tsconfig.node.json</text>
+    <line x1="45" y1="7260" x2="45" y2="7270" class="line"/>
+    <line x1="45" y1="7270" x2="55" y2="7270" class="line"/>
+    <text x="60" y="7275" class="icon">📄</text>
+    <text x="85" y="7275" class="file-text">vite.config.ts</text>
+    <line x1="15" y1="7340" x2="25" y2="7340" class="line"/>
+    <text x="30" y="7345" class="icon">📁</text>
+    <text x="55" y="7345" class="folder-text">nginx/</text>
+    <line x1="45" y1="7360" x2="45" y2="7370" class="line"/>
+    <line x1="45" y1="7370" x2="55" y2="7370" class="line"/>
+    <text x="60" y="7375" class="icon">⚙️</text>
+    <text x="85" y="7375" class="file-text">nginx.conf</text>
+    <line x1="15" y1="7440" x2="25" y2="7440" class="line"/>
+    <text x="30" y="7445" class="icon">📁</text>
+    <text x="55" y="7445" class="folder-text">public/</text>
+    <line x1="45" y1="7460" x2="45" y2="7470" class="line"/>
+    <line x1="45" y1="7470" x2="55" y2="7470" class="line"/>
+    <text x="60" y="7475" class="icon">📄</text>
+    <text x="85" y="7475" class="file-text">mockServiceWorker.js</text>
+    <line x1="45" y1="7495" x2="45" y2="7505" class="line"/>
+    <line x1="45" y1="7505" x2="55" y2="7505" class="line"/>
+    <text x="60" y="7510" class="icon">🖼️</text>
+    <text x="85" y="7510" class="file-text">vite.svg</text>
+    <line x1="15" y1="7575" x2="25" y2="7575" class="line"/>
+    <text x="30" y="7580" class="icon">📁</text>
+    <text x="55" y="7580" class="folder-text">src/</text>
+    <line x1="45" y1="7595" x2="45" y2="7605" class="line"/>
+    <line x1="45" y1="7605" x2="55" y2="7605" class="line"/>
+    <text x="60" y="7610" class="icon">📁</text>
+    <text x="85" y="7610" class="folder-text">api/</text>
+    <line x1="75" y1="7625" x2="75" y2="7635" class="line"/>
+    <line x1="75" y1="7635" x2="85" y2="7635" class="line"/>
+    <text x="90" y="7640" class="icon">📄</text>
+    <text x="115" y="7640" class="file-text">http.ts</text>
+    <line x1="75" y1="7660" x2="75" y2="7670" class="line"/>
+    <line x1="75" y1="7670" x2="85" y2="7670" class="line"/>
+    <text x="90" y="7675" class="icon">📄</text>
+    <text x="115" y="7675" class="file-text">roomsApi.ts</text>
+    <line x1="45" y1="7730" x2="45" y2="7740" class="line"/>
+    <line x1="45" y1="7740" x2="55" y2="7740" class="line"/>
+    <text x="60" y="7745" class="icon">📁</text>
+    <text x="85" y="7745" class="folder-text">assets/</text>
+    <line x1="75" y1="7760" x2="75" y2="7770" class="line"/>
+    <line x1="75" y1="7770" x2="85" y2="7770" class="line"/>
+    <text x="90" y="7775" class="icon">🖼️</text>
+    <text x="115" y="7775" class="file-text">react.svg</text>
+    <line x1="45" y1="7830" x2="45" y2="7840" class="line"/>
+    <line x1="45" y1="7840" x2="55" y2="7840" class="line"/>
+    <text x="60" y="7845" class="icon">📁</text>
+    <text x="85" y="7845" class="folder-text">components/</text>
+    <line x1="75" y1="7860" x2="75" y2="7870" class="line"/>
+    <line x1="75" y1="7870" x2="85" y2="7870" class="line"/>
+    <text x="90" y="7875" class="icon">📁</text>
+    <text x="115" y="7875" class="folder-text">Footer/</text>
+    <line x1="105" y1="7890" x2="105" y2="7900" class="line"/>
+    <line x1="105" y1="7900" x2="115" y2="7900" class="line"/>
+    <text x="120" y="7905" class="icon">🎨</text>
+    <text x="145" y="7905" class="file-text">Bottom.module.css</text>
+    <line x1="105" y1="7925" x2="105" y2="7935" class="line"/>
+    <line x1="105" y1="7935" x2="115" y2="7935" class="line"/>
+    <text x="120" y="7940" class="icon">📄</text>
+    <text x="145" y="7940" class="file-text">Bottom.tsx</text>
+    <line x1="105" y1="7960" x2="105" y2="7970" class="line"/>
+    <line x1="105" y1="7970" x2="115" y2="7970" class="line"/>
+    <text x="120" y="7975" class="icon">📄</text>
+    <text x="145" y="7975" class="file-text">index.ts</text>
+    <line x1="75" y1="8030" x2="75" y2="8040" class="line"/>
+    <line x1="75" y1="8040" x2="85" y2="8040" class="line"/>
+    <text x="90" y="8045" class="icon">📁</text>
+    <text x="115" y="8045" class="folder-text">Header/</text>
+    <line x1="105" y1="8060" x2="105" y2="8070" class="line"/>
+    <line x1="105" y1="8070" x2="115" y2="8070" class="line"/>
+    <text x="120" y="8075" class="icon">🎨</text>
+    <text x="145" y="8075" class="file-text">Header.module.css</text>
+    <line x1="105" y1="8095" x2="105" y2="8105" class="line"/>
+    <line x1="105" y1="8105" x2="115" y2="8105" class="line"/>
+    <text x="120" y="8110" class="icon">📄</text>
+    <text x="145" y="8110" class="file-text">Header.tsx</text>
+    <line x1="105" y1="8130" x2="105" y2="8140" class="line"/>
+    <line x1="105" y1="8140" x2="115" y2="8140" class="line"/>
+    <text x="120" y="8145" class="icon">📄</text>
+    <text x="145" y="8145" class="file-text">header.config.ts</text>
+    <line x1="105" y1="8165" x2="105" y2="8175" class="line"/>
+    <line x1="105" y1="8175" x2="115" y2="8175" class="line"/>
+    <text x="120" y="8180" class="icon">📄</text>
+    <text x="145" y="8180" class="file-text">header.types.ts</text>
+    <line x1="105" y1="8200" x2="105" y2="8210" class="line"/>
+    <line x1="105" y1="8210" x2="115" y2="8210" class="line"/>
+    <text x="120" y="8215" class="icon">📄</text>
+    <text x="145" y="8215" class="file-text">header.utils.ts</text>
+    <line x1="105" y1="8235" x2="105" y2="8245" class="line"/>
+    <line x1="105" y1="8245" x2="115" y2="8245" class="line"/>
+    <text x="120" y="8250" class="icon">📄</text>
+    <text x="145" y="8250" class="file-text">index.ts</text>
+    <line x1="75" y1="8305" x2="75" y2="8315" class="line"/>
+    <line x1="75" y1="8315" x2="85" y2="8315" class="line"/>
+    <text x="90" y="8320" class="icon">📁</text>
+    <text x="115" y="8320" class="folder-text">bookingManagement/</text>
+    <line x1="105" y1="8335" x2="105" y2="8345" class="line"/>
+    <line x1="105" y1="8345" x2="115" y2="8345" class="line"/>
+    <text x="120" y="8350" class="icon">📁</text>
+    <text x="145" y="8350" class="folder-text">BodyHeaderBooking/</text>
+    <line x1="135" y1="8365" x2="135" y2="8375" class="line"/>
+    <line x1="135" y1="8375" x2="145" y2="8375" class="line"/>
+    <text x="150" y="8380" class="icon">🎨</text>
+    <text x="175" y="8380" class="file-text">BodyHeaderBooking.module.css</text>
+    <line x1="135" y1="8400" x2="135" y2="8410" class="line"/>
+    <line x1="135" y1="8410" x2="145" y2="8410" class="line"/>
+    <text x="150" y="8415" class="icon">📄</text>
+    <text x="175" y="8415" class="file-text">BodyHeaderBooking.tsx</text>
+    <line x1="135" y1="8435" x2="135" y2="8445" class="line"/>
+    <line x1="135" y1="8445" x2="145" y2="8445" class="line"/>
+    <text x="150" y="8450" class="icon">📄</text>
+    <text x="175" y="8450" class="file-text">index.ts</text>
+    <line x1="105" y1="8505" x2="105" y2="8515" class="line"/>
+    <line x1="105" y1="8515" x2="115" y2="8515" class="line"/>
+    <text x="120" y="8520" class="icon">📁</text>
+    <text x="145" y="8520" class="folder-text">BookingEmploymentGrid/</text>
+    <line x1="135" y1="8535" x2="135" y2="8545" class="line"/>
+    <line x1="135" y1="8545" x2="145" y2="8545" class="line"/>
+    <text x="150" y="8550" class="icon">📄</text>
+    <text x="175" y="8550" class="file-text">BookingEmploymentGrid.config.ts</text>
+    <line x1="135" y1="8570" x2="135" y2="8580" class="line"/>
+    <line x1="135" y1="8580" x2="145" y2="8580" class="line"/>
+    <text x="150" y="8585" class="icon">🎨</text>
+    <text x="175" y="8585" class="file-text">BookingEmploymentGrid.module.css</text>
+    <line x1="135" y1="8605" x2="135" y2="8615" class="line"/>
+    <line x1="135" y1="8615" x2="145" y2="8615" class="line"/>
+    <text x="150" y="8620" class="icon">📄</text>
+    <text x="175" y="8620" class="file-text">BookingEmploymentGrid.tsx</text>
+    <line x1="135" y1="8640" x2="135" y2="8650" class="line"/>
+    <line x1="135" y1="8650" x2="145" y2="8650" class="line"/>
+    <text x="150" y="8655" class="icon">📄</text>
+    <text x="175" y="8655" class="file-text">BookingEmploymentGrid.types.ts</text>
+    <line x1="135" y1="8675" x2="135" y2="8685" class="line"/>
+    <line x1="135" y1="8685" x2="145" y2="8685" class="line"/>
+    <text x="150" y="8690" class="icon">📄</text>
+    <text x="175" y="8690" class="file-text">index.ts</text>
+    <line x1="105" y1="8745" x2="105" y2="8755" class="line"/>
+    <line x1="105" y1="8755" x2="115" y2="8755" class="line"/>
+    <text x="120" y="8760" class="icon">📁</text>
+    <text x="145" y="8760" class="folder-text">BookingFilters/</text>
+    <line x1="135" y1="8775" x2="135" y2="8785" class="line"/>
+    <line x1="135" y1="8785" x2="145" y2="8785" class="line"/>
+    <text x="150" y="8790" class="icon">📄</text>
+    <text x="175" y="8790" class="file-text">BookingFilters.config.ts</text>
+    <line x1="135" y1="8810" x2="135" y2="8820" class="line"/>
+    <line x1="135" y1="8820" x2="145" y2="8820" class="line"/>
+    <text x="150" y="8825" class="icon">🎨</text>
+    <text x="175" y="8825" class="file-text">BookingFilters.module.css</text>
+    <line x1="135" y1="8845" x2="135" y2="8855" class="line"/>
+    <line x1="135" y1="8855" x2="145" y2="8855" class="line"/>
+    <text x="150" y="8860" class="icon">📄</text>
+    <text x="175" y="8860" class="file-text">BookingFilters.tsx</text>
+    <line x1="135" y1="8880" x2="135" y2="8890" class="line"/>
+    <line x1="135" y1="8890" x2="145" y2="8890" class="line"/>
+    <text x="150" y="8895" class="icon">📄</text>
+    <text x="175" y="8895" class="file-text">BookingFilters.types.ts</text>
+    <line x1="135" y1="8915" x2="135" y2="8925" class="line"/>
+    <line x1="135" y1="8925" x2="145" y2="8925" class="line"/>
+    <text x="150" y="8930" class="icon">📄</text>
+    <text x="175" y="8930" class="file-text">index.ts</text>
+    <line x1="105" y1="8985" x2="105" y2="8995" class="line"/>
+    <line x1="105" y1="8995" x2="115" y2="8995" class="line"/>
+    <text x="120" y="9000" class="icon">📁</text>
+    <text x="145" y="9000" class="folder-text">LastUpdatesBooking/</text>
+    <line x1="135" y1="9015" x2="135" y2="9025" class="line"/>
+    <line x1="135" y1="9025" x2="145" y2="9025" class="line"/>
+    <text x="150" y="9030" class="icon">📄</text>
+    <text x="175" y="9030" class="file-text">LastUpdatesBooking.config.ts</text>
+    <line x1="135" y1="9050" x2="135" y2="9060" class="line"/>
+    <line x1="135" y1="9060" x2="145" y2="9060" class="line"/>
+    <text x="150" y="9065" class="icon">🎨</text>
+    <text x="175" y="9065" class="file-text">LastUpdatesBooking.module.css</text>
+    <line x1="135" y1="9085" x2="135" y2="9095" class="line"/>
+    <line x1="135" y1="9095" x2="145" y2="9095" class="line"/>
+    <text x="150" y="9100" class="icon">📄</text>
+    <text x="175" y="9100" class="file-text">LastUpdatesBooking.tsx</text>
+    <line x1="135" y1="9120" x2="135" y2="9130" class="line"/>
+    <line x1="135" y1="9130" x2="145" y2="9130" class="line"/>
+    <text x="150" y="9135" class="icon">📄</text>
+    <text x="175" y="9135" class="file-text">LastUpdatesBooking.types.ts</text>
+    <line x1="135" y1="9155" x2="135" y2="9165" class="line"/>
+    <line x1="135" y1="9165" x2="145" y2="9165" class="line"/>
+    <text x="150" y="9170" class="icon">📄</text>
+    <text x="175" y="9170" class="file-text">index.ts</text>
+    <line x1="105" y1="9225" x2="105" y2="9235" class="line"/>
+    <line x1="105" y1="9235" x2="115" y2="9235" class="line"/>
+    <text x="120" y="9240" class="icon">📁</text>
+    <text x="145" y="9240" class="folder-text">QuickActionsBooking/</text>
+    <line x1="135" y1="9255" x2="135" y2="9265" class="line"/>
+    <line x1="135" y1="9265" x2="145" y2="9265" class="line"/>
+    <text x="150" y="9270" class="icon">📄</text>
+    <text x="175" y="9270" class="file-text">QuickActionsBooking.config.ts</text>
+    <line x1="135" y1="9290" x2="135" y2="9300" class="line"/>
+    <line x1="135" y1="9300" x2="145" y2="9300" class="line"/>
+    <text x="150" y="9305" class="icon">🎨</text>
+    <text x="175" y="9305" class="file-text">QuickActionsBooking.module.css</text>
+    <line x1="135" y1="9325" x2="135" y2="9335" class="line"/>
+    <line x1="135" y1="9335" x2="145" y2="9335" class="line"/>
+    <text x="150" y="9340" class="icon">📄</text>
+    <text x="175" y="9340" class="file-text">QuickActionsBooking.tsx</text>
+    <line x1="135" y1="9360" x2="135" y2="9370" class="line"/>
+    <line x1="135" y1="9370" x2="145" y2="9370" class="line"/>
+    <text x="150" y="9375" class="icon">📄</text>
+    <text x="175" y="9375" class="file-text">QuickActionsBooking.types.ts</text>
+    <line x1="135" y1="9395" x2="135" y2="9405" class="line"/>
+    <line x1="135" y1="9405" x2="145" y2="9405" class="line"/>
+    <text x="150" y="9410" class="icon">📄</text>
+    <text x="175" y="9410" class="file-text">index.ts</text>
+    <line x1="105" y1="9465" x2="105" y2="9475" class="line"/>
+    <line x1="105" y1="9475" x2="115" y2="9475" class="line"/>
+    <text x="120" y="9480" class="icon">📁</text>
+    <text x="145" y="9480" class="folder-text">RoomWorkload/</text>
+    <line x1="135" y1="9495" x2="135" y2="9505" class="line"/>
+    <line x1="135" y1="9505" x2="145" y2="9505" class="line"/>
+    <text x="150" y="9510" class="icon">🎨</text>
+    <text x="175" y="9510" class="file-text">RoomWorkload.module.css</text>
+    <line x1="135" y1="9530" x2="135" y2="9540" class="line"/>
+    <line x1="135" y1="9540" x2="145" y2="9540" class="line"/>
+    <text x="150" y="9545" class="icon">📄</text>
+    <text x="175" y="9545" class="file-text">RoomWorkload.tsx</text>
+    <line x1="135" y1="9565" x2="135" y2="9575" class="line"/>
+    <line x1="135" y1="9575" x2="145" y2="9575" class="line"/>
+    <text x="150" y="9580" class="icon">📄</text>
+    <text x="175" y="9580" class="file-text">index.ts</text>
+    <line x1="105" y1="9635" x2="105" y2="9645" class="line"/>
+    <line x1="105" y1="9645" x2="115" y2="9645" class="line"/>
+    <text x="120" y="9650" class="icon">📁</text>
+    <text x="145" y="9650" class="folder-text">StatCardsBooking/</text>
+    <line x1="135" y1="9665" x2="135" y2="9675" class="line"/>
+    <line x1="135" y1="9675" x2="145" y2="9675" class="line"/>
+    <text x="150" y="9680" class="icon">📄</text>
+    <text x="175" y="9680" class="file-text">StatCardsBooking.config.ts</text>
+    <line x1="135" y1="9700" x2="135" y2="9710" class="line"/>
+    <line x1="135" y1="9710" x2="145" y2="9710" class="line"/>
+    <text x="150" y="9715" class="icon">🎨</text>
+    <text x="175" y="9715" class="file-text">StatCardsBooking.module.css</text>
+    <line x1="135" y1="9735" x2="135" y2="9745" class="line"/>
+    <line x1="135" y1="9745" x2="145" y2="9745" class="line"/>
+    <text x="150" y="9750" class="icon">📄</text>
+    <text x="175" y="9750" class="file-text">StatCardsBooking.tsx</text>
+    <line x1="135" y1="9770" x2="135" y2="9780" class="line"/>
+    <line x1="135" y1="9780" x2="145" y2="9780" class="line"/>
+    <text x="150" y="9785" class="icon">📄</text>
+    <text x="175" y="9785" class="file-text">StatCardsBooking.types.ts</text>
+    <line x1="135" y1="9805" x2="135" y2="9815" class="line"/>
+    <line x1="135" y1="9815" x2="145" y2="9815" class="line"/>
+    <text x="150" y="9820" class="icon">📄</text>
+    <text x="175" y="9820" class="file-text">index.ts</text>
+    <line x1="105" y1="9875" x2="105" y2="9885" class="line"/>
+    <line x1="105" y1="9885" x2="115" y2="9885" class="line"/>
+    <text x="120" y="9890" class="icon">📁</text>
+    <text x="145" y="9890" class="folder-text">StatsOnTime/</text>
+    <line x1="135" y1="9905" x2="135" y2="9915" class="line"/>
+    <line x1="135" y1="9915" x2="145" y2="9915" class="line"/>
+    <text x="150" y="9920" class="icon">🎨</text>
+    <text x="175" y="9920" class="file-text">StatsOnTime.module.css</text>
+    <line x1="135" y1="9940" x2="135" y2="9950" class="line"/>
+    <line x1="135" y1="9950" x2="145" y2="9950" class="line"/>
+    <text x="150" y="9955" class="icon">📄</text>
+    <text x="175" y="9955" class="file-text">StatsOnTime.tsx</text>
+    <line x1="135" y1="9975" x2="135" y2="9985" class="line"/>
+    <line x1="135" y1="9985" x2="145" y2="9985" class="line"/>
+    <text x="150" y="9990" class="icon">📄</text>
+    <text x="175" y="9990" class="file-text">index.ts</text>
+    <line x1="105" y1="10045" x2="105" y2="10055" class="line"/>
+    <line x1="105" y1="10055" x2="115" y2="10055" class="line"/>
+    <text x="120" y="10060" class="icon">📁</text>
+    <text x="145" y="10060" class="folder-text">UpcomingEvents/</text>
+    <line x1="135" y1="10075" x2="135" y2="10085" class="line"/>
+    <line x1="135" y1="10085" x2="145" y2="10085" class="line"/>
+    <text x="150" y="10090" class="icon">📄</text>
+    <text x="175" y="10090" class="file-text">UpcomingEvents.config.ts</text>
+    <line x1="135" y1="10110" x2="135" y2="10120" class="line"/>
+    <line x1="135" y1="10120" x2="145" y2="10120" class="line"/>
+    <text x="150" y="10125" class="icon">🎨</text>
+    <text x="175" y="10125" class="file-text">UpcomingEvents.module.css</text>
+    <line x1="135" y1="10145" x2="135" y2="10155" class="line"/>
+    <line x1="135" y1="10155" x2="145" y2="10155" class="line"/>
+    <text x="150" y="10160" class="icon">📄</text>
+    <text x="175" y="10160" class="file-text">UpcomingEvents.tsx</text>
+    <line x1="135" y1="10180" x2="135" y2="10190" class="line"/>
+    <line x1="135" y1="10190" x2="145" y2="10190" class="line"/>
+    <text x="150" y="10195" class="icon">📄</text>
+    <text x="175" y="10195" class="file-text">UpcomingEvents.types.ts</text>
+    <line x1="135" y1="10215" x2="135" y2="10225" class="line"/>
+    <line x1="135" y1="10225" x2="145" y2="10225" class="line"/>
+    <text x="150" y="10230" class="icon">📄</text>
+    <text x="175" y="10230" class="file-text">index.ts</text>
+    <line x1="105" y1="10285" x2="105" y2="10295" class="line"/>
+    <line x1="105" y1="10295" x2="115" y2="10295" class="line"/>
+    <text x="120" y="10300" class="icon">📁</text>
+    <text x="145" y="10300" class="folder-text">WorkloadStats/</text>
+    <line x1="135" y1="10315" x2="135" y2="10325" class="line"/>
+    <line x1="135" y1="10325" x2="145" y2="10325" class="line"/>
+    <text x="150" y="10330" class="icon">🎨</text>
+    <text x="175" y="10330" class="file-text">WorkloadStats.module.css</text>
+    <line x1="135" y1="10350" x2="135" y2="10360" class="line"/>
+    <line x1="135" y1="10360" x2="145" y2="10360" class="line"/>
+    <text x="150" y="10365" class="icon">📄</text>
+    <text x="175" y="10365" class="file-text">WorkloadStats.tsx</text>
+    <line x1="135" y1="10385" x2="135" y2="10395" class="line"/>
+    <line x1="135" y1="10395" x2="145" y2="10395" class="line"/>
+    <text x="150" y="10400" class="icon">📄</text>
+    <text x="175" y="10400" class="file-text">index.ts</text>
+    <line x1="75" y1="10490" x2="75" y2="10500" class="line"/>
+    <line x1="75" y1="10500" x2="85" y2="10500" class="line"/>
+    <text x="90" y="10505" class="icon">📁</text>
+    <text x="115" y="10505" class="folder-text">catalogAuditorious/</text>
+    <line x1="105" y1="10520" x2="105" y2="10530" class="line"/>
+    <line x1="105" y1="10530" x2="115" y2="10530" class="line"/>
+    <text x="120" y="10535" class="icon">📁</text>
+    <text x="145" y="10535" class="folder-text">BodyFilters/</text>
+    <line x1="135" y1="10550" x2="135" y2="10560" class="line"/>
+    <line x1="135" y1="10560" x2="145" y2="10560" class="line"/>
+    <text x="150" y="10565" class="icon">📄</text>
+    <text x="175" y="10565" class="file-text">BodyFilters.config.ts</text>
+    <line x1="135" y1="10585" x2="135" y2="10595" class="line"/>
+    <line x1="135" y1="10595" x2="145" y2="10595" class="line"/>
+    <text x="150" y="10600" class="icon">🎨</text>
+    <text x="175" y="10600" class="file-text">BodyFilters.module.css</text>
+    <line x1="135" y1="10620" x2="135" y2="10630" class="line"/>
+    <line x1="135" y1="10630" x2="145" y2="10630" class="line"/>
+    <text x="150" y="10635" class="icon">📄</text>
+    <text x="175" y="10635" class="file-text">BodyFilters.tsx</text>
+    <line x1="135" y1="10655" x2="135" y2="10665" class="line"/>
+    <line x1="135" y1="10665" x2="145" y2="10665" class="line"/>
+    <text x="150" y="10670" class="icon">📄</text>
+    <text x="175" y="10670" class="file-text">BodyFilters.types.ts</text>
+    <line x1="135" y1="10690" x2="135" y2="10700" class="line"/>
+    <line x1="135" y1="10700" x2="145" y2="10700" class="line"/>
+    <text x="150" y="10705" class="icon">📄</text>
+    <text x="175" y="10705" class="file-text">index.ts</text>
+    <line x1="105" y1="10760" x2="105" y2="10770" class="line"/>
+    <line x1="105" y1="10770" x2="115" y2="10770" class="line"/>
+    <text x="120" y="10775" class="icon">📁</text>
+    <text x="145" y="10775" class="folder-text">BodyHeader/</text>
+    <line x1="135" y1="10790" x2="135" y2="10800" class="line"/>
+    <line x1="135" y1="10800" x2="145" y2="10800" class="line"/>
+    <text x="150" y="10805" class="icon">📄</text>
+    <text x="175" y="10805" class="file-text">BodyHeader.tsx</text>
+    <line x1="135" y1="10825" x2="135" y2="10835" class="line"/>
+    <line x1="135" y1="10835" x2="145" y2="10835" class="line"/>
+    <text x="150" y="10840" class="icon">🎨</text>
+    <text x="175" y="10840" class="file-text">bodyheader.module.css</text>
+    <line x1="135" y1="10860" x2="135" y2="10870" class="line"/>
+    <line x1="135" y1="10870" x2="145" y2="10870" class="line"/>
+    <text x="150" y="10875" class="icon">📄</text>
+    <text x="175" y="10875" class="file-text">index.ts</text>
+    <line x1="105" y1="10930" x2="105" y2="10940" class="line"/>
+    <line x1="105" y1="10940" x2="115" y2="10940" class="line"/>
+    <text x="120" y="10945" class="icon">📁</text>
+    <text x="145" y="10945" class="folder-text">Button/</text>
+    <line x1="135" y1="10960" x2="135" y2="10970" class="line"/>
+    <line x1="135" y1="10970" x2="145" y2="10970" class="line"/>
+    <text x="150" y="10975" class="icon">🎨</text>
+    <text x="175" y="10975" class="file-text">Button.module.css</text>
+    <line x1="135" y1="10995" x2="135" y2="11005" class="line"/>
+    <line x1="135" y1="11005" x2="145" y2="11005" class="line"/>
+    <text x="150" y="11010" class="icon">📄</text>
+    <text x="175" y="11010" class="file-text">Button.tsx</text>
+    <line x1="135" y1="11030" x2="135" y2="11040" class="line"/>
+    <line x1="135" y1="11040" x2="145" y2="11040" class="line"/>
+    <text x="150" y="11045" class="icon">📄</text>
+    <text x="175" y="11045" class="file-text">index.ts</text>
+    <line x1="105" y1="11100" x2="105" y2="11110" class="line"/>
+    <line x1="105" y1="11110" x2="115" y2="11110" class="line"/>
+    <text x="120" y="11115" class="icon">📁</text>
+    <text x="145" y="11115" class="folder-text">Equipment/</text>
+    <line x1="135" y1="11130" x2="135" y2="11140" class="line"/>
+    <line x1="135" y1="11140" x2="145" y2="11140" class="line"/>
+    <text x="150" y="11145" class="icon">🎨</text>
+    <text x="175" y="11145" class="file-text">Equipment.module.css</text>
+    <line x1="135" y1="11165" x2="135" y2="11175" class="line"/>
+    <line x1="135" y1="11175" x2="145" y2="11175" class="line"/>
+    <text x="150" y="11180" class="icon">📄</text>
+    <text x="175" y="11180" class="file-text">Equipment.tsx</text>
+    <line x1="135" y1="11200" x2="135" y2="11210" class="line"/>
+    <line x1="135" y1="11210" x2="145" y2="11210" class="line"/>
+    <text x="150" y="11215" class="icon">📄</text>
+    <text x="175" y="11215" class="file-text">equipment.config.ts</text>
+    <line x1="135" y1="11235" x2="135" y2="11245" class="line"/>
+    <line x1="135" y1="11245" x2="145" y2="11245" class="line"/>
+    <text x="150" y="11250" class="icon">📄</text>
+    <text x="175" y="11250" class="file-text">equipment.types.ts</text>
+    <line x1="135" y1="11270" x2="135" y2="11280" class="line"/>
+    <line x1="135" y1="11280" x2="145" y2="11280" class="line"/>
+    <text x="150" y="11285" class="icon">📄</text>
+    <text x="175" y="11285" class="file-text">index.ts</text>
+    <line x1="105" y1="11340" x2="105" y2="11350" class="line"/>
+    <line x1="105" y1="11350" x2="115" y2="11350" class="line"/>
+    <text x="120" y="11355" class="icon">📁</text>
+    <text x="145" y="11355" class="folder-text">LastUpdates/</text>
+    <line x1="135" y1="11370" x2="135" y2="11380" class="line"/>
+    <line x1="135" y1="11380" x2="145" y2="11380" class="line"/>
+    <text x="150" y="11385" class="icon">🎨</text>
+    <text x="175" y="11385" class="file-text">LastUpdates.module.css</text>
+    <line x1="135" y1="11405" x2="135" y2="11415" class="line"/>
+    <line x1="135" y1="11415" x2="145" y2="11415" class="line"/>
+    <text x="150" y="11420" class="icon">📄</text>
+    <text x="175" y="11420" class="file-text">LastUpdates.tsx</text>
+    <line x1="135" y1="11440" x2="135" y2="11450" class="line"/>
+    <line x1="135" y1="11450" x2="145" y2="11450" class="line"/>
+    <text x="150" y="11455" class="icon">📄</text>
+    <text x="175" y="11455" class="file-text">index.ts</text>
+    <line x1="135" y1="11475" x2="135" y2="11485" class="line"/>
+    <line x1="135" y1="11485" x2="145" y2="11485" class="line"/>
+    <text x="150" y="11490" class="icon">📄</text>
+    <text x="175" y="11490" class="file-text">lastupdates.config.ts</text>
+    <line x1="135" y1="11510" x2="135" y2="11520" class="line"/>
+    <line x1="135" y1="11520" x2="145" y2="11520" class="line"/>
+    <text x="150" y="11525" class="icon">📄</text>
+    <text x="175" y="11525" class="file-text">lastupdates.types.ts</text>
+    <line x1="105" y1="11580" x2="105" y2="11590" class="line"/>
+    <line x1="105" y1="11590" x2="115" y2="11590" class="line"/>
+    <text x="120" y="11595" class="icon">📁</text>
+    <text x="145" y="11595" class="folder-text">QuickActions/</text>
+    <line x1="135" y1="11610" x2="135" y2="11620" class="line"/>
+    <line x1="135" y1="11620" x2="145" y2="11620" class="line"/>
+    <text x="150" y="11625" class="icon">📄</text>
+    <text x="175" y="11625" class="file-text">QuickAction.tsx</text>
+    <line x1="135" y1="11645" x2="135" y2="11655" class="line"/>
+    <line x1="135" y1="11655" x2="145" y2="11655" class="line"/>
+    <text x="150" y="11660" class="icon">🎨</text>
+    <text x="175" y="11660" class="file-text">QuickActions.module.css</text>
+    <line x1="135" y1="11680" x2="135" y2="11690" class="line"/>
+    <line x1="135" y1="11690" x2="145" y2="11690" class="line"/>
+    <text x="150" y="11695" class="icon">📄</text>
+    <text x="175" y="11695" class="file-text">index.ts</text>
+    <line x1="135" y1="11715" x2="135" y2="11725" class="line"/>
+    <line x1="135" y1="11725" x2="145" y2="11725" class="line"/>
+    <text x="150" y="11730" class="icon">📄</text>
+    <text x="175" y="11730" class="file-text">quickaction.config.ts</text>
+    <line x1="135" y1="11750" x2="135" y2="11760" class="line"/>
+    <line x1="135" y1="11760" x2="145" y2="11760" class="line"/>
+    <text x="150" y="11765" class="icon">📄</text>
+    <text x="175" y="11765" class="file-text">quickaction.types.ts</text>
+    <line x1="105" y1="11820" x2="105" y2="11830" class="line"/>
+    <line x1="105" y1="11830" x2="115" y2="11830" class="line"/>
+    <text x="120" y="11835" class="icon">📁</text>
+    <text x="145" y="11835" class="folder-text">RoomsSchema/</text>
+    <line x1="135" y1="11850" x2="135" y2="11860" class="line"/>
+    <line x1="135" y1="11860" x2="145" y2="11860" class="line"/>
+    <text x="150" y="11865" class="icon">🎨</text>
+    <text x="175" y="11865" class="file-text">RoomsSchema.module.css</text>
+    <line x1="135" y1="11885" x2="135" y2="11895" class="line"/>
+    <line x1="135" y1="11895" x2="145" y2="11895" class="line"/>
+    <text x="150" y="11900" class="icon">📄</text>
+    <text x="175" y="11900" class="file-text">RoomsSchema.tsx</text>
+    <line x1="135" y1="11920" x2="135" y2="11930" class="line"/>
+    <line x1="135" y1="11930" x2="145" y2="11930" class="line"/>
+    <text x="150" y="11935" class="icon">📄</text>
+    <text x="175" y="11935" class="file-text">index.ts</text>
+    <line x1="135" y1="11955" x2="135" y2="11965" class="line"/>
+    <line x1="135" y1="11965" x2="145" y2="11965" class="line"/>
+    <text x="150" y="11970" class="icon">📄</text>
+    <text x="175" y="11970" class="file-text">roomschema.config.ts</text>
+    <line x1="135" y1="11990" x2="135" y2="12000" class="line"/>
+    <line x1="135" y1="12000" x2="145" y2="12000" class="line"/>
+    <text x="150" y="12005" class="icon">📄</text>
+    <text x="175" y="12005" class="file-text">roomsschema.types.ts</text>
+    <line x1="105" y1="12060" x2="105" y2="12070" class="line"/>
+    <line x1="105" y1="12070" x2="115" y2="12070" class="line"/>
+    <text x="120" y="12075" class="icon">📁</text>
+    <text x="145" y="12075" class="folder-text">RoomsTable/</text>
+    <line x1="135" y1="12090" x2="135" y2="12100" class="line"/>
+    <line x1="135" y1="12100" x2="145" y2="12100" class="line"/>
+    <text x="150" y="12105" class="icon">📄</text>
+    <text x="175" y="12105" class="file-text">RoomsTable.tsx</text>
+    <line x1="105" y1="12160" x2="105" y2="12170" class="line"/>
+    <line x1="105" y1="12170" x2="115" y2="12170" class="line"/>
+    <text x="120" y="12175" class="icon">📁</text>
+    <text x="145" y="12175" class="folder-text">StatCards/</text>
+    <line x1="135" y1="12190" x2="135" y2="12200" class="line"/>
+    <line x1="135" y1="12200" x2="145" y2="12200" class="line"/>
+    <text x="150" y="12205" class="icon">📄</text>
+    <text x="175" y="12205" class="file-text">StatCards.config.ts</text>
+    <line x1="135" y1="12225" x2="135" y2="12235" class="line"/>
+    <line x1="135" y1="12235" x2="145" y2="12235" class="line"/>
+    <text x="150" y="12240" class="icon">🎨</text>
+    <text x="175" y="12240" class="file-text">StatCards.module.css</text>
+    <line x1="135" y1="12260" x2="135" y2="12270" class="line"/>
+    <line x1="135" y1="12270" x2="145" y2="12270" class="line"/>
+    <text x="150" y="12275" class="icon">📄</text>
+    <text x="175" y="12275" class="file-text">StatCards.tsx</text>
+    <line x1="135" y1="12295" x2="135" y2="12305" class="line"/>
+    <line x1="135" y1="12305" x2="145" y2="12305" class="line"/>
+    <text x="150" y="12310" class="icon">📄</text>
+    <text x="175" y="12310" class="file-text">StatCards.types.ts</text>
+    <line x1="135" y1="12330" x2="135" y2="12340" class="line"/>
+    <line x1="135" y1="12340" x2="145" y2="12340" class="line"/>
+    <text x="150" y="12345" class="icon">📄</text>
+    <text x="175" y="12345" class="file-text">index.ts</text>
+    <line x1="45" y1="12470" x2="45" y2="12480" class="line"/>
+    <line x1="45" y1="12480" x2="55" y2="12480" class="line"/>
+    <text x="60" y="12485" class="icon">📁</text>
+    <text x="85" y="12485" class="folder-text">context/</text>
+    <line x1="75" y1="12500" x2="75" y2="12510" class="line"/>
+    <line x1="75" y1="12510" x2="85" y2="12510" class="line"/>
+    <text x="90" y="12515" class="icon">📄</text>
+    <text x="115" y="12515" class="file-text">auth.tsx</text>
+    <line x1="45" y1="12570" x2="45" y2="12580" class="line"/>
+    <line x1="45" y1="12580" x2="55" y2="12580" class="line"/>
+    <text x="60" y="12585" class="icon">📁</text>
+    <text x="85" y="12585" class="folder-text">mocks/</text>
+    <line x1="75" y1="12600" x2="75" y2="12610" class="line"/>
+    <line x1="75" y1="12610" x2="85" y2="12610" class="line"/>
+    <text x="90" y="12615" class="icon">📄</text>
+    <text x="115" y="12615" class="file-text">browser.ts</text>
+    <line x1="75" y1="12635" x2="75" y2="12645" class="line"/>
+    <line x1="75" y1="12645" x2="85" y2="12645" class="line"/>
+    <text x="90" y="12650" class="icon">📄</text>
+    <text x="115" y="12650" class="file-text">data.ts</text>
+    <line x1="75" y1="12670" x2="75" y2="12680" class="line"/>
+    <line x1="75" y1="12680" x2="85" y2="12680" class="line"/>
+    <text x="90" y="12685" class="icon">📄</text>
+    <text x="115" y="12685" class="file-text">handlers.ts</text>
+    <line x1="45" y1="12740" x2="45" y2="12750" class="line"/>
+    <line x1="45" y1="12750" x2="55" y2="12750" class="line"/>
+    <text x="60" y="12755" class="icon">📁</text>
+    <text x="85" y="12755" class="folder-text">pages/</text>
+    <line x1="75" y1="12770" x2="75" y2="12780" class="line"/>
+    <line x1="75" y1="12780" x2="85" y2="12780" class="line"/>
+    <text x="90" y="12785" class="icon">📄</text>
+    <text x="115" y="12785" class="file-text">AuditoriumCataloguePage.tsx</text>
+    <line x1="75" y1="12805" x2="75" y2="12815" class="line"/>
+    <line x1="75" y1="12815" x2="85" y2="12815" class="line"/>
+    <text x="90" y="12820" class="icon">📄</text>
+    <text x="115" y="12820" class="file-text">BookingManagementPage.tsx</text>
+    <line x1="75" y1="12840" x2="75" y2="12850" class="line"/>
+    <line x1="75" y1="12850" x2="85" y2="12850" class="line"/>
+    <text x="90" y="12855" class="icon">📄</text>
+    <text x="115" y="12855" class="file-text">Settings.tsx</text>
+    <line x1="45" y1="12910" x2="45" y2="12920" class="line"/>
+    <line x1="45" y1="12920" x2="55" y2="12920" class="line"/>
+    <text x="60" y="12925" class="icon">🎨</text>
+    <text x="85" y="12925" class="file-text">App.css</text>
+    <line x1="45" y1="12945" x2="45" y2="12955" class="line"/>
+    <line x1="45" y1="12955" x2="55" y2="12955" class="line"/>
+    <text x="60" y="12960" class="icon">📄</text>
+    <text x="85" y="12960" class="file-text">App.tsx</text>
+    <line x1="45" y1="12980" x2="45" y2="12990" class="line"/>
+    <line x1="45" y1="12990" x2="55" y2="12990" class="line"/>
+    <text x="60" y="12995" class="icon">📄</text>
+    <text x="85" y="12995" class="file-text">config.ts</text>
+    <line x1="45" y1="13015" x2="45" y2="13025" class="line"/>
+    <line x1="45" y1="13025" x2="55" y2="13025" class="line"/>
+    <text x="60" y="13030" class="icon">🎨</text>
+    <text x="85" y="13030" class="file-text">index.css</text>
+    <line x1="45" y1="13050" x2="45" y2="13060" class="line"/>
+    <line x1="45" y1="13060" x2="55" y2="13060" class="line"/>
+    <text x="60" y="13065" class="icon">📄</text>
+    <text x="85" y="13065" class="file-text">main.tsx</text>
+    <line x1="15" y1="13130" x2="25" y2="13130" class="line"/>
+    <text x="30" y="13135" class="icon">⚙️</text>
+    <text x="55" y="13135" class="file-text">.gitignore</text>
+    <line x1="15" y1="13165" x2="25" y2="13165" class="line"/>
+    <text x="30" y="13170" class="icon">🐳</text>
+    <text x="55" y="13170" class="file-text">Dockerfile</text>
+    <line x1="15" y1="13200" x2="25" y2="13200" class="line"/>
+    <text x="30" y="13205" class="icon">📝</text>
+    <text x="55" y="13205" class="file-text">README.md</text>
+    <line x1="15" y1="13235" x2="25" y2="13235" class="line"/>
+    <text x="30" y="13240" class="icon">⚙️</text>
+    <text x="55" y="13240" class="file-text">compose.base.yaml</text>
+    <line x1="15" y1="13270" x2="25" y2="13270" class="line"/>
+    <text x="30" y="13275" class="icon">⚙️</text>
+    <text x="55" y="13275" class="file-text">compose.base.yml</text>
+    <line x1="15" y1="13305" x2="25" y2="13305" class="line"/>
+    <text x="30" y="13310" class="icon">⚙️</text>
+    <text x="55" y="13310" class="file-text">compose.dev.yaml</text>
+    <line x1="15" y1="13340" x2="25" y2="13340" class="line"/>
+    <text x="30" y="13345" class="icon">⚙️</text>
+    <text x="55" y="13345" class="file-text">compose.dev.yml</text>
+    <line x1="15" y1="13375" x2="25" y2="13375" class="line"/>
+    <text x="30" y="13380" class="icon">⚙️</text>
+    <text x="55" y="13380" class="file-text">compose.prod.yaml</text>
+    <line x1="15" y1="13410" x2="25" y2="13410" class="line"/>
+    <text x="30" y="13415" class="icon">⚙️</text>
+    <text x="55" y="13415" class="file-text">compose.prod.yml</text>
+    <line x1="15" y1="13445" x2="25" y2="13445" class="line"/>
+    <text x="30" y="13450" class="icon">⚙️</text>
+    <text x="55" y="13450" class="file-text">docker-compose.dev.yml</text>
+    <line x1="15" y1="13480" x2="25" y2="13480" class="line"/>
+    <text x="30" y="13485" class="icon">⚙️</text>
+    <text x="55" y="13485" class="file-text">docker-compose.yml</text>
+    <line x1="15" y1="13515" x2="25" y2="13515" class="line"/>
+    <text x="30" y="13520" class="icon">📄</text>
+    <text x="55" y="13520" class="file-text">eslint.config.js</text>
+    <line x1="15" y1="13550" x2="25" y2="13550" class="line"/>
+    <text x="30" y="13555" class="icon">🌐</text>
+    <text x="55" y="13555" class="file-text">index.html</text>
+    <line x1="15" y1="13585" x2="25" y2="13585" class="line"/>
+    <text x="30" y="13590" class="icon">⚙️</text>
+    <text x="55" y="13590" class="file-text">package-lock.json</text>
+    <line x1="15" y1="13620" x2="25" y2="13620" class="line"/>
+    <text x="30" y="13625" class="icon">⚙️</text>
+    <text x="55" y="13625" class="file-text">package.json</text>
+    <line x1="15" y1="13655" x2="25" y2="13655" class="line"/>
+    <text x="30" y="13660" class="icon">⚙️</text>
+    <text x="55" y="13660" class="file-text">tsconfig.app.json</text>
+    <line x1="15" y1="13690" x2="25" y2="13690" class="line"/>
+    <text x="30" y="13695" class="icon">⚙️</text>
+    <text x="55" y="13695" class="file-text">tsconfig.json</text>
+    <line x1="15" y1="13725" x2="25" y2="13725" class="line"/>
+    <text x="30" y="13730" class="icon">⚙️</text>
+    <text x="55" y="13730" class="file-text">tsconfig.node.json</text>
+    <line x1="15" y1="13760" x2="25" y2="13760" class="line"/>
+    <text x="30" y="13765" class="icon">📄</text>
+    <text x="55" y="13765" class="file-text">vite.config.ts</text>
+</svg>

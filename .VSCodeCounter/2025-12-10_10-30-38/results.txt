@@ -1,0 +1,369 @@
+Date : 2025-12-10 10:30:38
+Directory : /Users/admin/room-assets
+Total : 256 files,  20452 codes, 306 comments, 1024 blanks, all 21782 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| JSON               |         10 |     11,091 |          8 |         16 |     11,115 |
+| PostCSS            |         44 |      3,022 |          0 |        456 |      3,478 |
+| TypeScript JSX     |         54 |      2,352 |         28 |        210 |      2,590 |
+| TypeScript         |        113 |      1,655 |         70 |        148 |      1,873 |
+| XML                |          5 |      1,319 |          2 |          2 |      1,323 |
+| JavaScript         |          4 |        496 |        142 |        110 |        748 |
+| YAML               |         13 |        171 |          8 |         10 |        189 |
+| Markdown           |          2 |        120 |          0 |         28 |        148 |
+| Properties         |          2 |         87 |         17 |         20 |        124 |
+| Docker             |          3 |         69 |         11 |         10 |         90 |
+| JSON with Comments |          3 |         36 |         18 |          9 |         63 |
+| HTML               |          2 |         26 |          0 |          2 |         28 |
+| MS SQL             |          1 |          8 |          2 |          3 |         13 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                      | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                         |        256 |     20,452 |        306 |      1,024 |     21,782 |
+| . (Files)                                                                                                                 |         18 |      5,080 |         16 |         40 |      5,136 |
+| backend                                                                                                                   |         10 |      1,795 |         87 |         50 |      1,932 |
+| backend (Files)                                                                                                           |          5 |      1,525 |         21 |         15 |      1,561 |
+| backend/prisma                                                                                                            |          1 |          8 |          2 |          3 |         13 |
+| backend/prisma/migrations                                                                                                 |          1 |          8 |          2 |          3 |         13 |
+| backend/prisma/migrations/20251209180045_init                                                                             |          1 |          8 |          2 |          3 |         13 |
+| backend/src                                                                                                               |          4 |        262 |         64 |         32 |        358 |
+| backend/src (Files)                                                                                                       |          3 |        248 |         60 |         29 |        337 |
+| backend/src/plugins                                                                                                       |          1 |         14 |          4 |          3 |         21 |
+| frontend                                                                                                                  |        122 |      9,942 |        109 |        484 |     10,535 |
+| frontend (Files)                                                                                                          |         15 |      4,995 |         12 |         30 |      5,037 |
+| frontend/nginx                                                                                                            |          1 |         42 |          9 |         10 |         61 |
+| frontend/public                                                                                                           |          3 |      1,542 |         73 |         55 |      1,670 |
+| frontend/src                                                                                                              |        103 |      3,363 |         15 |        389 |      3,767 |
+| frontend/src (Files)                                                                                                      |          5 |        127 |          0 |         20 |        147 |
+| frontend/src/api                                                                                                          |          2 |         29 |          0 |          6 |         35 |
+| frontend/src/assets                                                                                                       |          1 |          1 |          0 |          0 |          1 |
+| frontend/src/components                                                                                                   |         88 |      3,081 |         15 |        346 |      3,442 |
+| frontend/src/components/Footer                                                                                            |          3 |         73 |          0 |          7 |         80 |
+| frontend/src/components/Header                                                                                            |          6 |        188 |          0 |         28 |        216 |
+| frontend/src/components/bookingManagement                                                                                 |         42 |      1,507 |          0 |        164 |      1,671 |
+| frontend/src/components/bookingManagement/BodyHeaderBooking                                                               |          3 |        108 |          0 |         14 |        122 |
+| frontend/src/components/bookingManagement/BookingEmploymentGrid                                                           |          5 |        258 |          0 |         34 |        292 |
+| frontend/src/components/bookingManagement/BookingFilters                                                                  |          5 |        217 |          0 |         30 |        247 |
+| frontend/src/components/bookingManagement/LastUpdatesBooking                                                              |          5 |        151 |          0 |         15 |        166 |
+| frontend/src/components/bookingManagement/QuickActionsBooking                                                             |          5 |        144 |          0 |         14 |        158 |
+| frontend/src/components/bookingManagement/RoomWorkload                                                                    |          3 |        124 |          0 |         11 |        135 |
+| frontend/src/components/bookingManagement/StatCardsBooking                                                                |          5 |        152 |          0 |          9 |        161 |
+| frontend/src/components/bookingManagement/StatsOnTime                                                                     |          3 |        118 |          0 |         10 |        128 |
+| frontend/src/components/bookingManagement/UpcomingEvents                                                                  |          5 |        216 |          0 |         26 |        242 |
+| frontend/src/components/bookingManagement/WorkloadStats                                                                   |          3 |         19 |          0 |          1 |         20 |
+| frontend/src/components/catalogAuditorious                                                                                |         37 |      1,313 |         15 |        147 |      1,475 |
+| frontend/src/components/catalogAuditorious/BodyFilters                                                                    |          5 |        216 |          0 |         30 |        246 |
+| frontend/src/components/catalogAuditorious/BodyHeader                                                                     |          3 |        113 |          0 |         15 |        128 |
+| frontend/src/components/catalogAuditorious/Button                                                                         |          3 |         65 |          9 |         13 |         87 |
+| frontend/src/components/catalogAuditorious/Equipment                                                                      |          5 |        145 |          0 |         11 |        156 |
+| frontend/src/components/catalogAuditorious/LastUpdates                                                                    |          5 |        141 |          0 |         15 |        156 |
+| frontend/src/components/catalogAuditorious/QuickActions                                                                   |          5 |        135 |          0 |         14 |        149 |
+| frontend/src/components/catalogAuditorious/RoomsSchema                                                                    |          5 |        264 |          0 |         33 |        297 |
+| frontend/src/components/catalogAuditorious/RoomsTable                                                                     |          1 |         95 |          0 |          5 |        100 |
+| frontend/src/components/catalogAuditorious/StatCards                                                                      |          5 |        139 |          6 |         11 |        156 |
+| frontend/src/context                                                                                                      |          1 |         42 |          0 |          9 |         51 |
+| frontend/src/mocks                                                                                                        |          3 |         23 |          0 |          3 |         26 |
+| frontend/src/pages                                                                                                        |          3 |         60 |          0 |          5 |         65 |
+| nginx                                                                                                                     |          1 |         45 |          8 |         10 |         63 |
+| public                                                                                                                    |          2 |        227 |         71 |         53 |        351 |
+| src                                                                                                                       |        103 |      3,363 |         15 |        387 |      3,765 |
+| src (Files)                                                                                                               |          5 |        127 |          0 |         19 |        146 |
+| src/api                                                                                                                   |          2 |         29 |          0 |          6 |         35 |
+| src/assets                                                                                                                |          1 |          1 |          0 |          0 |          1 |
+| src/components                                                                                                            |         88 |      3,081 |         15 |        346 |      3,442 |
+| src/components/Footer                                                                                                     |          3 |         73 |          0 |          7 |         80 |
+| src/components/Header                                                                                                     |          6 |        188 |          0 |         28 |        216 |
+| src/components/bookingManagement                                                                                          |         42 |      1,507 |          0 |        164 |      1,671 |
+| src/components/bookingManagement/BodyHeaderBooking                                                                        |          3 |        108 |          0 |         14 |        122 |
+| src/components/bookingManagement/BookingEmploymentGrid                                                                    |          5 |        258 |          0 |         34 |        292 |
+| src/components/bookingManagement/BookingFilters                                                                           |          5 |        217 |          0 |         30 |        247 |
+| src/components/bookingManagement/LastUpdatesBooking                                                                       |          5 |        151 |          0 |         15 |        166 |
+| src/components/bookingManagement/QuickActionsBooking                                                                      |          5 |        144 |          0 |         14 |        158 |
+| src/components/bookingManagement/RoomWorkload                                                                             |          3 |        124 |          0 |         11 |        135 |
+| src/components/bookingManagement/StatCardsBooking                                                                         |          5 |        152 |          0 |          9 |        161 |
+| src/components/bookingManagement/StatsOnTime                                                                              |          3 |        118 |          0 |         10 |        128 |
+| src/components/bookingManagement/UpcomingEvents                                                                           |          5 |        216 |          0 |         26 |        242 |
+| src/components/bookingManagement/WorkloadStats                                                                            |          3 |         19 |          0 |          1 |         20 |
+| src/components/catalogAuditorious                                                                                         |         37 |      1,313 |         15 |        147 |      1,475 |
+| src/components/catalogAuditorious/BodyFilters                                                                             |          5 |        216 |          0 |         30 |        246 |
+| src/components/catalogAuditorious/BodyHeader                                                                              |          3 |        113 |          0 |         15 |        128 |
+| src/components/catalogAuditorious/Button                                                                                  |          3 |         65 |          9 |         13 |         87 |
+| src/components/catalogAuditorious/Equipment                                                                               |          5 |        145 |          0 |         11 |        156 |
+| src/components/catalogAuditorious/LastUpdates                                                                             |          5 |        141 |          0 |         15 |        156 |
+| src/components/catalogAuditorious/QuickActions                                                                            |          5 |        135 |          0 |         14 |        149 |
+| src/components/catalogAuditorious/RoomsSchema                                                                             |          5 |        264 |          0 |         33 |        297 |
+| src/components/catalogAuditorious/RoomsTable                                                                              |          1 |         95 |          0 |          5 |        100 |
+| src/components/catalogAuditorious/StatCards                                                                               |          5 |        139 |          6 |         11 |        156 |
+| src/context                                                                                                               |          1 |         42 |          0 |          9 |         51 |
+| src/mocks                                                                                                                 |          3 |         23 |          0 |          3 |         26 |
+| src/pages                                                                                                                 |          3 |         60 |          0 |          4 |         64 |
++---------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                                                                                  | language           | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| /Users/admin/room-assets/Dockerfile                                                                                       | Docker             |         20 |          5 |          3 |         28 |
+| /Users/admin/room-assets/README.md                                                                                        | Markdown           |         60 |          0 |         14 |         74 |
+| /Users/admin/room-assets/backend/Dockerfile                                                                               | Docker             |         29 |          1 |          4 |         34 |
+| /Users/admin/room-assets/backend/package-lock.json                                                                        | JSON               |      1,430 |          0 |          1 |      1,431 |
+| /Users/admin/room-assets/backend/package.json                                                                             | JSON               |         33 |          0 |          1 |         34 |
+| /Users/admin/room-assets/backend/prisma.config.ts                                                                         | TypeScript         |         11 |          2 |          2 |         15 |
+| /Users/admin/room-assets/backend/prisma/migrations/20251209180045_init/migration.sql                                      | MS SQL             |          8 |          2 |          3 |         13 |
+| /Users/admin/room-assets/backend/src/app.ts                                                                               | TypeScript         |        170 |         37 |         18 |        225 |
+| /Users/admin/room-assets/backend/src/plugins/prisma.ts                                                                    | TypeScript         |         14 |          4 |          3 |         21 |
+| /Users/admin/room-assets/backend/src/server.ts                                                                            | TypeScript         |         12 |          6 |          4 |         22 |
+| /Users/admin/room-assets/backend/src/types.ts                                                                             | TypeScript         |         66 |         17 |          7 |         90 |
+| /Users/admin/room-assets/backend/tsconfig.json                                                                            | JSON with Comments |         22 |         18 |          7 |         47 |
+| /Users/admin/room-assets/compose.base.yaml                                                                                | YAML               |         41 |          3 |          7 |         51 |
+| /Users/admin/room-assets/compose.base.yml                                                                                 | YAML               |          5 |          0 |          0 |          5 |
+| /Users/admin/room-assets/compose.dev.yaml                                                                                 | YAML               |         29 |          0 |          2 |         31 |
+| /Users/admin/room-assets/compose.dev.yml                                                                                  | YAML               |         11 |          1 |          0 |         12 |
+| /Users/admin/room-assets/compose.prod.yaml                                                                                | YAML               |         15 |          1 |          1 |         17 |
+| /Users/admin/room-assets/compose.prod.yml                                                                                 | YAML               |          6 |          1 |          0 |          7 |
+| /Users/admin/room-assets/docker-compose.dev.yml                                                                           | YAML               |         13 |          0 |          0 |         13 |
+| /Users/admin/room-assets/docker-compose.yml                                                                               | YAML               |          8 |          0 |          0 |          8 |
+| /Users/admin/room-assets/eslint.config.js                                                                                 | JavaScript         |         22 |          0 |          2 |         24 |
+| /Users/admin/room-assets/frontend/Dockerfile                                                                              | Docker             |         20 |          5 |          3 |         28 |
+| /Users/admin/room-assets/frontend/README.md                                                                               | Markdown           |         60 |          0 |         14 |         74 |
+| /Users/admin/room-assets/frontend/compose.base.yml                                                                        | YAML               |          5 |          0 |          0 |          5 |
+| /Users/admin/room-assets/frontend/compose.dev.yml                                                                         | YAML               |         11 |          1 |          0 |         12 |
+| /Users/admin/room-assets/frontend/compose.prod.yml                                                                        | YAML               |          6 |          1 |          0 |          7 |
+| /Users/admin/room-assets/frontend/docker-compose.dev.yml                                                                  | YAML               |         13 |          0 |          0 |         13 |
+| /Users/admin/room-assets/frontend/docker-compose.yml                                                                      | YAML               |          8 |          0 |          0 |          8 |
+| /Users/admin/room-assets/frontend/eslint.config.js                                                                        | JavaScript         |         22 |          0 |          2 |         24 |
+| /Users/admin/room-assets/frontend/index.html                                                                              | HTML               |         13 |          0 |          1 |         14 |
+| /Users/admin/room-assets/frontend/nginx/nginx.conf                                                                        | Properties         |         42 |          9 |         10 |         61 |
+| /Users/admin/room-assets/frontend/package-lock.json                                                                       | JSON               |      4,717 |          0 |          1 |      4,718 |
+| /Users/admin/room-assets/frontend/package.json                                                                            | JSON               |         47 |          0 |          0 |         47 |
+| /Users/admin/room-assets/frontend/public/fileTree.svg                                                                     | XML                |      1,315 |          2 |          2 |      1,319 |
+| /Users/admin/room-assets/frontend/public/mockServiceWorker.js                                                             | JavaScript         |        226 |         71 |         53 |        350 |
+| /Users/admin/room-assets/frontend/public/vite.svg                                                                         | XML                |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/frontend/src/App.css                                                                             | PostCSS            |         10 |          0 |          2 |         12 |
+| /Users/admin/room-assets/frontend/src/App.tsx                                                                             | TypeScript JSX     |         30 |          0 |          8 |         38 |
+| /Users/admin/room-assets/frontend/src/api/http.ts                                                                         | TypeScript         |         10 |          0 |          2 |         12 |
+| /Users/admin/room-assets/frontend/src/api/roomsApi.ts                                                                     | TypeScript         |         19 |          0 |          4 |         23 |
+| /Users/admin/room-assets/frontend/src/assets/react.svg                                                                    | XML                |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/frontend/src/components/Footer/Bottom.module.css                                                 | PostCSS            |         49 |          0 |          6 |         55 |
+| /Users/admin/room-assets/frontend/src/components/Footer/Bottom.tsx                                                        | TypeScript JSX     |         23 |          0 |          1 |         24 |
+| /Users/admin/room-assets/frontend/src/components/Footer/index.ts                                                          | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/frontend/src/components/Header/Header.module.css                                                 | PostCSS            |        100 |          0 |         16 |        116 |
+| /Users/admin/room-assets/frontend/src/components/Header/Header.tsx                                                        | TypeScript JSX     |         66 |          0 |          8 |         74 |
+| /Users/admin/room-assets/frontend/src/components/Header/header.config.ts                                                  | TypeScript         |          7 |          0 |          1 |          8 |
+| /Users/admin/room-assets/frontend/src/components/Header/header.types.ts                                                   | TypeScript         |          8 |          0 |          3 |         11 |
+| /Users/admin/room-assets/frontend/src/components/Header/header.utils.ts                                                   | TypeScript         |          5 |          0 |          0 |          5 |
+| /Users/admin/room-assets/frontend/src/components/Header/index.ts                                                          | TypeScript         |          2 |          0 |          0 |          2 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/BodyHeaderBooking/BodyHeaderBooking.module.css         | PostCSS            |         58 |          0 |          9 |         67 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/BodyHeaderBooking/BodyHeaderBooking.tsx                | TypeScript JSX     |         49 |          0 |          5 |         54 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/BodyHeaderBooking/index.ts                             | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/BookingEmploymentGrid/BookingEmploymentGrid.config.ts  | TypeScript         |         73 |          0 |          5 |         78 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/BookingEmploymentGrid/BookingEmploymentGrid.module.css | PostCSS            |         91 |          0 |         19 |        110 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/BookingEmploymentGrid/BookingEmploymentGrid.tsx        | TypeScript JSX     |         82 |          0 |          8 |         90 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/BookingEmploymentGrid/BookingEmploymentGrid.types.ts   | TypeScript         |         11 |          0 |          2 |         13 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/BookingEmploymentGrid/index.ts                         | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/BookingFilters/BookingFilters.config.ts                | TypeScript         |          8 |          0 |          3 |         11 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/BookingFilters/BookingFilters.module.css               | PostCSS            |        129 |          0 |         19 |        148 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/BookingFilters/BookingFilters.tsx                      | TypeScript JSX     |         70 |          0 |          6 |         76 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/BookingFilters/BookingFilters.types.ts                 | TypeScript         |          9 |          0 |          2 |         11 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/BookingFilters/index.ts                                | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/LastUpdatesBooking/LastUpdatesBooking.config.ts        | TypeScript         |         36 |          0 |          1 |         37 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/LastUpdatesBooking/LastUpdatesBooking.module.css       | PostCSS            |         69 |          0 |         11 |         80 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/LastUpdatesBooking/LastUpdatesBooking.tsx              | TypeScript JSX     |         36 |          0 |          2 |         38 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/LastUpdatesBooking/LastUpdatesBooking.types.ts         | TypeScript         |          9 |          0 |          1 |         10 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/LastUpdatesBooking/index.ts                            | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/QuickActionsBooking/QuickActionsBooking.config.ts      | TypeScript         |         36 |          0 |          2 |         38 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/QuickActionsBooking/QuickActionsBooking.module.css     | PostCSS            |         63 |          0 |          9 |         72 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/QuickActionsBooking/QuickActionsBooking.tsx            | TypeScript JSX     |         35 |          0 |          2 |         37 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/QuickActionsBooking/QuickActionsBooking.types.ts       | TypeScript         |          9 |          0 |          1 |         10 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/QuickActionsBooking/index.ts                           | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/RoomWorkload/RoomWorkload.module.css                   | PostCSS            |         69 |          0 |          9 |         78 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/RoomWorkload/RoomWorkload.tsx                          | TypeScript JSX     |         54 |          0 |          2 |         56 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/RoomWorkload/index.ts                                  | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/StatCardsBooking/StatCardsBooking.config.ts            | TypeScript         |         59 |          0 |          1 |         60 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/StatCardsBooking/StatCardsBooking.module.css           | PostCSS            |         51 |          0 |          5 |         56 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/StatCardsBooking/StatCardsBooking.tsx                  | TypeScript JSX     |         29 |          0 |          2 |         31 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/StatCardsBooking/StatCardsBooking.types.ts             | TypeScript         |         12 |          0 |          1 |         13 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/StatCardsBooking/index.ts                              | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/StatsOnTime/StatsOnTime.module.css                     | PostCSS            |         62 |          0 |          8 |         70 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/StatsOnTime/StatsOnTime.tsx                            | TypeScript JSX     |         55 |          0 |          2 |         57 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/StatsOnTime/index.ts                                   | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/UpcomingEvents/UpcomingEvents.config.ts                | TypeScript         |         43 |          0 |          1 |         44 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/UpcomingEvents/UpcomingEvents.module.css               | PostCSS            |        109 |          0 |         22 |        131 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/UpcomingEvents/UpcomingEvents.tsx                      | TypeScript JSX     |         49 |          0 |          2 |         51 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/UpcomingEvents/UpcomingEvents.types.ts                 | TypeScript         |         14 |          0 |          1 |         15 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/UpcomingEvents/index.ts                                | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/WorkloadStats/WorkloadStats.module.css                 | PostCSS            |          7 |          0 |          0 |          7 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/WorkloadStats/WorkloadStats.tsx                        | TypeScript JSX     |         11 |          0 |          1 |         12 |
+| /Users/admin/room-assets/frontend/src/components/bookingManagement/WorkloadStats/index.ts                                 | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/frontend/src/components/catalogAuditorious/BodyFilters/BodyFilters.config.ts                     | TypeScript         |          8 |          0 |          3 |         11 |
+| /Users/admin/room-assets/frontend/src/components/catalogAuditorious/BodyFilters/BodyFilters.module.css                    | PostCSS            |        128 |          0 |         19 |        147 |
+| /Users/admin/room-assets/frontend/src/components/catalogAuditorious/BodyFilters/BodyFilters.tsx                           | TypeScript JSX     |         70 |          0 |          6 |         76 |
+| /Users/admin/room-assets/frontend/src/components/catalogAuditorious/BodyFilters/BodyFilters.types.ts                      | TypeScript         |          9 |          0 |          2 |         11 |
+| /Users/admin/room-assets/frontend/src/components/catalogAuditorious/BodyFilters/index.ts                                  | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/frontend/src/components/catalogAuditorious/BodyHeader/BodyHeader.tsx                             | TypeScript JSX     |         49 |          0 |          6 |         55 |
+| /Users/admin/room-assets/frontend/src/components/catalogAuditorious/BodyHeader/bodyheader.module.css                      | PostCSS            |         63 |          0 |          9 |         72 |
+| /Users/admin/room-assets/frontend/src/components/catalogAuditorious/BodyHeader/index.ts                                   | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/frontend/src/components/catalogAuditorious/Button/Button.module.css                              | PostCSS            |         31 |          0 |          4 |         35 |
+| /Users/admin/room-assets/frontend/src/components/catalogAuditorious/Button/Button.tsx                                     | TypeScript JSX     |         33 |          9 |          9 |         51 |
+| /Users/admin/room-assets/frontend/src/components/catalogAuditorious/Button/index.ts                                       | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/frontend/src/components/catalogAuditorious/Equipment/Equipment.module.css                        | PostCSS            |         50 |          0 |          7 |         57 |
+| /Users/admin/room-assets/frontend/src/components/catalogAuditorious/Equipment/Equipment.tsx                               | TypeScript JSX     |         33 |          0 |          2 |         35 |
+| /Users/admin/room-assets/frontend/src/components/catalogAuditorious/Equipment/equipment.config.ts                         | TypeScript         |         52 |          0 |          1 |         53 |
+| /Users/admin/room-assets/frontend/src/components/catalogAuditorious/Equipment/equipment.types.ts                          | TypeScript         |          9 |          0 |          1 |         10 |
+| /Users/admin/room-assets/frontend/src/components/catalogAuditorious/Equipment/index.ts                                    | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/frontend/src/components/catalogAuditorious/LastUpdates/LastUpdates.module.css                    | PostCSS            |         67 |          0 |         11 |         78 |
+| /Users/admin/room-assets/frontend/src/components/catalogAuditorious/LastUpdates/LastUpdates.tsx                           | TypeScript JSX     |         36 |          0 |          2 |         38 |
+| /Users/admin/room-assets/frontend/src/components/catalogAuditorious/LastUpdates/index.ts                                  | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/frontend/src/components/catalogAuditorious/LastUpdates/lastupdates.config.ts                     | TypeScript         |         28 |          0 |          1 |         29 |
+| /Users/admin/room-assets/frontend/src/components/catalogAuditorious/LastUpdates/lastupdates.types.ts                      | TypeScript         |          9 |          0 |          1 |         10 |
+| /Users/admin/room-assets/frontend/src/components/catalogAuditorious/QuickActions/QuickAction.tsx                          | TypeScript JSX     |         35 |          0 |          2 |         37 |
+| /Users/admin/room-assets/frontend/src/components/catalogAuditorious/QuickActions/QuickActions.module.css                  | PostCSS            |         62 |          0 |          9 |         71 |
+| /Users/admin/room-assets/frontend/src/components/catalogAuditorious/QuickActions/index.ts                                 | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/frontend/src/components/catalogAuditorious/QuickActions/quickaction.config.ts                    | TypeScript         |         28 |          0 |          2 |         30 |
+| /Users/admin/room-assets/frontend/src/components/catalogAuditorious/QuickActions/quickaction.types.ts                     | TypeScript         |          9 |          0 |          1 |         10 |
+| /Users/admin/room-assets/frontend/src/components/catalogAuditorious/RoomsSchema/RoomsSchema.module.css                    | PostCSS            |        127 |          0 |         20 |        147 |
+| /Users/admin/room-assets/frontend/src/components/catalogAuditorious/RoomsSchema/RoomsSchema.tsx                           | TypeScript JSX     |         82 |          0 |          7 |         89 |
+| /Users/admin/room-assets/frontend/src/components/catalogAuditorious/RoomsSchema/index.ts                                  | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/frontend/src/components/catalogAuditorious/RoomsSchema/roomschema.config.ts                      | TypeScript         |         35 |          0 |          2 |         37 |
+| /Users/admin/room-assets/frontend/src/components/catalogAuditorious/RoomsSchema/roomsschema.types.ts                      | TypeScript         |         19 |          0 |          4 |         23 |
+| /Users/admin/room-assets/frontend/src/components/catalogAuditorious/RoomsTable/RoomsTable.tsx                             | TypeScript JSX     |         95 |          0 |          5 |        100 |
+| /Users/admin/room-assets/frontend/src/components/catalogAuditorious/StatCards/StatCards.config.ts                         | TypeScript         |         44 |          1 |          2 |         47 |
+| /Users/admin/room-assets/frontend/src/components/catalogAuditorious/StatCards/StatCards.module.css                        | PostCSS            |         54 |          0 |          6 |         60 |
+| /Users/admin/room-assets/frontend/src/components/catalogAuditorious/StatCards/StatCards.tsx                               | TypeScript JSX     |         29 |          5 |          2 |         36 |
+| /Users/admin/room-assets/frontend/src/components/catalogAuditorious/StatCards/StatCards.types.ts                          | TypeScript         |         11 |          0 |          1 |         12 |
+| /Users/admin/room-assets/frontend/src/components/catalogAuditorious/StatCards/index.ts                                    | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/frontend/src/config.ts                                                                           | TypeScript         |          2 |          0 |          0 |          2 |
+| /Users/admin/room-assets/frontend/src/context/auth.tsx                                                                    | TypeScript JSX     |         42 |          0 |          9 |         51 |
+| /Users/admin/room-assets/frontend/src/index.css                                                                           | PostCSS            |         62 |          0 |          8 |         70 |
+| /Users/admin/room-assets/frontend/src/main.tsx                                                                            | TypeScript JSX     |         23 |          0 |          2 |         25 |
+| /Users/admin/room-assets/frontend/src/mocks/browser.ts                                                                    | TypeScript         |          3 |          0 |          1 |          4 |
+| /Users/admin/room-assets/frontend/src/mocks/data.ts                                                                       | TypeScript         |         11 |          0 |          1 |         12 |
+| /Users/admin/room-assets/frontend/src/mocks/handlers.ts                                                                   | TypeScript         |          9 |          0 |          1 |         10 |
+| /Users/admin/room-assets/frontend/src/pages/AuditoriumCataloguePage.tsx                                                   | TypeScript JSX     |         27 |          0 |          3 |         30 |
+| /Users/admin/room-assets/frontend/src/pages/BookingManagementPage.tsx                                                     | TypeScript JSX     |         27 |          0 |          2 |         29 |
+| /Users/admin/room-assets/frontend/src/pages/Settings.tsx                                                                  | TypeScript JSX     |          6 |          0 |          0 |          6 |
+| /Users/admin/room-assets/frontend/tsconfig.app.json                                                                       | JSON               |         28 |          2 |          3 |         33 |
+| /Users/admin/room-assets/frontend/tsconfig.json                                                                           | JSON with Comments |          7 |          0 |          1 |          8 |
+| /Users/admin/room-assets/frontend/tsconfig.node.json                                                                      | JSON               |         22 |          2 |          3 |         27 |
+| /Users/admin/room-assets/frontend/vite.config.ts                                                                          | TypeScript         |         16 |          1 |          2 |         19 |
+| /Users/admin/room-assets/index.html                                                                                       | HTML               |         13 |          0 |          1 |         14 |
+| /Users/admin/room-assets/nginx/nginx.conf                                                                                 | Properties         |         45 |          8 |         10 |         63 |
+| /Users/admin/room-assets/package-lock.json                                                                                | JSON               |      4,717 |          0 |          1 |      4,718 |
+| /Users/admin/room-assets/package.json                                                                                     | JSON               |         47 |          0 |          0 |         47 |
+| /Users/admin/room-assets/public/mockServiceWorker.js                                                                      | JavaScript         |        226 |         71 |         53 |        350 |
+| /Users/admin/room-assets/public/vite.svg                                                                                  | XML                |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/src/App.css                                                                                      | PostCSS            |         10 |          0 |          2 |         12 |
+| /Users/admin/room-assets/src/App.tsx                                                                                      | TypeScript JSX     |         30 |          0 |          7 |         37 |
+| /Users/admin/room-assets/src/api/http.ts                                                                                  | TypeScript         |         10 |          0 |          2 |         12 |
+| /Users/admin/room-assets/src/api/roomsApi.ts                                                                              | TypeScript         |         19 |          0 |          4 |         23 |
+| /Users/admin/room-assets/src/assets/react.svg                                                                             | XML                |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/src/components/Footer/Bottom.module.css                                                          | PostCSS            |         49 |          0 |          6 |         55 |
+| /Users/admin/room-assets/src/components/Footer/Bottom.tsx                                                                 | TypeScript JSX     |         23 |          0 |          1 |         24 |
+| /Users/admin/room-assets/src/components/Footer/index.ts                                                                   | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/src/components/Header/Header.module.css                                                          | PostCSS            |        100 |          0 |         16 |        116 |
+| /Users/admin/room-assets/src/components/Header/Header.tsx                                                                 | TypeScript JSX     |         66 |          0 |          8 |         74 |
+| /Users/admin/room-assets/src/components/Header/header.config.ts                                                           | TypeScript         |          7 |          0 |          1 |          8 |
+| /Users/admin/room-assets/src/components/Header/header.types.ts                                                            | TypeScript         |          8 |          0 |          3 |         11 |
+| /Users/admin/room-assets/src/components/Header/header.utils.ts                                                            | TypeScript         |          5 |          0 |          0 |          5 |
+| /Users/admin/room-assets/src/components/Header/index.ts                                                                   | TypeScript         |          2 |          0 |          0 |          2 |
+| /Users/admin/room-assets/src/components/bookingManagement/BodyHeaderBooking/BodyHeaderBooking.module.css                  | PostCSS            |         58 |          0 |          9 |         67 |
+| /Users/admin/room-assets/src/components/bookingManagement/BodyHeaderBooking/BodyHeaderBooking.tsx                         | TypeScript JSX     |         49 |          0 |          5 |         54 |
+| /Users/admin/room-assets/src/components/bookingManagement/BodyHeaderBooking/index.ts                                      | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/src/components/bookingManagement/BookingEmploymentGrid/BookingEmploymentGrid.config.ts           | TypeScript         |         73 |          0 |          5 |         78 |
+| /Users/admin/room-assets/src/components/bookingManagement/BookingEmploymentGrid/BookingEmploymentGrid.module.css          | PostCSS            |         91 |          0 |         19 |        110 |
+| /Users/admin/room-assets/src/components/bookingManagement/BookingEmploymentGrid/BookingEmploymentGrid.tsx                 | TypeScript JSX     |         82 |          0 |          8 |         90 |
+| /Users/admin/room-assets/src/components/bookingManagement/BookingEmploymentGrid/BookingEmploymentGrid.types.ts            | TypeScript         |         11 |          0 |          2 |         13 |
+| /Users/admin/room-assets/src/components/bookingManagement/BookingEmploymentGrid/index.ts                                  | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/src/components/bookingManagement/BookingFilters/BookingFilters.config.ts                         | TypeScript         |          8 |          0 |          3 |         11 |
+| /Users/admin/room-assets/src/components/bookingManagement/BookingFilters/BookingFilters.module.css                        | PostCSS            |        129 |          0 |         19 |        148 |
+| /Users/admin/room-assets/src/components/bookingManagement/BookingFilters/BookingFilters.tsx                               | TypeScript JSX     |         70 |          0 |          6 |         76 |
+| /Users/admin/room-assets/src/components/bookingManagement/BookingFilters/BookingFilters.types.ts                          | TypeScript         |          9 |          0 |          2 |         11 |
+| /Users/admin/room-assets/src/components/bookingManagement/BookingFilters/index.ts                                         | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/src/components/bookingManagement/LastUpdatesBooking/LastUpdatesBooking.config.ts                 | TypeScript         |         36 |          0 |          1 |         37 |
+| /Users/admin/room-assets/src/components/bookingManagement/LastUpdatesBooking/LastUpdatesBooking.module.css                | PostCSS            |         69 |          0 |         11 |         80 |
+| /Users/admin/room-assets/src/components/bookingManagement/LastUpdatesBooking/LastUpdatesBooking.tsx                       | TypeScript JSX     |         36 |          0 |          2 |         38 |
+| /Users/admin/room-assets/src/components/bookingManagement/LastUpdatesBooking/LastUpdatesBooking.types.ts                  | TypeScript         |          9 |          0 |          1 |         10 |
+| /Users/admin/room-assets/src/components/bookingManagement/LastUpdatesBooking/index.ts                                     | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/src/components/bookingManagement/QuickActionsBooking/QuickActionsBooking.config.ts               | TypeScript         |         36 |          0 |          2 |         38 |
+| /Users/admin/room-assets/src/components/bookingManagement/QuickActionsBooking/QuickActionsBooking.module.css              | PostCSS            |         63 |          0 |          9 |         72 |
+| /Users/admin/room-assets/src/components/bookingManagement/QuickActionsBooking/QuickActionsBooking.tsx                     | TypeScript JSX     |         35 |          0 |          2 |         37 |
+| /Users/admin/room-assets/src/components/bookingManagement/QuickActionsBooking/QuickActionsBooking.types.ts                | TypeScript         |          9 |          0 |          1 |         10 |
+| /Users/admin/room-assets/src/components/bookingManagement/QuickActionsBooking/index.ts                                    | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/src/components/bookingManagement/RoomWorkload/RoomWorkload.module.css                            | PostCSS            |         69 |          0 |          9 |         78 |
+| /Users/admin/room-assets/src/components/bookingManagement/RoomWorkload/RoomWorkload.tsx                                   | TypeScript JSX     |         54 |          0 |          2 |         56 |
+| /Users/admin/room-assets/src/components/bookingManagement/RoomWorkload/index.ts                                           | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/src/components/bookingManagement/StatCardsBooking/StatCardsBooking.config.ts                     | TypeScript         |         59 |          0 |          1 |         60 |
+| /Users/admin/room-assets/src/components/bookingManagement/StatCardsBooking/StatCardsBooking.module.css                    | PostCSS            |         51 |          0 |          5 |         56 |
+| /Users/admin/room-assets/src/components/bookingManagement/StatCardsBooking/StatCardsBooking.tsx                           | TypeScript JSX     |         29 |          0 |          2 |         31 |
+| /Users/admin/room-assets/src/components/bookingManagement/StatCardsBooking/StatCardsBooking.types.ts                      | TypeScript         |         12 |          0 |          1 |         13 |
+| /Users/admin/room-assets/src/components/bookingManagement/StatCardsBooking/index.ts                                       | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/src/components/bookingManagement/StatsOnTime/StatsOnTime.module.css                              | PostCSS            |         62 |          0 |          8 |         70 |
+| /Users/admin/room-assets/src/components/bookingManagement/StatsOnTime/StatsOnTime.tsx                                     | TypeScript JSX     |         55 |          0 |          2 |         57 |
+| /Users/admin/room-assets/src/components/bookingManagement/StatsOnTime/index.ts                                            | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/src/components/bookingManagement/UpcomingEvents/UpcomingEvents.config.ts                         | TypeScript         |         43 |          0 |          1 |         44 |
+| /Users/admin/room-assets/src/components/bookingManagement/UpcomingEvents/UpcomingEvents.module.css                        | PostCSS            |        109 |          0 |         22 |        131 |
+| /Users/admin/room-assets/src/components/bookingManagement/UpcomingEvents/UpcomingEvents.tsx                               | TypeScript JSX     |         49 |          0 |          2 |         51 |
+| /Users/admin/room-assets/src/components/bookingManagement/UpcomingEvents/UpcomingEvents.types.ts                          | TypeScript         |         14 |          0 |          1 |         15 |
+| /Users/admin/room-assets/src/components/bookingManagement/UpcomingEvents/index.ts                                         | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/src/components/bookingManagement/WorkloadStats/WorkloadStats.module.css                          | PostCSS            |          7 |          0 |          0 |          7 |
+| /Users/admin/room-assets/src/components/bookingManagement/WorkloadStats/WorkloadStats.tsx                                 | TypeScript JSX     |         11 |          0 |          1 |         12 |
+| /Users/admin/room-assets/src/components/bookingManagement/WorkloadStats/index.ts                                          | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/src/components/catalogAuditorious/BodyFilters/BodyFilters.config.ts                              | TypeScript         |          8 |          0 |          3 |         11 |
+| /Users/admin/room-assets/src/components/catalogAuditorious/BodyFilters/BodyFilters.module.css                             | PostCSS            |        128 |          0 |         19 |        147 |
+| /Users/admin/room-assets/src/components/catalogAuditorious/BodyFilters/BodyFilters.tsx                                    | TypeScript JSX     |         70 |          0 |          6 |         76 |
+| /Users/admin/room-assets/src/components/catalogAuditorious/BodyFilters/BodyFilters.types.ts                               | TypeScript         |          9 |          0 |          2 |         11 |
+| /Users/admin/room-assets/src/components/catalogAuditorious/BodyFilters/index.ts                                           | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/src/components/catalogAuditorious/BodyHeader/BodyHeader.tsx                                      | TypeScript JSX     |         49 |          0 |          6 |         55 |
+| /Users/admin/room-assets/src/components/catalogAuditorious/BodyHeader/bodyheader.module.css                               | PostCSS            |         63 |          0 |          9 |         72 |
+| /Users/admin/room-assets/src/components/catalogAuditorious/BodyHeader/index.ts                                            | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/src/components/catalogAuditorious/Button/Button.module.css                                       | PostCSS            |         31 |          0 |          4 |         35 |
+| /Users/admin/room-assets/src/components/catalogAuditorious/Button/Button.tsx                                              | TypeScript JSX     |         33 |          9 |          9 |         51 |
+| /Users/admin/room-assets/src/components/catalogAuditorious/Button/index.ts                                                | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/src/components/catalogAuditorious/Equipment/Equipment.module.css                                 | PostCSS            |         50 |          0 |          7 |         57 |
+| /Users/admin/room-assets/src/components/catalogAuditorious/Equipment/Equipment.tsx                                        | TypeScript JSX     |         33 |          0 |          2 |         35 |
+| /Users/admin/room-assets/src/components/catalogAuditorious/Equipment/equipment.config.ts                                  | TypeScript         |         52 |          0 |          1 |         53 |
+| /Users/admin/room-assets/src/components/catalogAuditorious/Equipment/equipment.types.ts                                   | TypeScript         |          9 |          0 |          1 |         10 |
+| /Users/admin/room-assets/src/components/catalogAuditorious/Equipment/index.ts                                             | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/src/components/catalogAuditorious/LastUpdates/LastUpdates.module.css                             | PostCSS            |         67 |          0 |         11 |         78 |
+| /Users/admin/room-assets/src/components/catalogAuditorious/LastUpdates/LastUpdates.tsx                                    | TypeScript JSX     |         36 |          0 |          2 |         38 |
+| /Users/admin/room-assets/src/components/catalogAuditorious/LastUpdates/index.ts                                           | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/src/components/catalogAuditorious/LastUpdates/lastupdates.config.ts                              | TypeScript         |         28 |          0 |          1 |         29 |
+| /Users/admin/room-assets/src/components/catalogAuditorious/LastUpdates/lastupdates.types.ts                               | TypeScript         |          9 |          0 |          1 |         10 |
+| /Users/admin/room-assets/src/components/catalogAuditorious/QuickActions/QuickAction.tsx                                   | TypeScript JSX     |         35 |          0 |          2 |         37 |
+| /Users/admin/room-assets/src/components/catalogAuditorious/QuickActions/QuickActions.module.css                           | PostCSS            |         62 |          0 |          9 |         71 |
+| /Users/admin/room-assets/src/components/catalogAuditorious/QuickActions/index.ts                                          | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/src/components/catalogAuditorious/QuickActions/quickaction.config.ts                             | TypeScript         |         28 |          0 |          2 |         30 |
+| /Users/admin/room-assets/src/components/catalogAuditorious/QuickActions/quickaction.types.ts                              | TypeScript         |          9 |          0 |          1 |         10 |
+| /Users/admin/room-assets/src/components/catalogAuditorious/RoomsSchema/RoomsSchema.module.css                             | PostCSS            |        127 |          0 |         20 |        147 |
+| /Users/admin/room-assets/src/components/catalogAuditorious/RoomsSchema/RoomsSchema.tsx                                    | TypeScript JSX     |         82 |          0 |          7 |         89 |
+| /Users/admin/room-assets/src/components/catalogAuditorious/RoomsSchema/index.ts                                           | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/src/components/catalogAuditorious/RoomsSchema/roomschema.config.ts                               | TypeScript         |         35 |          0 |          2 |         37 |
+| /Users/admin/room-assets/src/components/catalogAuditorious/RoomsSchema/roomsschema.types.ts                               | TypeScript         |         19 |          0 |          4 |         23 |
+| /Users/admin/room-assets/src/components/catalogAuditorious/RoomsTable/RoomsTable.tsx                                      | TypeScript JSX     |         95 |          0 |          5 |        100 |
+| /Users/admin/room-assets/src/components/catalogAuditorious/StatCards/StatCards.config.ts                                  | TypeScript         |         44 |          1 |          2 |         47 |
+| /Users/admin/room-assets/src/components/catalogAuditorious/StatCards/StatCards.module.css                                 | PostCSS            |         54 |          0 |          6 |         60 |
+| /Users/admin/room-assets/src/components/catalogAuditorious/StatCards/StatCards.tsx                                        | TypeScript JSX     |         29 |          5 |          2 |         36 |
+| /Users/admin/room-assets/src/components/catalogAuditorious/StatCards/StatCards.types.ts                                   | TypeScript         |         11 |          0 |          1 |         12 |
+| /Users/admin/room-assets/src/components/catalogAuditorious/StatCards/index.ts                                             | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/admin/room-assets/src/config.ts                                                                                    | TypeScript         |          2 |          0 |          0 |          2 |
+| /Users/admin/room-assets/src/context/auth.tsx                                                                             | TypeScript JSX     |         42 |          0 |          9 |         51 |
+| /Users/admin/room-assets/src/index.css                                                                                    | PostCSS            |         62 |          0 |          8 |         70 |
+| /Users/admin/room-assets/src/main.tsx                                                                                     | TypeScript JSX     |         23 |          0 |          2 |         25 |
+| /Users/admin/room-assets/src/mocks/browser.ts                                                                             | TypeScript         |          3 |          0 |          1 |          4 |
+| /Users/admin/room-assets/src/mocks/data.ts                                                                                | TypeScript         |         11 |          0 |          1 |         12 |
+| /Users/admin/room-assets/src/mocks/handlers.ts                                                                            | TypeScript         |          9 |          0 |          1 |         10 |
+| /Users/admin/room-assets/src/pages/AuditoriumCataloguePage.tsx                                                            | TypeScript JSX     |         27 |          0 |          2 |         29 |
+| /Users/admin/room-assets/src/pages/BookingManagementPage.tsx                                                              | TypeScript JSX     |         27 |          0 |          2 |         29 |
+| /Users/admin/room-assets/src/pages/Settings.tsx                                                                           | TypeScript JSX     |          6 |          0 |          0 |          6 |
+| /Users/admin/room-assets/tsconfig.app.json                                                                                | JSON               |         28 |          2 |          3 |         33 |
+| /Users/admin/room-assets/tsconfig.json                                                                                    | JSON with Comments |          7 |          0 |          1 |          8 |
+| /Users/admin/room-assets/tsconfig.node.json                                                                               | JSON               |         22 |          2 |          3 |         27 |
+| /Users/admin/room-assets/vite.config.ts                                                                                   | TypeScript         |         16 |          1 |          2 |         19 |
+| Total                                                                                                                     |                    |     20,452 |        306 |      1,024 |     21,782 |
++---------------------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+

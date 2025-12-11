@@ -1,0 +1,109 @@
+.bookingEmploymentGrid {
+    background-color: #fff;
+    border-radius: 12px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    border: 1px solid rgba(182, 182, 182, 0.3);
+}
+
+.header {
+    padding: 1.5em 2em 1.5em 2em;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(135, 135, 135, 0.3);
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+}
+
+.categories {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.categoryIcon {
+    width: 14px;
+    height: 14px;
+    border-radius: 25%;
+}
+
+.categoryBox {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    font-weight: 400;
+    color: gray;
+    margin-right: 1em;
+    gap: 4px;
+}
+
+.gridContainer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.gridRow {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.timeRow {
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+}
+
+.auditoriumGridRow {
+    border-bottom: 1px solid rgba(135, 135, 135, 0.3);
+}
+
+.auditoriumGridRow:last-child {
+    border-bottom: none;
+}
+
+.auditoriumNumber {
+    display: flex;
+    font-weight: 700;
+    color: black;
+    margin-right: 10em;
+}
+
+.auditoriumLabel {
+    font-size: 14px;
+    color: gray;
+}
+
+.scheduleColumn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.statusBlock {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.headerTitle {
+    font-size: 16px;
+    font-weight: 600;
+    padding-right: 1em;
+    margin-right: 5.9em;
+}
+
+
+

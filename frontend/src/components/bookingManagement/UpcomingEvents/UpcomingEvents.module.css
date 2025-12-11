@@ -1,0 +1,130 @@
+.upcomingEvents {
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    background-color: #fff;
+    padding-left: 2em;
+    padding-right: 2em;
+    border: 1px solid rgba(182, 182, 182, 0.3);
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+}
+
+.showAllButton {
+    font-size: 16px;
+    color: rgb(10, 114, 233);
+    background-color: #fff;
+    border: none;
+    background: none;
+    margin-right: -1em;
+}
+
+.showAllButton:focus {
+    outline: none;
+}
+
+.body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 16px;
+    margin-bottom: 2em;
+}
+
+.eventCard {
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    border: 2px solid rgba(182, 182, 182, 0.3);
+}
+
+.eventCardHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1em 1em 1em 1em;
+}
+
+.eventCardHeaderLeftPart {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.eventCardHeaderTitleIcon {
+    width: 14px;
+    height: 14px;
+    border-radius: 999px;
+}
+
+.eventCardHeaderTitleAuditory {
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+
+.eventCardHeaderDay {
+    font-size: 14px;
+    font-weight: 500;
+    color: grey;
+}
+
+.eventCardBody {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 1em;
+    font-size: 14px;
+    font-weight: 500;
+    color: grey;
+    gap: 5px
+}
+
+.eventCardBodyTitle {
+    font-size: 18px;
+    font-weight: 600;
+    color: black
+}
+
+.eventCardBodyTimeAndMembers{
+    display: flex;
+    flex-direction: row;
+    margin-left: -2px;
+    gap: 2px;
+}
+
+.eventCardBodyTeacher {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+.eventCardBodyTeacherIcon {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+    border-radius: 999px;
+    font-weight: 600;
+    align-content: center;
+    margin-right: 0.5em;
+}
+
+
+
+
+

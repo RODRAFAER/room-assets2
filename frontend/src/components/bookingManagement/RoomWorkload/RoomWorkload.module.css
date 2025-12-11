@@ -1,0 +1,78 @@
+.roomWorkload {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 12px;
+    flex-shrink: 1;
+    border: 1px solid rgba(182, 182, 182, 0.3);
+}
+
+.title {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-start;
+    color: black;
+}
+
+.body {
+    margin-left: 1.5em;
+    margin-right: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.auditory {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 1.5em;
+}
+
+.colorIcon {
+    width: 14px;
+    height: 14px;
+    border-radius: 999px;
+}
+
+.auditoryLabel {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+
+.progressBarAndPercentage {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; 
+    flex-shrink: 1;
+    justify-content: flex-end;
+}
+
+.progressBarBackground {
+    flex-grow: 1; 
+    height: 8px; 
+    background-color: rgba(197, 197, 197, 0.5);
+    border-radius: 4px;
+    margin-right: 10px; 
+    max-width: 150px;
+}
+
+.progressBarFill {
+    height: 100%; 
+    border-radius: 4px;
+}
+
+.percentage {
+    padding-right: 1em;
+    width: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    color: black;
+}

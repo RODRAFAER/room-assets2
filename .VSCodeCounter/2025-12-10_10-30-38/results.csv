@@ -1,0 +1,258 @@
+"filename", "language", "TypeScript", "YAML", "JSON with Comments", "JSON", "Markdown", "Docker", "HTML", "JavaScript", "XML", "TypeScript JSX", "PostCSS", "Properties", "MS SQL", "comment", "blank", "total"
+"/Users/admin/room-assets/Dockerfile", "Docker", 0, 0, 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 5, 3, 28
+"/Users/admin/room-assets/README.md", "Markdown", 0, 0, 0, 0, 60, 0, 0, 0, 0, 0, 0, 0, 0, 0, 14, 74
+"/Users/admin/room-assets/backend/Dockerfile", "Docker", 0, 0, 0, 0, 0, 29, 0, 0, 0, 0, 0, 0, 0, 1, 4, 34
+"/Users/admin/room-assets/backend/package-lock.json", "JSON", 0, 0, 0, 1430, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1431
+"/Users/admin/room-assets/backend/package.json", "JSON", 0, 0, 0, 33, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 34
+"/Users/admin/room-assets/backend/prisma.config.ts", "TypeScript", 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 15
+"/Users/admin/room-assets/backend/prisma/migrations/20251209180045_init/migration.sql", "MS SQL", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 2, 3, 13
+"/Users/admin/room-assets/backend/src/app.ts", "TypeScript", 170, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 37, 18, 225
+"/Users/admin/room-assets/backend/src/plugins/prisma.ts", "TypeScript", 14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 3, 21
+"/Users/admin/room-assets/backend/src/server.ts", "TypeScript", 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 4, 22
+"/Users/admin/room-assets/backend/src/types.ts", "TypeScript", 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17, 7, 90
+"/Users/admin/room-assets/backend/tsconfig.json", "JSON with Comments", 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 7, 47
+"/Users/admin/room-assets/compose.base.yaml", "YAML", 0, 41, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 7, 51
+"/Users/admin/room-assets/compose.base.yml", "YAML", 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5
+"/Users/admin/room-assets/compose.dev.yaml", "YAML", 0, 29, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 31
+"/Users/admin/room-assets/compose.dev.yml", "YAML", 0, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 12
+"/Users/admin/room-assets/compose.prod.yaml", "YAML", 0, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 17
+"/Users/admin/room-assets/compose.prod.yml", "YAML", 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 7
+"/Users/admin/room-assets/docker-compose.dev.yml", "YAML", 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13
+"/Users/admin/room-assets/docker-compose.yml", "YAML", 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8
+"/Users/admin/room-assets/eslint.config.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 2, 24
+"/Users/admin/room-assets/frontend/Dockerfile", "Docker", 0, 0, 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 5, 3, 28
+"/Users/admin/room-assets/frontend/README.md", "Markdown", 0, 0, 0, 0, 60, 0, 0, 0, 0, 0, 0, 0, 0, 0, 14, 74
+"/Users/admin/room-assets/frontend/compose.base.yml", "YAML", 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5
+"/Users/admin/room-assets/frontend/compose.dev.yml", "YAML", 0, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 12
+"/Users/admin/room-assets/frontend/compose.prod.yml", "YAML", 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 7
+"/Users/admin/room-assets/frontend/docker-compose.dev.yml", "YAML", 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13
+"/Users/admin/room-assets/frontend/docker-compose.yml", "YAML", 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8
+"/Users/admin/room-assets/frontend/eslint.config.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 2, 24
+"/Users/admin/room-assets/frontend/index.html", "HTML", 0, 0, 0, 0, 0, 0, 13, 0, 0, 0, 0, 0, 0, 0, 1, 14
+"/Users/admin/room-assets/frontend/nginx/nginx.conf", "Properties", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 42, 0, 9, 10, 61
+"/Users/admin/room-assets/frontend/package-lock.json", "JSON", 0, 0, 0, 4717, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4718
+"/Users/admin/room-assets/frontend/package.json", "JSON", 0, 0, 0, 47, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 47
+"/Users/admin/room-assets/frontend/public/fileTree.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 0, 1315, 0, 0, 0, 0, 2, 2, 1319
+"/Users/admin/room-assets/frontend/public/mockServiceWorker.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 226, 0, 0, 0, 0, 0, 71, 53, 350
+"/Users/admin/room-assets/frontend/public/vite.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/frontend/src/App.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 2, 12
+"/Users/admin/room-assets/frontend/src/App.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 30, 0, 0, 0, 0, 8, 38
+"/Users/admin/room-assets/frontend/src/api/http.ts", "TypeScript", 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 12
+"/Users/admin/room-assets/frontend/src/api/roomsApi.ts", "TypeScript", 19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 23
+"/Users/admin/room-assets/frontend/src/assets/react.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/frontend/src/components/Footer/Bottom.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 49, 0, 0, 0, 6, 55
+"/Users/admin/room-assets/frontend/src/components/Footer/Bottom.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 23, 0, 0, 0, 0, 1, 24
+"/Users/admin/room-assets/frontend/src/components/Footer/index.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/frontend/src/components/Header/Header.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 0, 0, 0, 16, 116
+"/Users/admin/room-assets/frontend/src/components/Header/Header.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 66, 0, 0, 0, 0, 8, 74
+"/Users/admin/room-assets/frontend/src/components/Header/header.config.ts", "TypeScript", 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 8
+"/Users/admin/room-assets/frontend/src/components/Header/header.types.ts", "TypeScript", 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 11
+"/Users/admin/room-assets/frontend/src/components/Header/header.utils.ts", "TypeScript", 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5
+"/Users/admin/room-assets/frontend/src/components/Header/index.ts", "TypeScript", 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/BodyHeaderBooking/BodyHeaderBooking.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 58, 0, 0, 0, 9, 67
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/BodyHeaderBooking/BodyHeaderBooking.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 49, 0, 0, 0, 0, 5, 54
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/BodyHeaderBooking/index.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/BookingEmploymentGrid/BookingEmploymentGrid.config.ts", "TypeScript", 73, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 78
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/BookingEmploymentGrid/BookingEmploymentGrid.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 91, 0, 0, 0, 19, 110
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/BookingEmploymentGrid/BookingEmploymentGrid.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 82, 0, 0, 0, 0, 8, 90
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/BookingEmploymentGrid/BookingEmploymentGrid.types.ts", "TypeScript", 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 13
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/BookingEmploymentGrid/index.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/BookingFilters/BookingFilters.config.ts", "TypeScript", 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 11
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/BookingFilters/BookingFilters.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 129, 0, 0, 0, 19, 148
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/BookingFilters/BookingFilters.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 70, 0, 0, 0, 0, 6, 76
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/BookingFilters/BookingFilters.types.ts", "TypeScript", 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 11
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/BookingFilters/index.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/LastUpdatesBooking/LastUpdatesBooking.config.ts", "TypeScript", 36, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 37
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/LastUpdatesBooking/LastUpdatesBooking.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 69, 0, 0, 0, 11, 80
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/LastUpdatesBooking/LastUpdatesBooking.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 36, 0, 0, 0, 0, 2, 38
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/LastUpdatesBooking/LastUpdatesBooking.types.ts", "TypeScript", 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 10
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/LastUpdatesBooking/index.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/QuickActionsBooking/QuickActionsBooking.config.ts", "TypeScript", 36, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 38
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/QuickActionsBooking/QuickActionsBooking.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 9, 72
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/QuickActionsBooking/QuickActionsBooking.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 35, 0, 0, 0, 0, 2, 37
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/QuickActionsBooking/QuickActionsBooking.types.ts", "TypeScript", 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 10
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/QuickActionsBooking/index.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/RoomWorkload/RoomWorkload.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 69, 0, 0, 0, 9, 78
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/RoomWorkload/RoomWorkload.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 54, 0, 0, 0, 0, 2, 56
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/RoomWorkload/index.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/StatCardsBooking/StatCardsBooking.config.ts", "TypeScript", 59, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 60
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/StatCardsBooking/StatCardsBooking.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 51, 0, 0, 0, 5, 56
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/StatCardsBooking/StatCardsBooking.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 29, 0, 0, 0, 0, 2, 31
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/StatCardsBooking/StatCardsBooking.types.ts", "TypeScript", 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 13
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/StatCardsBooking/index.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/StatsOnTime/StatsOnTime.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 62, 0, 0, 0, 8, 70
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/StatsOnTime/StatsOnTime.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 55, 0, 0, 0, 0, 2, 57
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/StatsOnTime/index.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/UpcomingEvents/UpcomingEvents.config.ts", "TypeScript", 43, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 44
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/UpcomingEvents/UpcomingEvents.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 109, 0, 0, 0, 22, 131
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/UpcomingEvents/UpcomingEvents.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 49, 0, 0, 0, 0, 2, 51
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/UpcomingEvents/UpcomingEvents.types.ts", "TypeScript", 14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 15
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/UpcomingEvents/index.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/WorkloadStats/WorkloadStats.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 7
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/WorkloadStats/WorkloadStats.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 0, 0, 0, 0, 1, 12
+"/Users/admin/room-assets/frontend/src/components/bookingManagement/WorkloadStats/index.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/frontend/src/components/catalogAuditorious/BodyFilters/BodyFilters.config.ts", "TypeScript", 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 11
+"/Users/admin/room-assets/frontend/src/components/catalogAuditorious/BodyFilters/BodyFilters.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 0, 0, 0, 19, 147
+"/Users/admin/room-assets/frontend/src/components/catalogAuditorious/BodyFilters/BodyFilters.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 70, 0, 0, 0, 0, 6, 76
+"/Users/admin/room-assets/frontend/src/components/catalogAuditorious/BodyFilters/BodyFilters.types.ts", "TypeScript", 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 11
+"/Users/admin/room-assets/frontend/src/components/catalogAuditorious/BodyFilters/index.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/frontend/src/components/catalogAuditorious/BodyHeader/BodyHeader.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 49, 0, 0, 0, 0, 6, 55
+"/Users/admin/room-assets/frontend/src/components/catalogAuditorious/BodyHeader/bodyheader.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 9, 72
+"/Users/admin/room-assets/frontend/src/components/catalogAuditorious/BodyHeader/index.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/frontend/src/components/catalogAuditorious/Button/Button.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 0, 0, 0, 4, 35
+"/Users/admin/room-assets/frontend/src/components/catalogAuditorious/Button/Button.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 33, 0, 0, 0, 9, 9, 51
+"/Users/admin/room-assets/frontend/src/components/catalogAuditorious/Button/index.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/frontend/src/components/catalogAuditorious/Equipment/Equipment.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 0, 7, 57
+"/Users/admin/room-assets/frontend/src/components/catalogAuditorious/Equipment/Equipment.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 33, 0, 0, 0, 0, 2, 35
+"/Users/admin/room-assets/frontend/src/components/catalogAuditorious/Equipment/equipment.config.ts", "TypeScript", 52, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 53
+"/Users/admin/room-assets/frontend/src/components/catalogAuditorious/Equipment/equipment.types.ts", "TypeScript", 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 10
+"/Users/admin/room-assets/frontend/src/components/catalogAuditorious/Equipment/index.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/frontend/src/components/catalogAuditorious/LastUpdates/LastUpdates.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 67, 0, 0, 0, 11, 78
+"/Users/admin/room-assets/frontend/src/components/catalogAuditorious/LastUpdates/LastUpdates.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 36, 0, 0, 0, 0, 2, 38
+"/Users/admin/room-assets/frontend/src/components/catalogAuditorious/LastUpdates/index.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/frontend/src/components/catalogAuditorious/LastUpdates/lastupdates.config.ts", "TypeScript", 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 29
+"/Users/admin/room-assets/frontend/src/components/catalogAuditorious/LastUpdates/lastupdates.types.ts", "TypeScript", 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 10
+"/Users/admin/room-assets/frontend/src/components/catalogAuditorious/QuickActions/QuickAction.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 35, 0, 0, 0, 0, 2, 37
+"/Users/admin/room-assets/frontend/src/components/catalogAuditorious/QuickActions/QuickActions.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 62, 0, 0, 0, 9, 71
+"/Users/admin/room-assets/frontend/src/components/catalogAuditorious/QuickActions/index.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/frontend/src/components/catalogAuditorious/QuickActions/quickaction.config.ts", "TypeScript", 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 30
+"/Users/admin/room-assets/frontend/src/components/catalogAuditorious/QuickActions/quickaction.types.ts", "TypeScript", 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 10
+"/Users/admin/room-assets/frontend/src/components/catalogAuditorious/RoomsSchema/RoomsSchema.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 127, 0, 0, 0, 20, 147
+"/Users/admin/room-assets/frontend/src/components/catalogAuditorious/RoomsSchema/RoomsSchema.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 82, 0, 0, 0, 0, 7, 89
+"/Users/admin/room-assets/frontend/src/components/catalogAuditorious/RoomsSchema/index.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/frontend/src/components/catalogAuditorious/RoomsSchema/roomschema.config.ts", "TypeScript", 35, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 37
+"/Users/admin/room-assets/frontend/src/components/catalogAuditorious/RoomsSchema/roomsschema.types.ts", "TypeScript", 19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 23
+"/Users/admin/room-assets/frontend/src/components/catalogAuditorious/RoomsTable/RoomsTable.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 95, 0, 0, 0, 0, 5, 100
+"/Users/admin/room-assets/frontend/src/components/catalogAuditorious/StatCards/StatCards.config.ts", "TypeScript", 44, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 47
+"/Users/admin/room-assets/frontend/src/components/catalogAuditorious/StatCards/StatCards.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 54, 0, 0, 0, 6, 60
+"/Users/admin/room-assets/frontend/src/components/catalogAuditorious/StatCards/StatCards.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 29, 0, 0, 0, 5, 2, 36
+"/Users/admin/room-assets/frontend/src/components/catalogAuditorious/StatCards/StatCards.types.ts", "TypeScript", 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 12
+"/Users/admin/room-assets/frontend/src/components/catalogAuditorious/StatCards/index.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/frontend/src/config.ts", "TypeScript", 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2
+"/Users/admin/room-assets/frontend/src/context/auth.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 42, 0, 0, 0, 0, 9, 51
+"/Users/admin/room-assets/frontend/src/index.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 62, 0, 0, 0, 8, 70
+"/Users/admin/room-assets/frontend/src/main.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 23, 0, 0, 0, 0, 2, 25
+"/Users/admin/room-assets/frontend/src/mocks/browser.ts", "TypeScript", 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4
+"/Users/admin/room-assets/frontend/src/mocks/data.ts", "TypeScript", 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 12
+"/Users/admin/room-assets/frontend/src/mocks/handlers.ts", "TypeScript", 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 10
+"/Users/admin/room-assets/frontend/src/pages/AuditoriumCataloguePage.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 27, 0, 0, 0, 0, 3, 30
+"/Users/admin/room-assets/frontend/src/pages/BookingManagementPage.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 27, 0, 0, 0, 0, 2, 29
+"/Users/admin/room-assets/frontend/src/pages/Settings.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 6
+"/Users/admin/room-assets/frontend/tsconfig.app.json", "JSON", 0, 0, 0, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 33
+"/Users/admin/room-assets/frontend/tsconfig.json", "JSON with Comments", 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 8
+"/Users/admin/room-assets/frontend/tsconfig.node.json", "JSON", 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 27
+"/Users/admin/room-assets/frontend/vite.config.ts", "TypeScript", 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 19
+"/Users/admin/room-assets/index.html", "HTML", 0, 0, 0, 0, 0, 0, 13, 0, 0, 0, 0, 0, 0, 0, 1, 14
+"/Users/admin/room-assets/nginx/nginx.conf", "Properties", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 45, 0, 8, 10, 63
+"/Users/admin/room-assets/package-lock.json", "JSON", 0, 0, 0, 4717, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4718
+"/Users/admin/room-assets/package.json", "JSON", 0, 0, 0, 47, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 47
+"/Users/admin/room-assets/public/mockServiceWorker.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 226, 0, 0, 0, 0, 0, 71, 53, 350
+"/Users/admin/room-assets/public/vite.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/src/App.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 2, 12
+"/Users/admin/room-assets/src/App.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 30, 0, 0, 0, 0, 7, 37
+"/Users/admin/room-assets/src/api/http.ts", "TypeScript", 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 12
+"/Users/admin/room-assets/src/api/roomsApi.ts", "TypeScript", 19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 23
+"/Users/admin/room-assets/src/assets/react.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/src/components/Footer/Bottom.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 49, 0, 0, 0, 6, 55
+"/Users/admin/room-assets/src/components/Footer/Bottom.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 23, 0, 0, 0, 0, 1, 24
+"/Users/admin/room-assets/src/components/Footer/index.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/src/components/Header/Header.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 0, 0, 0, 16, 116
+"/Users/admin/room-assets/src/components/Header/Header.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 66, 0, 0, 0, 0, 8, 74
+"/Users/admin/room-assets/src/components/Header/header.config.ts", "TypeScript", 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 8
+"/Users/admin/room-assets/src/components/Header/header.types.ts", "TypeScript", 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 11
+"/Users/admin/room-assets/src/components/Header/header.utils.ts", "TypeScript", 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5
+"/Users/admin/room-assets/src/components/Header/index.ts", "TypeScript", 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2
+"/Users/admin/room-assets/src/components/bookingManagement/BodyHeaderBooking/BodyHeaderBooking.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 58, 0, 0, 0, 9, 67
+"/Users/admin/room-assets/src/components/bookingManagement/BodyHeaderBooking/BodyHeaderBooking.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 49, 0, 0, 0, 0, 5, 54
+"/Users/admin/room-assets/src/components/bookingManagement/BodyHeaderBooking/index.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/src/components/bookingManagement/BookingEmploymentGrid/BookingEmploymentGrid.config.ts", "TypeScript", 73, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 78
+"/Users/admin/room-assets/src/components/bookingManagement/BookingEmploymentGrid/BookingEmploymentGrid.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 91, 0, 0, 0, 19, 110
+"/Users/admin/room-assets/src/components/bookingManagement/BookingEmploymentGrid/BookingEmploymentGrid.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 82, 0, 0, 0, 0, 8, 90
+"/Users/admin/room-assets/src/components/bookingManagement/BookingEmploymentGrid/BookingEmploymentGrid.types.ts", "TypeScript", 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 13
+"/Users/admin/room-assets/src/components/bookingManagement/BookingEmploymentGrid/index.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/src/components/bookingManagement/BookingFilters/BookingFilters.config.ts", "TypeScript", 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 11
+"/Users/admin/room-assets/src/components/bookingManagement/BookingFilters/BookingFilters.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 129, 0, 0, 0, 19, 148
+"/Users/admin/room-assets/src/components/bookingManagement/BookingFilters/BookingFilters.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 70, 0, 0, 0, 0, 6, 76
+"/Users/admin/room-assets/src/components/bookingManagement/BookingFilters/BookingFilters.types.ts", "TypeScript", 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 11
+"/Users/admin/room-assets/src/components/bookingManagement/BookingFilters/index.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/src/components/bookingManagement/LastUpdatesBooking/LastUpdatesBooking.config.ts", "TypeScript", 36, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 37
+"/Users/admin/room-assets/src/components/bookingManagement/LastUpdatesBooking/LastUpdatesBooking.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 69, 0, 0, 0, 11, 80
+"/Users/admin/room-assets/src/components/bookingManagement/LastUpdatesBooking/LastUpdatesBooking.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 36, 0, 0, 0, 0, 2, 38
+"/Users/admin/room-assets/src/components/bookingManagement/LastUpdatesBooking/LastUpdatesBooking.types.ts", "TypeScript", 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 10
+"/Users/admin/room-assets/src/components/bookingManagement/LastUpdatesBooking/index.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/src/components/bookingManagement/QuickActionsBooking/QuickActionsBooking.config.ts", "TypeScript", 36, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 38
+"/Users/admin/room-assets/src/components/bookingManagement/QuickActionsBooking/QuickActionsBooking.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 9, 72
+"/Users/admin/room-assets/src/components/bookingManagement/QuickActionsBooking/QuickActionsBooking.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 35, 0, 0, 0, 0, 2, 37
+"/Users/admin/room-assets/src/components/bookingManagement/QuickActionsBooking/QuickActionsBooking.types.ts", "TypeScript", 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 10
+"/Users/admin/room-assets/src/components/bookingManagement/QuickActionsBooking/index.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/src/components/bookingManagement/RoomWorkload/RoomWorkload.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 69, 0, 0, 0, 9, 78
+"/Users/admin/room-assets/src/components/bookingManagement/RoomWorkload/RoomWorkload.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 54, 0, 0, 0, 0, 2, 56
+"/Users/admin/room-assets/src/components/bookingManagement/RoomWorkload/index.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/src/components/bookingManagement/StatCardsBooking/StatCardsBooking.config.ts", "TypeScript", 59, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 60
+"/Users/admin/room-assets/src/components/bookingManagement/StatCardsBooking/StatCardsBooking.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 51, 0, 0, 0, 5, 56
+"/Users/admin/room-assets/src/components/bookingManagement/StatCardsBooking/StatCardsBooking.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 29, 0, 0, 0, 0, 2, 31
+"/Users/admin/room-assets/src/components/bookingManagement/StatCardsBooking/StatCardsBooking.types.ts", "TypeScript", 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 13
+"/Users/admin/room-assets/src/components/bookingManagement/StatCardsBooking/index.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/src/components/bookingManagement/StatsOnTime/StatsOnTime.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 62, 0, 0, 0, 8, 70
+"/Users/admin/room-assets/src/components/bookingManagement/StatsOnTime/StatsOnTime.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 55, 0, 0, 0, 0, 2, 57
+"/Users/admin/room-assets/src/components/bookingManagement/StatsOnTime/index.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/src/components/bookingManagement/UpcomingEvents/UpcomingEvents.config.ts", "TypeScript", 43, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 44
+"/Users/admin/room-assets/src/components/bookingManagement/UpcomingEvents/UpcomingEvents.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 109, 0, 0, 0, 22, 131
+"/Users/admin/room-assets/src/components/bookingManagement/UpcomingEvents/UpcomingEvents.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 49, 0, 0, 0, 0, 2, 51
+"/Users/admin/room-assets/src/components/bookingManagement/UpcomingEvents/UpcomingEvents.types.ts", "TypeScript", 14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 15
+"/Users/admin/room-assets/src/components/bookingManagement/UpcomingEvents/index.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/src/components/bookingManagement/WorkloadStats/WorkloadStats.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 7
+"/Users/admin/room-assets/src/components/bookingManagement/WorkloadStats/WorkloadStats.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 0, 0, 0, 0, 1, 12
+"/Users/admin/room-assets/src/components/bookingManagement/WorkloadStats/index.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/src/components/catalogAuditorious/BodyFilters/BodyFilters.config.ts", "TypeScript", 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 11
+"/Users/admin/room-assets/src/components/catalogAuditorious/BodyFilters/BodyFilters.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 0, 0, 0, 19, 147
+"/Users/admin/room-assets/src/components/catalogAuditorious/BodyFilters/BodyFilters.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 70, 0, 0, 0, 0, 6, 76
+"/Users/admin/room-assets/src/components/catalogAuditorious/BodyFilters/BodyFilters.types.ts", "TypeScript", 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 11
+"/Users/admin/room-assets/src/components/catalogAuditorious/BodyFilters/index.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/src/components/catalogAuditorious/BodyHeader/BodyHeader.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 49, 0, 0, 0, 0, 6, 55
+"/Users/admin/room-assets/src/components/catalogAuditorious/BodyHeader/bodyheader.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 9, 72
+"/Users/admin/room-assets/src/components/catalogAuditorious/BodyHeader/index.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/src/components/catalogAuditorious/Button/Button.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 0, 0, 0, 4, 35
+"/Users/admin/room-assets/src/components/catalogAuditorious/Button/Button.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 33, 0, 0, 0, 9, 9, 51
+"/Users/admin/room-assets/src/components/catalogAuditorious/Button/index.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/src/components/catalogAuditorious/Equipment/Equipment.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 0, 7, 57
+"/Users/admin/room-assets/src/components/catalogAuditorious/Equipment/Equipment.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 33, 0, 0, 0, 0, 2, 35
+"/Users/admin/room-assets/src/components/catalogAuditorious/Equipment/equipment.config.ts", "TypeScript", 52, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 53
+"/Users/admin/room-assets/src/components/catalogAuditorious/Equipment/equipment.types.ts", "TypeScript", 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 10
+"/Users/admin/room-assets/src/components/catalogAuditorious/Equipment/index.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/src/components/catalogAuditorious/LastUpdates/LastUpdates.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 67, 0, 0, 0, 11, 78
+"/Users/admin/room-assets/src/components/catalogAuditorious/LastUpdates/LastUpdates.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 36, 0, 0, 0, 0, 2, 38
+"/Users/admin/room-assets/src/components/catalogAuditorious/LastUpdates/index.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/src/components/catalogAuditorious/LastUpdates/lastupdates.config.ts", "TypeScript", 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 29
+"/Users/admin/room-assets/src/components/catalogAuditorious/LastUpdates/lastupdates.types.ts", "TypeScript", 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 10
+"/Users/admin/room-assets/src/components/catalogAuditorious/QuickActions/QuickAction.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 35, 0, 0, 0, 0, 2, 37
+"/Users/admin/room-assets/src/components/catalogAuditorious/QuickActions/QuickActions.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 62, 0, 0, 0, 9, 71
+"/Users/admin/room-assets/src/components/catalogAuditorious/QuickActions/index.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/src/components/catalogAuditorious/QuickActions/quickaction.config.ts", "TypeScript", 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 30
+"/Users/admin/room-assets/src/components/catalogAuditorious/QuickActions/quickaction.types.ts", "TypeScript", 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 10
+"/Users/admin/room-assets/src/components/catalogAuditorious/RoomsSchema/RoomsSchema.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 127, 0, 0, 0, 20, 147
+"/Users/admin/room-assets/src/components/catalogAuditorious/RoomsSchema/RoomsSchema.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 82, 0, 0, 0, 0, 7, 89
+"/Users/admin/room-assets/src/components/catalogAuditorious/RoomsSchema/index.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/src/components/catalogAuditorious/RoomsSchema/roomschema.config.ts", "TypeScript", 35, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 37
+"/Users/admin/room-assets/src/components/catalogAuditorious/RoomsSchema/roomsschema.types.ts", "TypeScript", 19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 23
+"/Users/admin/room-assets/src/components/catalogAuditorious/RoomsTable/RoomsTable.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 95, 0, 0, 0, 0, 5, 100
+"/Users/admin/room-assets/src/components/catalogAuditorious/StatCards/StatCards.config.ts", "TypeScript", 44, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 47
+"/Users/admin/room-assets/src/components/catalogAuditorious/StatCards/StatCards.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 54, 0, 0, 0, 6, 60
+"/Users/admin/room-assets/src/components/catalogAuditorious/StatCards/StatCards.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 29, 0, 0, 0, 5, 2, 36
+"/Users/admin/room-assets/src/components/catalogAuditorious/StatCards/StatCards.types.ts", "TypeScript", 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 12
+"/Users/admin/room-assets/src/components/catalogAuditorious/StatCards/index.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/admin/room-assets/src/config.ts", "TypeScript", 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2
+"/Users/admin/room-assets/src/context/auth.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 42, 0, 0, 0, 0, 9, 51
+"/Users/admin/room-assets/src/index.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 62, 0, 0, 0, 8, 70
+"/Users/admin/room-assets/src/main.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 23, 0, 0, 0, 0, 2, 25
+"/Users/admin/room-assets/src/mocks/browser.ts", "TypeScript", 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4
+"/Users/admin/room-assets/src/mocks/data.ts", "TypeScript", 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 12
+"/Users/admin/room-assets/src/mocks/handlers.ts", "TypeScript", 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 10
+"/Users/admin/room-assets/src/pages/AuditoriumCataloguePage.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 27, 0, 0, 0, 0, 2, 29
+"/Users/admin/room-assets/src/pages/BookingManagementPage.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 27, 0, 0, 0, 0, 2, 29
+"/Users/admin/room-assets/src/pages/Settings.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 6
+"/Users/admin/room-assets/tsconfig.app.json", "JSON", 0, 0, 0, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 33
+"/Users/admin/room-assets/tsconfig.json", "JSON with Comments", 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 8
+"/Users/admin/room-assets/tsconfig.node.json", "JSON", 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 27
+"/Users/admin/room-assets/vite.config.ts", "TypeScript", 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 19
+"Total", "-", 1655, 171, 36, 11091, 120, 69, 26, 496, 1319, 2352, 3022, 87, 8, 306, 1024, 21782

@@ -1,0 +1,147 @@
+.schemeContainer {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    border: 1px solid #eef0f3;
+    margin-top: 32px;
+}
+
+.mainTitle {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 24px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.gridLayout {
+    display: flex;
+    gap: 30px;
+}
+
+.schemeArea {
+    flex: 7 1 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(237, 237, 237);
+    border-radius: 12px;
+}
+
+.sidebarArea {
+    flex: 3 1 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.schemeHeader {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    margin: 16px 8px;
+}
+
+.floorRow {
+    display: flex;
+    flex-direction: column;
+    border-style: dotted;
+    border-width: 2px;
+    border-color: rgba(79, 79, 79, 0.3);
+    padding: 1em;
+    border-radius: 12px;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.floorLabel {
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+}
+
+.roomsContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.roomBlock {
+    width: 64px;
+    height: 32px;
+    padding: 6px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+.available {
+    background-color: rgba(28, 218, 35, 0.3);
+}
+
+.occupied {
+    background-color: rgba(255, 162, 0, 0.3);
+}
+
+.maintenance {
+    background-color: rgba(155, 155, 155, 0.3);
+}
+
+.legendTitle {
+    font-size: 14px;
+    font-weight: 600;
+    color: #0f172a;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.legendLabel {
+    font-size: 12px;
+    font-weight: 500;
+    color:rgb(90, 90, 90);
+}
+
+.legendContainer {
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #e2e8f0;
+}
+
+.legendItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.legendColor {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    flex-shrink: 0;
+}
+.legendAvailable { background-color: rgba(0, 255, 26, 0.3); }
+.legendOccupied { background-color: rgba(255, 162, 0, 0.3); }
+.legendMaintenance { background-color: rgba(155, 155, 155, 0.3); }
+
+.statRow {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.statLabel {
+    color: #334155;
+}
+
+.statValue {
+    font-weight: 600;
+    color: #0f172a;
+}

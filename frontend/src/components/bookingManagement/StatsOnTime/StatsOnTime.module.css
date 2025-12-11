@@ -1,0 +1,70 @@
+.statsOnTime {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 12px;
+    flex-shrink: 1;
+    border: 1px solid rgba(182, 182, 182, 0.3);
+}
+
+.title {
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    color: black;
+}
+
+.body {
+    margin-left: 1.5em;
+    margin-right: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 0.7em;
+}
+
+.bodyRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 1.5em;
+}
+
+.periodOfTime {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+
+.progressBarAndValue {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.progressBarBackground {
+    flex-grow: 1;
+    height: 8px;
+    background-color: rgba(197, 197, 197, 0.5);
+    border-radius: 4px;
+    margin-right: 10px;
+    max-width: 150px;
+}
+
+.progressBarFill {
+    height: 100%;
+    border-radius: 4px;
+}
+
+.value {
+    width: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: black
+}

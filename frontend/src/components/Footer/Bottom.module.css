@@ -1,0 +1,55 @@
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(1, 60, 221, 0.812);
+    border-radius: 12px;
+    padding: 2em 2em 2em 2em;
+    margin-top: 2em;
+}
+
+.leftPart {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.label {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.5em;
+}
+
+.secondLabel {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.rightPart {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px
+}
+
+.button {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 600;
+    align-items: center;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+    border: none;
+}
+
+.button:focus,
+.button:active {
+    background-color: #fff;
+    color: rgba(1, 60, 221, 0.812);
+}

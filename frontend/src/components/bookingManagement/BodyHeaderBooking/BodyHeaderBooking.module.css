@@ -1,0 +1,66 @@
+.bodyHeaderContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 2em;
+}
+
+.leftText { 
+    text-align: left;
+}
+
+.leftUpText {
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+    margin: 0;
+    text-align: left;
+}
+
+.leftBottomText {
+    color: black;
+    margin-top: 4px;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 10em;
+    gap: 12px;
+}
+
+.button {
+    display: flex;
+    flex: 1 1 1;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 220px;
+    gap: 10px;
+}
+
+.buttonIcon {
+    width: 24px;
+    height: 24px;
+}
+
+.exportButton, .calendarButton {
+    background: #F3F4F6;
+    color: #000000;
+    height: 40px;
+    width: auto;
+}
+
+.addBookingButton {
+    background: #1d4ed8;
+    color: #fff;
+    border: 1px solid #1d4ed8;
+    width: auto;
+    height: 40px;
+}
