@@ -282,7 +282,14 @@ export async function buildApp() {
     async (req, reply) => {
       const {roomId, startTime, endTime} = req.body
 
-      const userId = "some-user-id";
+      // Находим первого пользователя в базе
+      const user = await app.prisma.user.findFirst();
+      if (!user) {
+        // Если пользователей нет, возвращаем ошибку
+        reply.code(500).send({ detail: 'No users found in the database to create a booking.' });
+        return;
+      }
+      const userId = user.id;
 
       const newBooking = await app.prisma.booking.create({
         data: {
