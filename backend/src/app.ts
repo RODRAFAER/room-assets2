@@ -7,7 +7,7 @@ import { STATUS_CODES } from 'node:http'
 import prismaPlugin from './plugins/prisma.js'
 import { Type as T } from 'typebox'
 import type { TypeBoxTypeProvider } from '@fastify/type-provider-typebox'
-import { ValidationProblem, ProblemDetails, User, Health, Room, Booking } from './types.js'
+import { ValidationProblem, ProblemDetails, User, Health, Room, Booking, RoomsResponse } from './types.js'
 
 // Этот модуль собирает все настройки Fastify: плагины инфраструктуры, обработчики ошибок и маршруты API.
 
@@ -165,18 +165,52 @@ export async function buildApp() {
         tags: ['Rooms'],
         summary: 'Возвращает список аудиторий',
         description: 'Получаем полный список аудиторий с их статусом и оборудованием.',
+        querystring: {
+          type: 'object',
+          properties: {
+            page: {
+              type: 'integer',
+              minimum: 1,
+              default: 1,
+              description: 'Номер страницы'
+            },
+            pageSize: {
+              type: 'integer',
+              minimum: 1,
+              maximum: 100,
+              default: 10,
+              description: 'Размер страницы'
+            }
+          }
+        },
         response: {
           200: {
             description: 'Список аудиторий',
-            content: { 'application/json': {schema: T.Array(Room)}}
+            content: { 'application/json': {schema: RoomsResponse}}
           },
           429: { description: 'Too Many Requests'},
           500: { description: 'Internal Server Error'}
         }
       }
     },
-    async (_req, _reply) => {
-      return app.prisma.room.findMany()
+    async (req, reply) => {
+      const { page = 1, pageSize = 10} = req.query;
+
+      const pageNumber = Number(page);
+      const pageSizeNumber = Number(pageSize);
+      const skip = (pageNumber - 1) * pageSizeNumber;
+
+      const total = await app.prisma.room.count();
+      const items = await app.prisma.room.findMany({
+        skip: skip,
+        take: pageSizeNumber,
+      });
+
+      return {
+        items,
+        page: pageNumber,
+        total,
+      }
     }
   )
 

@@ -145,3 +145,10 @@ export const Booking = T.Object(
     }),
 })
 export type Booking = Static<typeof Booking>
+
+export const RoomsResponse = T.Object({
+  items: T.Array(Room),
+  page: T.Integer({ description: 'Текущий номер страницы' }),
+  total: T.Integer({ description: 'Общее количество комнат' }),
+});
+export type RoomsResponse = Static<typeof RoomsResponse>;

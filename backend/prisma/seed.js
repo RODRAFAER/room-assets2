@@ -19,7 +19,7 @@ async function seedDatabase() {
     const room1 = await prisma.room.upsert({
         where: { code: '201' },
         update: {},
-        create: { code: '201', name: 'Конференц-зал', capacity: 50, equipment: ['projector', 'microphone', 'wifi'] },
+        create: { code: '201', name: 'Конференц-зал', capacity: 30, equipment: ['projector', 'microphone', 'wifi'] },
     });
     const room2 = await prisma.room.upsert({
         where: { code: '101' },
