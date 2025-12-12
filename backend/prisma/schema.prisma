@@ -29,7 +29,7 @@ model Room {
   name  String
   capacity  Int
   equipment String[]
-  status  RoomStatus  @default(AVAILABLE)
+  status  RoomStatus  @default(available)
 
   bookings Booking[]
 
@@ -53,7 +53,7 @@ model Booking {
 }
 
 enum RoomStatus {
-  AVAILABLE
-  BOOKED
-  MAINTENANCE
+  available
+  booked
+  maintenance
 }

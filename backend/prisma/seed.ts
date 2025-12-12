@@ -24,7 +24,7 @@ const prisma = new PrismaClient();
     const room1 = await prisma.room.upsert({
       where: { code: '201' },
       update: {},
-      create: { code: '201', name: 'Конференц-зал', capacity: 30, equipment: ['projector', 'microphone', 'wifi'] },
+      create: { code: '201', name: 'Конференц-зал', capacity: 70, equipment: ['projector', 'microphone', 'wifi', 'Невероятное оборудование для проверки'] },
     });
     const room2 = await prisma.room.upsert({
       where: { code: '101' },
@@ -34,7 +34,7 @@ const prisma = new PrismaClient();
     const room3 = await prisma.room.upsert({
       where: { code: '102' },
       update: {},
-      create: { code: '102', name: 'Компьютерный класс', capacity: 30, equipment: ['computers', 'projector', 'board', 'wifi'] },
+      create: { code: '102', name: 'Компьютерный сас', capacity: 30, equipment: ['computers', 'projector', 'board', 'wifi'] },
     });
     const room4 = await prisma.room.upsert({
       where: { code: '202' },
