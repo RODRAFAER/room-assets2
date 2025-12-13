@@ -8,7 +8,7 @@ import { Settings } from './pages/Settings';
 import { Bottom } from "./components/Footer";
 
 const ROUTES = {
-  CATALOG: '/room-assets2',
+  CATALOG: '/room-assets2/',
   BOOKINGS: '/bookings',
   SETTINGS: '/settings'
 }
