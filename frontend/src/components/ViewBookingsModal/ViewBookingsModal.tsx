@@ -17,8 +17,7 @@ import {
   Paper,
 } from '@mui/material';
 import { http } from '@/api/http';
-import type { Booking } from '@/../../backend/src/types.ts'; 
-
+import type { Booking } from '@/types/api';
 interface ViewBookingsModalProps {
   open: boolean;
   onClose: () => void;
