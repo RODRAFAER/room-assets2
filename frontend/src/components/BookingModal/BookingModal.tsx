@@ -39,20 +39,17 @@ export function BookingModal({ open, onClose, roomId, roomName }: BookingModalPr
 
     setLoading(true);
 
-    // Собираем полную дату и время
     const startDateTime = startDate
-        .hour(startTime.hour())
-        .minute(startTime.minute())
-        .second(0)
-        .millisecond(0)
-        .toISOString();
+    .hour(startTime.hour())
+    .minute(startTime.minute())
+    .second(0)
+    .millisecond(0);
 
     const endDateTime = startDate
-        .hour(endTime.hour())
-        .minute(endTime.minute())
-        .second(0)
-        .millisecond(0)
-        .toISOString();
+    .hour(endTime.hour())
+    .minute(endTime.minute())
+    .second(0)
+    .millisecond(0);
 
     try {
     // --- ВОТ НОВЫЙ КОД ---
