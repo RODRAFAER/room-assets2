@@ -1,20 +1,24 @@
-import axios from "axios";
+// frontend/src/api/http.ts
+import axios from 'axios';
 
 const getApiUrl = () => {
-
-  if (import.meta.env.PROD) {
-    return import.meta.env.VITE_API_URL;
+  const prodUrl = import.meta.env.VITE_API_URL;
+  if (prodUrl) {
+    return prodUrl;
   }
-  return '/api';
+  return 'http://localhost:3000';
 };
 
 export const http = axios.create({
   baseURL: getApiUrl(),
   timeout: 10_000,
-  headers: { "Content-Type": "application/json" },
+  headers: { 'Content-Type': 'application/json' },
 });
 
 http.interceptors.response.use(
-  (r) => r,
-  (err) => { console.error("HTTP error:", err); throw err; }
+  (response) => response,
+  (error) => {
+    console.error("HTTP error:", error);
+    throw error;
+  }
 );
