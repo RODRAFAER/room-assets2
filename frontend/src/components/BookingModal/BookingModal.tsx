@@ -45,14 +45,12 @@ export function BookingModal({ open, onClose, roomId, roomName }: BookingModalPr
         .minute(startTime.minute())
         .second(0)
         .millisecond(0)
-        .toISOString();
 
     const endDateTime = startDate
         .hour(endTime.hour())
         .minute(endTime.minute())
         .second(0)
         .millisecond(0)
-        .toISOString();
 
     try {
     // --- ВОТ НОВЫЙ КОД ---
