@@ -272,12 +272,21 @@ export async function buildApp() {
         },
         response: {
           200: { description: 'Список бронирований', content: { 'application/json': { schema: T.Array(Booking) } } },
+          400: { 
+            description: 'Bad Request',
+            content: { 'application/problem+json': { schema: ProblemDetails } }
+          },
           500: { description: 'Internal Server Error' }
         }
       }
     },
     async (req, reply) => {
       const { roomId } = req.params;
+
+      if (!roomId) {
+        reply.code(400).send({ detail: 'roomId is required' });
+        return;
+      }
 
       const bookings = await app.prisma.booking.findMany({
         where: { roomId: roomId },
