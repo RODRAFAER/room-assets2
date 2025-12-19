@@ -4,9 +4,10 @@ import {
   Paper, Table, TableHead, TableRow, TableCell, TableBody,
   Chip, CircularProgress, Box, IconButton, Stack, Typography
 } from '@mui/material';
-import { VisibilityOutlined, EditOutlined, DeleteOutline, Groups2Outlined, BookmarkBorderOutlined } from '@mui/icons-material';
+import { VisibilityOutlined, EditOutlined, DeleteOutline, Groups2Outlined, BookmarkBorderOutlined, RemoveRedEye  } from '@mui/icons-material';
 import { fetchRooms, type RoomDto } from '@/api/roomsApi';
-import { BookingModal } from '@/components/BookingModal/BookingModal'; // <-- 1. Импортируем модальное окно
+import { BookingModal } from '@/components/BookingModal/BookingModal';
+import { ViewBookingsModal } from '@/components/ViewBookingsModal/ViewBookingsModal';
 
 // Этот объект теперь должен соответствовать вашим статусам в БД (AVAILABLE, BOOKED, MAINTENANCE)
 const STATUS_LABEL: Record<RoomDto['status'], string> = {
@@ -29,9 +30,10 @@ export function RoomsTable() {
   const [error, setError] = useState<string | null>(null);
   const [items, setItems] = useState<RoomDto[]>([]);
 
-  // <-- 2. Добавляем состояние для управления модальным окном -->
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
   const [selectedRoom, setSelectedRoom] = useState<{ id: string; name: string } | null>(null);
+  const [isViewBookingsModalOpen, setIsViewBookingsModalOpen] = useState(false);
+  const [selectedRoomForView, setSelectedRoomForView] = useState<{ id: string; name: string } | null>(null);
 
   useEffect(() => {
     let mounted = true;
@@ -58,6 +60,16 @@ export function RoomsTable() {
   const handleCloseBookingModal = () => {
     setIsBookingModalOpen(false);
     setSelectedRoom(null);
+  };
+
+  const handleOpenViewBookingsModal = (room: { id: string; name: string }) => {
+  setSelectedRoomForView(room);
+  setIsViewBookingsModalOpen(true);
+  };
+
+const handleCloseViewBookingsModal = () => {
+  setIsViewBookingsModalOpen(false);
+  setSelectedRoomForView(null);
   };
 
   if (loading) return <Box sx={{ p: 3, display: 'grid', placeItems: 'center' }}><CircularProgress /></Box>;
@@ -107,10 +119,14 @@ export function RoomsTable() {
                 </TableCell>
                 <TableCell align="center">
                   <Stack direction="row" spacing={0.5} justifyContent="center">
-                    <IconButton size="small" title="Просмотр"><VisibilityOutlined fontSize="small" /></IconButton>
+                    <IconButton 
+                      size="small" 
+                      title="Просмотр"
+                      onClick={() => handleOpenViewBookingsModal({ id: r.id, name: r.name })}
+                    >
+                      <VisibilityOutlined fontSize="small" /></IconButton>
                     <IconButton size="small" title="Редактировать"><EditOutlined fontSize="small" /></IconButton>
                     <IconButton size="small" color="error" title="Удалить"><DeleteOutline fontSize="small" /></IconButton>
-                    {/* <-- 4. Добавляем кнопку "Забронировать" */}
                     <IconButton
                       size="small"
                       color="primary"
@@ -134,6 +150,15 @@ export function RoomsTable() {
           onClose={handleCloseBookingModal}
           roomId={selectedRoom.id}
           roomName={selectedRoom.name}
+        />
+      )}
+
+      {selectedRoomForView && (
+        <ViewBookingsModal
+          open={isViewBookingsModalOpen}
+          onClose={handleCloseViewBookingsModal}
+          roomId={selectedRoomForView.id}
+          roomName={selectedRoomForView.name}
         />
       )}
     </>

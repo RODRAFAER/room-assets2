@@ -256,6 +256,42 @@ export async function buildApp() {
     }
   )
 
+  app.get(
+    '/api/rooms/:roomId/bookings',
+    {
+      schema: {
+        operationId: 'getRoomBookings',
+        tags: ['Bookings'],
+        summary: 'Возвращает бронирования для комнаты',
+        description: 'Получает все бронирования для указанной аудитории.',
+        params: {
+          type: 'object',
+          properties: {
+            roomId: { type: 'string', description: 'ID комнаты' }
+          }
+        },
+        response: {
+          200: { description: 'Список бронирований', content: { 'application/json': { schema: T.Array(Booking) } } },
+          500: { description: 'Internal Server Error' }
+        }
+      }
+    },
+    async (req, reply) => {
+      const { roomId } = req.params;
+
+      const bookings = await app.prisma.booking.findMany({
+        where: { roomId: roomId },
+        include: {
+          room: { select: { id: true, code: true, name: true } },
+          user: { select: { id: true, name: true } },
+        },
+        orderBy: { startTime: 'asc' }
+      });
+
+      reply.send(bookings);
+    }
+  )
+
   app.post(
     '/api/bookings',
     {
