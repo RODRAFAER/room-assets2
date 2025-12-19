@@ -4,7 +4,7 @@ import {
   Paper, Table, TableHead, TableRow, TableCell, TableBody,
   Chip, CircularProgress, Box, IconButton, Stack, Typography
 } from '@mui/material';
-import { VisibilityOutlined, EditOutlined, DeleteOutline, Groups2Outlined, BookmarkBorderOutlined, RemoveRedEye  } from '@mui/icons-material';
+import { VisibilityOutlined, EditOutlined, DeleteOutline, Groups2Outlined, BookmarkBorderOutlined } from '@mui/icons-material';
 import { fetchRooms, type RoomDto } from '@/api/roomsApi';
 import { BookingModal } from '@/components/BookingModal/BookingModal';
 import { ViewBookingsModal } from '@/components/ViewBookingsModal/ViewBookingsModal';

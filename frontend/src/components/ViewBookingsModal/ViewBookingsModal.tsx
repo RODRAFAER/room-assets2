@@ -1,5 +1,4 @@
-// frontend/src/components/ViewBookingsModal/ViewBookingsModal.tsx
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import {
   Dialog,
   DialogTitle,
@@ -18,7 +17,7 @@ import {
   Paper,
 } from '@mui/material';
 import { http } from '@/api/http';
-import type { Booking } from '/Users/admin/room-assets/backend/src/types.ts'; 
+import type { Booking } from '@/../../backend/src/types.ts'; 
 
 interface ViewBookingsModalProps {
   open: boolean;
