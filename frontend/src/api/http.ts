@@ -4,9 +4,10 @@ import axios from 'axios';
 const getApiUrl = () => {
   const prodUrl = import.meta.env.VITE_API_URL;
   if (prodUrl) {
-    return prodUrl;
+    return `${prodUrl}/api`;
   }
-  return 'http://localhost:3000';
+
+  return '/api';
 };
 
 export const http = axios.create({
@@ -16,9 +17,6 @@ export const http = axios.create({
 });
 
 http.interceptors.response.use(
-  (response) => response,
-  (error) => {
-    console.error("HTTP error:", error);
-    throw error;
-  }
+  (r) => r,
+  (err) => { console.error("HTTP error:", err); throw err; }
 );

@@ -34,7 +34,10 @@ export async function buildApp() {
   await app.register(helmet)
 
   // CORS ограничивает кросс-доменные запросы. Здесь полностью запрещаем их (origin: false) по умолчанию.
-  await app.register(cors, { origin: false })
+  await app.register(cors, {
+    origin: ['https://rodrafaer.github.io'], // <-- Разрешаем запросы с GitHub Pages
+    credentials: true, // Полезно для будущей авторизации
+  });
 
   /**
    * Ограничитель количества запросов на IP.
