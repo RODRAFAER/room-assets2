@@ -322,6 +322,7 @@ export async function buildApp() {
             description: 'Бронирование создано',
             content: { 'application/json': {schema: Booking}}
           },
+          409: { description: "Ошибка пересечения времени"},
           429: { description: 'Too Many Requests'},
           500: { description: 'Internal Server Error'}
         }
@@ -339,6 +340,19 @@ export async function buildApp() {
       }
       const userId = user.id;
 
+      const conflictingBooking = await app.prisma.booking.findFirst({
+        where: {
+          roomId: roomId,
+          OR: [
+            { startTime: { lt: new Date(endTime) }, endTime: { gt: new Date(startTime) } }
+          ]
+        }
+      });
+
+      if (conflictingBooking) {
+        return reply.code(409).send({ detail: 'The room is already booked for this time.' });
+      }
+
       const newBooking = await app.prisma.booking.create({
         data: {
           startTime: new Date(startTime),
@@ -355,6 +369,119 @@ export async function buildApp() {
       reply.code(201).send(newBooking)
     }
   )
+
+  app.delete(
+    '/api/bookings/:id',
+    {
+      schema: {
+        operationId: 'deleteBooking',
+        tags: ['Bookings'],
+        summary: 'Удаляет бронирование',
+        params: {
+          type: 'object',
+          properties: {
+            id: { type: 'string', description: 'ID бронирования' }
+          },
+          required: ['id']
+        },
+        response: {
+          200: { description: 'Бронирование успешно удалено' },
+          404: { description: 'Бронирование не найдено', content: { 'application/problem+json': { schema: ProblemDetails } } },
+          500: { description: 'Internal Server Error' }
+        }
+      }
+    },
+    async (req, reply) => {
+      const { id } = req.params;
+
+      try {
+        await app.prisma.booking.delete({
+          where: { id: id }
+        });
+        return reply.send({ message: 'Booking deleted successfully' });
+      } catch (error) {
+        const prismaError = error as any;
+        if (prismaError.code === 'P2025') {
+          return reply.code(404).send({ detail: 'Booking not found' });
+        }
+        return reply.code(500).send({ detail: 'Internal Server Error' });
+      }
+    }
+  );
+
+  app.put(
+    '/api/bookings/:id',
+    {
+      schema: {
+        operationId: 'updateBooking',
+        tags: ['Bookings'],
+        summary: 'Обновляет существующее бронирование',
+        params: {
+          type: 'object',
+          properties: {
+            id: { type: 'string', description: 'ID бронирования' }
+          },
+          required: ['id']},
+        body: {
+          type: 'object',
+          properties: {
+            roomId: { type: 'string' },
+            startTime: { type: 'string', format: 'date-time' },
+            endTime: { type: 'string', format: 'date-time' },
+          },
+          required: ['roomId', 'startTime', 'endTime'],
+        },
+        response: {
+          200: { description: 'Бронирование обновлено', content: { 'application/json': { schema: Booking } } },
+          404: { description: 'Бронирование не найдено' },
+          409: { description: 'Комната уже забронирована на это время' },
+          500: { description: 'Internal Server Error' }
+        }
+      }
+    },
+    async (req, reply) => {
+      const { id } = req.params;
+      const { roomId, startTime, endTime } = req.body;
+
+      // --- Проверка на пересечение (исключая текущее бронирование) ---
+      const conflictingBooking = await app.prisma.booking.findFirst({
+        where: {
+          id: { not: id }, // Исключаем текущее бронирование из поиска
+          roomId: roomId,
+          OR: [
+            { startTime: { lt: new Date(endTime) }, endTime: { gt: new Date(startTime) } }
+          ]
+        }
+      });
+
+      if (conflictingBooking) {
+        return reply.code(409).send({ detail: 'The room is already booked for this time.' });
+      }
+      // --- КОНЕЦ ПРОВЕРКИ ---
+
+      try {
+        const updatedBooking = await app.prisma.booking.update({
+          where: { id: id },
+          data: {
+            startTime: new Date(startTime),
+            endTime: new Date(endTime),
+            room: { connect: { id: roomId } },
+          },
+          include: {
+            room: { select: { id: true, code: true, name: true } },
+            user: { select: { id: true, name: true } },
+          }
+        });
+        return reply.send(updatedBooking);
+      } catch (error) {
+        const prismaError = error as any;
+        if (prismaError.code === 'P2025') {
+          return reply.code(404).send({ detail: 'Booking not found' });
+        }
+        return reply.code(500).send({ detail: 'Internal Server Error' });
+      }
+    }
+  );
 
   /**
    * GET /api/health — health-check для мониторинга.

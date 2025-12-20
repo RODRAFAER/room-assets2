@@ -8,6 +8,7 @@ import { VisibilityOutlined, EditOutlined, DeleteOutline, Groups2Outlined, Bookm
 import { fetchRooms, type RoomDto } from '@/api/roomsApi';
 import { BookingModal } from '@/components/BookingModal/BookingModal';
 import { ViewBookingsModal } from '@/components/ViewBookingsModal/ViewBookingsModal';
+import type { Booking } from '@/types/api';
 
 // Этот объект теперь должен соответствовать вашим статусам в БД (AVAILABLE, BOOKED, MAINTENANCE)
 const STATUS_LABEL: Record<RoomDto['status'], string> = {
@@ -29,9 +30,15 @@ export function RoomsTable() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [items, setItems] = useState<RoomDto[]>([]);
-
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
-  const [selectedRoom, setSelectedRoom] = useState<{ id: string; name: string } | null>(null);
+  // `bookingModalData` теперь хранит всю информацию для модального окна
+  const [bookingModalData, setBookingModalData] = useState<{
+    roomId: string;
+    roomName: string;
+    mode: 'create' | 'edit';
+    bookingData?: Booking; // Данные для редактирования
+  } | null>(null);
+
   const [isViewBookingsModalOpen, setIsViewBookingsModalOpen] = useState(false);
   const [selectedRoomForView, setSelectedRoomForView] = useState<{ id: string; name: string } | null>(null);
 
@@ -53,24 +60,49 @@ export function RoomsTable() {
 
   // <-- 3. Добавляем функции для управления модальным окном -->
   const handleOpenBookingModal = (room: { id: string; name: string }) => {
-    setSelectedRoom(room);
+    setBookingModalData({
+      roomId: room.id,
+      roomName: room.name,
+      mode: 'create'
+    });
+    setIsBookingModalOpen(true);
+  };
+
+  const handleOpenEditModal = (booking: Booking) => {
+    // Нам нужно найти информацию о комнате, чтобы передать ее в модальное окно
+    const room = items.find(r => r.id === booking.room.id); // <-- ИЗМЕНИТЬ ЗДЕСЬ
+    if (!room) return;
+
+    setBookingModalData({
+      roomId: room.id,
+      roomName: room.name,
+      mode: 'edit',
+      bookingData: booking
+    });
     setIsBookingModalOpen(true);
   };
 
   const handleCloseBookingModal = () => {
     setIsBookingModalOpen(false);
-    setSelectedRoom(null);
+    setBookingModalData(null);
   };
 
   const handleOpenViewBookingsModal = (room: { id: string; name: string }) => {
-  setSelectedRoomForView(room);
-  setIsViewBookingsModalOpen(true);
+    setSelectedRoomForView(room);
+    setIsViewBookingsModalOpen(true);
   };
 
-const handleCloseViewBookingsModal = () => {
-  setIsViewBookingsModalOpen(false);
-  setSelectedRoomForView(null);
+  const handleCloseViewBookingsModal = () => {
+    setIsViewBookingsModalOpen(false);
+    setSelectedRoomForView(null);
   };
+
+  const handleBookingSaved = () => {
+    // Здесь можно добавить логику для обновления данных, если это потребуется
+    // Например, обновить статус комнаты в таблице, если он меняется при бронировании
+    console.log('Booking saved!');
+    handleCloseBookingModal();
+  }
 
   if (loading) return <Box sx={{ p: 3, display: 'grid', placeItems: 'center' }}><CircularProgress /></Box>;
   if (error) return <Box sx={{ p: 3 }}><Typography color="error">Не удалось загрузить данные: {error}</Typography></Box>;
@@ -143,13 +175,15 @@ const handleCloseViewBookingsModal = () => {
         </Table>
       </Paper>
 
-      {/* <-- 5. Рендерим модальное окно */}
-      {selectedRoom && (
+      {bookingModalData && (
         <BookingModal
           open={isBookingModalOpen}
           onClose={handleCloseBookingModal}
-          roomId={selectedRoom.id}
-          roomName={selectedRoom.name}
+          onBookingSaved={handleBookingSaved}
+          mode={bookingModalData.mode}
+          initialData={bookingModalData.bookingData}
+          roomId={bookingModalData.roomId}
+          roomName={bookingModalData.roomName}
         />
       )}
 
@@ -159,6 +193,7 @@ const handleCloseViewBookingsModal = () => {
           onClose={handleCloseViewBookingsModal}
           roomId={selectedRoomForView.id}
           roomName={selectedRoomForView.name}
+          onEditBooking={handleOpenEditModal} // <-- ПЕРЕДАЕМ ФУНКЦИЮ
         />
       )}
     </>

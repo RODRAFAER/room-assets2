@@ -1,43 +1,60 @@
+// frontend/src/components/ViewBookingsModal/ViewBookingsModal.tsx
+
 import { useState, useEffect } from 'react';
 import {
-  Dialog,
-  DialogTitle,
-  DialogContent,
-  DialogActions,
-  Button,
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableHead,
-  TableRow,
-  CircularProgress,
-  Box,
-  Typography,
-  Paper,
+  Dialog, DialogTitle, DialogContent, DialogActions, Button,
+  Table, TableBody, TableCell, TableContainer, TableHead, TableRow,
+  CircularProgress, Box, Typography, Paper, IconButton, Tooltip
 } from '@mui/material';
-import { http } from '@/api/http';
-import type { Booking } from '@/types/api';
+import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
+import EditIcon from '@mui/icons-material/Edit';
+import { getRoomBookings, deleteBooking } from '@/api/bookingsApi';
+import type { Booking } from '@/types/api.ts'
+
+// Добавляем новый пропс для обработки редактирования
 interface ViewBookingsModalProps {
   open: boolean;
   onClose: () => void;
   roomId: string;
   roomName: string;
+  onEditBooking: (booking: Booking) => void; // <-- НОВЫЙ ПРОПС
 }
 
-export function ViewBookingsModal({ open, onClose, roomId, roomName }: ViewBookingsModalProps) {
+export function ViewBookingsModal({ open, onClose, roomId, roomName, onEditBooking }: ViewBookingsModalProps) {
   const [bookings, setBookings] = useState<Booking[]>([]);
   const [loading, setLoading] = useState(false);
 
+  const fetchBookings = async () => {
+    setLoading(true);
+    try {
+      const data = await getRoomBookings(roomId);
+      setBookings(data);
+    } catch (error) {
+      console.error('Failed to fetch bookings:', error);
+      // Можно добавить отображение ошибки
+    } finally {
+      setLoading(false);
+    }
+  };
+
   useEffect(() => {
     if (open && roomId) {
-      setLoading(true);
-      http.get(`/rooms/${roomId}/bookings`)
-        .then(res => setBookings(res.data))
-        .catch(console.error)
-        .finally(() => setLoading(false));
+      fetchBookings();
     }
   }, [open, roomId]);
+
+  const handleDelete = async (bookingId: string) => {
+    if (window.confirm('Вы уверены, что хотите удалить это бронирование?')) {
+      try {
+        await deleteBooking(bookingId);
+        // После успешного удаления, перезагружаем список
+        fetchBookings();
+      } catch (error) {
+        console.error('Failed to delete booking:', error);
+        alert('Не удалось удалить бронирование.');
+      }
+    }
+  };
 
   return (
     <Dialog open={open} onClose={onClose} maxWidth="md" fullWidth>
@@ -55,6 +72,7 @@ export function ViewBookingsModal({ open, onClose, roomId, roomName }: ViewBooki
                   <TableCell>Начало</TableCell>
                   <TableCell>Конец</TableCell>
                   <TableCell>Кто забронировал</TableCell>
+                  <TableCell align="center">Действия</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
@@ -64,11 +82,23 @@ export function ViewBookingsModal({ open, onClose, roomId, roomName }: ViewBooki
                       <TableCell>{new Date(booking.startTime).toLocaleString()}</TableCell>
                       <TableCell>{new Date(booking.endTime).toLocaleString()}</TableCell>
                       <TableCell>{booking.user?.name || 'Неизвестно'}</TableCell>
+                      <TableCell align="center">
+                        <Tooltip title="Редактировать">
+                          <IconButton onClick={() => onEditBooking(booking)}>
+                            <EditIcon color="primary" />
+                          </IconButton>
+                        </Tooltip>
+                        <Tooltip title="Удалить">
+                          <IconButton onClick={() => handleDelete(booking.id)} color="error">
+                            <DeleteOutlineIcon />
+                          </IconButton>
+                        </Tooltip>
+                      </TableCell>
                     </TableRow>
                   ))
                 ) : (
                   <TableRow>
-                    <TableCell colSpan={3} sx={{ textAlign: 'center' }}>
+                    <TableCell colSpan={4} sx={{ textAlign: 'center' }}>
                       <Typography variant="body2">Пока нет бронирований для этой аудитории.</Typography>
                     </TableCell>
                   </TableRow>

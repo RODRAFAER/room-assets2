@@ -14,13 +14,17 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import dayjs, { Dayjs } from 'dayjs';
 import { http } from '@/api/http';
+import type { Booking } from '@/types/api';
 
 // Описываем props, которые компонент будет принимать
 interface BookingModalProps {
   open: boolean;
   onClose: () => void;
-  roomId: string; // ID комнаты, которую бронируем
-  roomName: string; // Название комнаты для заголовка
+  onBookingSaved: () => void; // Колбэк для обновления данных
+  mode: 'create' | 'edit';    // Режим работы
+  roomId: string;             // ID комнаты
+  roomName: string;           // Название комнаты
+  initialData?: Booking;      // Данные для редактирования (опционально)
 }
 
 export function BookingModal({ open, onClose, roomId, roomName }: BookingModalProps) {
