@@ -36,7 +36,9 @@ export async function buildApp() {
   // CORS ограничивает кросс-доменные запросы. Здесь полностью запрещаем их (origin: false) по умолчанию.
   await app.register(cors, {
   origin: ['https://rodrafaer.github.io'], // <-- Разрешаем запросы с GitHub Pages
-  credentials: true, // Полезно для будущей авторизации
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Явно разрешаем нужные методы
+  allowedHeaders: ['Content-Type', 'Authorization'],  // Полезно для будущей авторизации
 });
 
   /**
@@ -331,7 +333,6 @@ export async function buildApp() {
     async (req, reply) => {
       const {roomId, startTime, endTime} = req.body
 
-      // Находим первого пользователя в базе
       const user = await app.prisma.user.findFirst();
       if (!user) {
         // Если пользователей нет, возвращаем ошибку
@@ -443,10 +444,9 @@ export async function buildApp() {
       const { id } = req.params;
       const { roomId, startTime, endTime } = req.body;
 
-      // --- Проверка на пересечение (исключая текущее бронирование) ---
       const conflictingBooking = await app.prisma.booking.findFirst({
         where: {
-          id: { not: id }, // Исключаем текущее бронирование из поиска
+          id: { not: id },
           roomId: roomId,
           OR: [
             { startTime: { lt: new Date(endTime) }, endTime: { gt: new Date(startTime) } }
@@ -457,7 +457,6 @@ export async function buildApp() {
       if (conflictingBooking) {
         return reply.code(409).send({ detail: 'The room is already booked for this time.' });
       }
-      // --- КОНЕЦ ПРОВЕРКИ ---
 
       try {
         const updatedBooking = await app.prisma.booking.update({
