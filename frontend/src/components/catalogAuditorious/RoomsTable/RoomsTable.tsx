@@ -104,9 +104,9 @@ export function RoomsTable() {
             <TableRow>
               <TableCell width={100}>Номер</TableCell>
               <TableCell>Название</TableCell>
-              <TableCell width={160} align="center">Вместимость</TableCell>
-              <TableCell width={160} align="left">Оборудование</TableCell>
-              <TableCell width={160} align="right">Действия</TableCell>
+              <TableCell width={160} align="left">Вместимость</TableCell>
+              <TableCell>Оборудование</TableCell>
+              <TableCell width={160} align="center">Действия</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -118,8 +118,8 @@ export function RoomsTable() {
                     <Typography fontWeight={600}>{r.name}</Typography>
                   </Stack>
                 </TableCell>
-                <TableCell align="right">
-                  <Stack direction="row" spacing={1} justifyContent="flex-end" alignItems="center">
+                <TableCell align="center">
+                  <Stack direction="row" spacing={1} justifyContent="center" alignItems="center">
                     <Groups2Outlined fontSize="small" />
                     <span>{r.capacity}</span>
                   </Stack>
