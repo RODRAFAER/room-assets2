@@ -1,26 +1,14 @@
-// frontend/src/components/RoomsTable/RoomsTable.tsx
 import { useEffect, useState, useRef } from 'react';
 import {
   Paper, Table, TableHead, TableRow, TableCell, TableBody,
   Chip, CircularProgress, Box, IconButton, Stack, Typography
 } from '@mui/material';
-import { VisibilityOutlined, EditOutlined, DeleteOutline, Groups2Outlined, BookmarkBorderOutlined } from '@mui/icons-material';
+import { VisibilityOutlined, Groups2Outlined, BookmarkBorderOutlined } from '@mui/icons-material';
 import { fetchRooms, type RoomDto } from '@/api/roomsApi';
 import { BookingModal } from '@/components/BookingModal/BookingModal';
 import { ViewBookingsModal, type ViewBookingsModalRef } from '@/components/ViewBookingsModal/ViewBookingsModal';
 import type { Booking } from '@/types/api';
 
-// Этот объект теперь должен соответствовать вашим статусам в БД (AVAILABLE, BOOKED, MAINTENANCE)
-const STATUS_LABEL: Record<RoomDto['status'], string> = {
-  available: 'Доступна',
-  booked: 'Забронирована',
-  maintenance: 'На обслуживании',
-};
-const STATUS_COLOR: Record<RoomDto['status'], "success" | "warning" | "default"> = {
-  available: 'success',
-  booked: 'warning',
-  maintenance: 'default',
-};
 const EQUIP_LABEL: Record<string, string> = {
   projector: "Проектор", microphone: "Микрофон", wifi: "Wi-Fi",
   computers: "Компьютеры", board: "Доска",
@@ -31,12 +19,12 @@ export function RoomsTable() {
   const [error, setError] = useState<string | null>(null);
   const [items, setItems] = useState<RoomDto[]>([]);
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
-  // `bookingModalData` теперь хранит всю информацию для модального окна
+
   const [bookingModalData, setBookingModalData] = useState<{
     roomId: string;
     roomName: string;
     mode: 'create' | 'edit';
-    bookingData?: Booking; // Данные для редактирования
+    bookingData?: Booking;
   } | null>(null);
 
   const [isViewBookingsModalOpen, setIsViewBookingsModalOpen] = useState(false);
@@ -59,7 +47,6 @@ export function RoomsTable() {
     return () => { mounted = false; };
   }, []);
 
-  // <-- 3. Добавляем функции для управления модальным окном -->
   const handleOpenBookingModal = (room: { id: string; name: string }) => {
     setBookingModalData({
       roomId: room.id,
@@ -70,8 +57,7 @@ export function RoomsTable() {
   };
 
   const handleOpenEditModal = (booking: Booking) => {
-    // Нам нужно найти информацию о комнате, чтобы передать ее в модальное окно
-    const room = items.find(r => r.id === booking.room.id); // <-- ИЗМЕНИТЬ ЗДЕСЬ
+    const room = items.find(r => r.id === booking.room.id);
     if (!room) return;
 
     setBookingModalData({
@@ -102,7 +88,6 @@ export function RoomsTable() {
     console.log('Booking saved!');
     handleCloseBookingModal();
     
-    // --- НОВЫЙ КОД: Обновляем список в ViewBookingsModal ---
     if (isViewBookingsModalOpen && viewBookingsModalRef.current) {
       viewBookingsModalRef.current.refreshBookings();
     }
@@ -121,8 +106,7 @@ export function RoomsTable() {
               <TableCell>Название</TableCell>
               <TableCell width={160} align="right">Вместимость</TableCell>
               <TableCell>Оборудование</TableCell>
-              <TableCell width={170}>Статус</TableCell>
-              <TableCell width={160} align="center">Действия</TableCell> {/* <-- Увеличили ширину */}
+              <TableCell width={160} align="center">Действия</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -145,14 +129,6 @@ export function RoomsTable() {
                     {r.equipment.map((k) => <Chip key={k} label={EQUIP_LABEL[k] ?? k} size="small" variant="outlined" />)}
                   </Stack>
                 </TableCell>
-                <TableCell>
-                  <Chip
-                    label={STATUS_LABEL[r.status]}
-                    size="small"
-                    color={STATUS_COLOR[r.status]}
-                    variant={r.status === 'maintenance' ? 'outlined' : 'filled'}
-                  />
-                </TableCell>
                 <TableCell align="center">
                   <Stack direction="row" spacing={0.5} justifyContent="center">
                     <IconButton 
@@ -161,8 +137,6 @@ export function RoomsTable() {
                       onClick={() => handleOpenViewBookingsModal({ id: r.id, name: r.name })}
                     >
                       <VisibilityOutlined fontSize="small" /></IconButton>
-                    <IconButton size="small" title="Редактировать"><EditOutlined fontSize="small" /></IconButton>
-                    <IconButton size="small" color="error" title="Удалить"><DeleteOutline fontSize="small" /></IconButton>
                     <IconButton
                       size="small"
                       color="primary"

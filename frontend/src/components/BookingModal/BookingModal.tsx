@@ -1,5 +1,4 @@
-// frontend/src/components/BookingModal/BookingModal.tsx
-import React, { useState, useEffect } from 'react'; // <-- ДОБАВИЛИ useEffect
+import React, { useState, useEffect } from 'react';
 import {
   Dialog, DialogTitle, DialogContent, DialogActions, Button,
   Box, CircularProgress
@@ -8,40 +7,35 @@ import { DatePicker, TimePicker } from '@mui/x-date-pickers';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import dayjs, { Dayjs } from 'dayjs';
-import { createBooking, updateBooking, type BookingFormData } from '@/api/bookingsApi'; // <-- ИМПОРТИРУЕМ НОВЫЕ ФУНКЦИИ
+import { createBooking, updateBooking, type BookingFormData } from '@/api/bookingsApi';
 import type { Booking } from '@/types/api';
 
-// Описываем props, которые компонент будет принимать
 interface BookingModalProps {
   open: boolean;
   onClose: () => void;
-  onBookingSaved: () => void; // Колбэк для обновления данных
-  mode: 'create' | 'edit';    // Режим работы
-  roomId: string;             // ID комнаты
-  roomName: string;           // Название комнаты
-  initialData?: Booking;      // Данные для редактирования (опционально)
+  onBookingSaved: () => void;
+  mode: 'create' | 'edit';
+  roomId: string;
+  roomName: string;
+  initialData?: Booking;
 }
 
 export function BookingModal({ open, onClose, onBookingSaved, mode, roomId, roomName, initialData }: BookingModalProps) {
-  // Состояния для полей формы
   const [startDate, setStartDate] = useState<Dayjs | null>(dayjs());
   const [startTime, setStartTime] = useState<Dayjs | null>(dayjs().add(1, 'hour'));
   const [endTime, setEndTime] = useState<Dayjs | null>(dayjs().add(2, 'hour'));
   const [loading, setLoading] = useState(false);
 
-  // --- НОВЫЙ useEffect: Заполняет форму при редактировании ---
   useEffect(() => {
     if (!open) return;
 
     if (mode === 'edit' && initialData) {
-      // Режим редактирования: заполняем поля из initialData
       const start = dayjs(initialData.startTime);
       const end = dayjs(initialData.endTime);
       setStartDate(start);
       setStartTime(start);
       setEndTime(end);
     } else {
-      // Режим создания: сбрасываем поля на значения по умолчанию
       setStartDate(dayjs());
       setStartTime(dayjs().add(1, 'hour'));
       setEndTime(dayjs().add(2, 'hour'));
@@ -66,7 +60,6 @@ export function BookingModal({ open, onClose, onBookingSaved, mode, roomId, room
 
     setLoading(true);
     try {
-      // --- НОВАЯ ЛОГИКА: Выбираем, что делать ---
       if (mode === 'edit' && initialData) {
         await updateBooking(initialData.id, bookingData);
         alert('Бронирование успешно обновлено!');
@@ -75,7 +68,7 @@ export function BookingModal({ open, onClose, onBookingSaved, mode, roomId, room
         alert('Бронирование успешно создано!');
       }
 
-      onBookingSaved(); // Сообщаем родителю, что нужно обновить данные
+      onBookingSaved();
     } catch (error: any) {
       console.error('Ошибка:', error);
       alert(error.response?.data?.detail || 'Не удалось сохранить бронирование. Попробуйте еще раз.');
@@ -103,12 +96,14 @@ export function BookingModal({ open, onClose, onBookingSaved, mode, roomId, room
                   value={startTime}
                   onChange={(newValue) => setStartTime(newValue)}
                   disabled={loading}
+                  sx={{ flex: 1 }}
                 />
                 <TimePicker
                   label="Время окончания"
                   value={endTime}
                   onChange={(newValue) => setEndTime(newValue)}
                   disabled={loading}
+                  sx={{ flex: 1 }}
                 />
               </Box>
             </Box>

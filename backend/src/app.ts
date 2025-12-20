@@ -8,48 +8,32 @@ import prismaPlugin from './plugins/prisma.js'
 import { Type as T } from 'typebox'
 import type { TypeBoxTypeProvider } from '@fastify/type-provider-typebox'
 import { ValidationProblem, ProblemDetails, User, Health, Room, Booking, RoomsResponse } from './types.js'
-import { PrismaClient } from '@prisma/client';
+import { PrismaClient } from '@prisma/client'
 
-// Этот модуль собирает все настройки Fastify: плагины инфраструктуры, обработчики ошибок и маршруты API.
-
-/**
- * Создает и настраивает экземпляр Fastify, готовый к запуску.
- */
 export async function buildApp() {
   const app = Fastify({
-    logger: true, // Подключаем встроенный логгер Fastify.
-    trustProxy: true, // Разрешаем доверять заголовкам X-Forwarded-* от прокси/ingress.
-    /**
-     * Схема валидации TypeBox -> Fastify генерирует массив ошибок.
-     * Мы превращаем его в ValidationProblem, чтобы вернуть клиенту единый формат Problem Details.
-     */
+    logger: true,
+    trustProxy: true,
+
     schemaErrorFormatter(errors, dataVar) {
       const msg = errors.map((e) => e.message).filter(Boolean).join('; ') || 'Validation failed'
       return new ValidationProblem(msg, errors, dataVar)
     }
-  }).withTypeProvider<TypeBoxTypeProvider>() // Позволяет Fastify понимать типы TypeBox при описании схем.
+  }).withTypeProvider<TypeBoxTypeProvider>()
 
-  // === Инфраструктурные плагины ===
-
-  // Helmet добавляет безопасные HTTP-заголовки (Content-Security-Policy, X-DNS-Prefetch-Control и др.).
   await app.register(helmet)
 
-  // CORS ограничивает кросс-доменные запросы. Здесь полностью запрещаем их (origin: false) по умолчанию.
   await app.register(cors, {
-  origin: ['https://rodrafaer.github.io'], // <-- Разрешаем запросы с GitHub Pages
+  origin: ['https://rodrafaer.github.io'],
   credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Явно разрешаем нужные методы
-  allowedHeaders: ['Content-Type', 'Authorization'],  // Полезно для будущей авторизации
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
 });
 
-  /**
-   * Ограничитель количества запросов на IP.
-   * Плагин автоматически вернет 429, а мы формируем Problem Details в errorResponseBuilder.
-   */
   await app.register(rateLimit, {
-    max: 100, // Максимум 100 запросов
-    timeWindow: '1 minute', // За одну минуту
-    enableDraftSpec: true, // Добавляет стандартные RateLimit-* заголовки в ответ
+    max: 100, 
+    timeWindow: '1 minute',
+    enableDraftSpec: true,
     addHeaders: {
       'x-ratelimit-limit': true,
       'x-ratelimit-remaining': true,
@@ -68,9 +52,6 @@ export async function buildApp() {
     }
   })
 
-  /**
-   * Документация API в формате OpenAPI 3.0.
-   */
   await app.register(swagger, {
     openapi: {
       openapi: '3.0.3',
@@ -87,15 +68,8 @@ export async function buildApp() {
     }
   })
 
-  // Плагин с PrismaClient: открывает соединение с БД и добавляет app.prisma во все маршруты.
   await app.register(prismaPlugin)
 
-  // === Глобальные обработчики ошибок ===
-
-  /**
-   * Единая точка обработки ошибок. Мы приводим их к Problem Details и отправляем клиенту JSON.
-   * ValidationProblem превращается в 400, остальные ошибки хранят свой статус или получают 500.
-   */
   app.setErrorHandler<FastifyError | ValidationProblem>((err, req, reply) => {
     const status = typeof err.statusCode === 'number' ? err.statusCode : 500
     const isValidation = err instanceof ValidationProblem
@@ -112,7 +86,6 @@ export async function buildApp() {
     reply.code(status).type('application/problem+json').send(problem)
   })
 
-  // Отдельный обработчик 404: отвечает в формате Problem Details.
   app.setNotFoundHandler((request, reply) => {
     reply.code(404).type('application/problem+json').send({
       type: 'about:blank',
@@ -123,11 +96,6 @@ export async function buildApp() {
     } satisfies ProblemDetails)
   })
 
-  // === Маршруты API ===
-
-  /**
-   * GET /api/users — примеры чтения данных из базы через Prisma.
-   */
   app.get(
     '/api/users',
     {
@@ -158,7 +126,6 @@ export async function buildApp() {
       }
     },
     async (_req, _reply) => {
-      // Prisma автоматически превращает результат в Promise; Fastify вернет массив как JSON.
       return app.prisma.user.findMany({ select: { id: true, email: true } })
     }
   )
@@ -336,8 +303,7 @@ export async function buildApp() {
 
       const user = await app.prisma.user.findFirst();
       if (!user) {
-        // Если пользователей нет, возвращаем ошибку
-        reply.code(500).send({ detail: 'No users found in the database to create a booking.' });
+        reply.code(500).send({ detail: 'В базе данных нет пользователей' });
         return;
       }
       const userId = user.id;
@@ -352,7 +318,7 @@ export async function buildApp() {
       });
 
       if (conflictingBooking) {
-        return reply.code(409).send({ detail: 'The room is already booked for this time.' });
+        return reply.code(409).send({ detail: 'Комната уже забронирована на это время' });
       }
 
       const newBooking = await app.prisma.booking.create({
@@ -400,11 +366,11 @@ export async function buildApp() {
         await app.prisma.booking.delete({
           where: { id: id }
         });
-        return reply.send({ message: 'Booking deleted successfully' });
+        return reply.send({ message: 'Бронирование успешно удалено' });
       } catch (error) {
         const prismaError = error as any;
         if (prismaError.code === 'P2025') {
-          return reply.code(404).send({ detail: 'Booking not found' });
+          return reply.code(404).send({ detail: 'Бронирование не найдено' });
         }
         return reply.code(500).send({ detail: 'Internal Server Error' });
       }
@@ -414,9 +380,34 @@ export async function buildApp() {
   app.put(
     '/api/bookings/:id',
     {
-      // ... твоя schema ...
+      schema: {
+        operationId: 'updateBooking',
+        tags: ['Bookings'],
+        summary: 'Обновляет существующее бронирование',
+        params: {
+          type: 'object',
+          properties: {
+            id: { type: 'string', description: 'ID бронирования' }
+          },
+          required: ['id']},
+        body: {
+          type: 'object',
+          properties: {
+            roomId: { type: 'string' },
+            startTime: { type: 'string', format: 'date-time' },
+            endTime: { type: 'string', format: 'date-time' },
+          },
+          required: ['roomId', 'startTime', 'endTime'],
+        },
+        response: {
+          200: { description: 'Бронирование обновлено', content: { 'application/json': { schema: Booking } } },
+          404: { description: 'Бронирование не найдено' },
+          409: { description: 'Комната уже забронирована на это время' },
+          500: { description: 'Internal Server Error' }
+        }
+      }
     },
-    async (req, reply) => {
+      async (req, reply) => {
       const { id } = req.params as { id: string };
       const { roomId, startTime, endTime } = req.body as { roomId: string; startTime: string; endTime: string };
 
@@ -427,10 +418,9 @@ export async function buildApp() {
             throw new Error('Booking not found');
           }
 
-          // 2. Проверяем на пересечение с ДРУГИМИ бронированиями (исключая текущее)
           const conflictingBooking = await tx.booking.findFirst({
             where: {
-              id: { not: id }, // Исключаем текущее бронирование
+              id: { not: id },
               roomId: roomId,
               OR: [
                 { startTime: { lt: new Date(endTime) }, endTime: { gt: new Date(startTime) } }
@@ -439,11 +429,9 @@ export async function buildApp() {
           });
 
           if (conflictingBooking) {
-            // Если есть конфликт, бросаем ошибку, чтобы прервать транзакцию
-            throw new Error('The room is already booked for this time.');
+            throw new Error('Комната уже забронирована на это время');
           }
 
-          // 3. Если все в порядке, обновляем бронирование
           const updatedBooking = await tx.booking.update({
             where: { id: id },
             data: {
@@ -464,11 +452,10 @@ export async function buildApp() {
 
       } catch (error: any) {
         const prismaError = error as any;
-        // Обрабатываем ошибки, которые могли возникнуть в транзакции
-        if (prismaError.code === 'P2025' || error.message === 'Booking not found') {
-          return reply.code(404).send({ detail: 'Booking not found' });
+        if (prismaError.code === 'P2025' || error.message === 'Бронирование не найдено') {
+          return reply.code(404).send({ detail: 'Бронирование не найдено' });
         }
-        if (error.message === 'The room is already booked for this time.') {
+        if (error.message === 'Комната уже забронирована на это время') {
           return reply.code(409).send({ detail: error.message });
         }
         console.error(error);
@@ -477,10 +464,6 @@ export async function buildApp() {
     }
   );
 
-  /**
-   * GET /api/health — health-check для мониторинга.
-   * Пытаемся сделать минимальный запрос в БД. Если БД недоступна, возвращаем 503.
-   */
   app.get(
     '/api/health',
     {
@@ -514,11 +497,9 @@ export async function buildApp() {
     },
     async (_req, reply) => {
       try {
-        // Если SELECT 1 прошел — сервис готов.
         await app.prisma.$queryRaw`SELECT 1`
         return { ok: true } as Health
       } catch {
-        // Возвращаем 503, чтобы условный балансировщик мог вывести инстанс из ротации.
         reply.code(503).type('application/problem+json').send({
           type: 'https://example.com/problems/dependency-unavailable',
           title: 'Service Unavailable',
@@ -530,11 +511,10 @@ export async function buildApp() {
     }
   )
 
-  // Служебный маршрут: возвращает OpenAPI-спецификацию.
   app.get(
     '/openapi.json',
     {
-      schema: { hide: true, tags: ['Internal'] } // Скрыт из списка, но доступен для клиентов/тестов
+      schema: { hide: true, tags: ['Internal'] }
     },
     async (_req, reply) => {
       reply.type('application/json').send(app.swagger())
