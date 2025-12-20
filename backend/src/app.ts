@@ -8,6 +8,7 @@ import prismaPlugin from './plugins/prisma.js'
 import { Type as T } from 'typebox'
 import type { TypeBoxTypeProvider } from '@fastify/type-provider-typebox'
 import { ValidationProblem, ProblemDetails, User, Health, Room, Booking, RoomsResponse } from './types.js'
+import { PrismaClient } from '@prisma/client';
 
 // Этот модуль собирает все настройки Fastify: плагины инфраструктуры, обработчики ошибок и маршруты API.
 
@@ -413,70 +414,64 @@ export async function buildApp() {
   app.put(
     '/api/bookings/:id',
     {
-      schema: {
-        operationId: 'updateBooking',
-        tags: ['Bookings'],
-        summary: 'Обновляет существующее бронирование',
-        params: {
-          type: 'object',
-          properties: {
-            id: { type: 'string', description: 'ID бронирования' }
-          },
-          required: ['id']},
-        body: {
-          type: 'object',
-          properties: {
-            roomId: { type: 'string' },
-            startTime: { type: 'string', format: 'date-time' },
-            endTime: { type: 'string', format: 'date-time' },
-          },
-          required: ['roomId', 'startTime', 'endTime'],
-        },
-        response: {
-          200: { description: 'Бронирование обновлено', content: { 'application/json': { schema: Booking } } },
-          404: { description: 'Бронирование не найдено' },
-          409: { description: 'Комната уже забронирована на это время' },
-          500: { description: 'Internal Server Error' }
-        }
-      }
+      // ... твоя schema ...
     },
     async (req, reply) => {
-      const { id } = req.params;
-      const { roomId, startTime, endTime } = req.body;
-
-      const conflictingBooking = await app.prisma.booking.findFirst({
-        where: {
-          id: { not: id },
-          roomId: roomId,
-          OR: [
-            { startTime: { lt: new Date(endTime) }, endTime: { gt: new Date(startTime) } }
-          ]
-        }
-      });
-
-      if (conflictingBooking) {
-        return reply.code(409).send({ detail: 'The room is already booked for this time.' });
-      }
+      const { id } = req.params as { id: string };
+      const { roomId, startTime, endTime } = req.body as { roomId: string; startTime: string; endTime: string };
 
       try {
-        const updatedBooking = await app.prisma.booking.update({
-          where: { id: id },
-          data: {
-            startTime: new Date(startTime),
-            endTime: new Date(endTime),
-            room: { connect: { id: roomId } },
-          },
-          include: {
-            room: { select: { id: true, code: true, name: true } },
-            user: { select: { id: true, name: true } },
+        const result = await app.prisma.$transaction(async (tx: PrismaClient) => {
+          const bookingToUpdate = await tx.booking.findUnique({ where: { id } });
+          if (!bookingToUpdate) {
+            throw new Error('Booking not found');
           }
+
+          // 2. Проверяем на пересечение с ДРУГИМИ бронированиями (исключая текущее)
+          const conflictingBooking = await tx.booking.findFirst({
+            where: {
+              id: { not: id }, // Исключаем текущее бронирование
+              roomId: roomId,
+              OR: [
+                { startTime: { lt: new Date(endTime) }, endTime: { gt: new Date(startTime) } }
+              ]
+            }
+          });
+
+          if (conflictingBooking) {
+            // Если есть конфликт, бросаем ошибку, чтобы прервать транзакцию
+            throw new Error('The room is already booked for this time.');
+          }
+
+          // 3. Если все в порядке, обновляем бронирование
+          const updatedBooking = await tx.booking.update({
+            where: { id: id },
+            data: {
+              startTime: new Date(startTime),
+              endTime: new Date(endTime),
+              room: { connect: { id: roomId } },
+            },
+            include: {
+              room: { select: { id: true, code: true, name: true } },
+              user: { select: { id: true, name: true } },
+            }
+          });
+          
+          return updatedBooking;
         });
-        return reply.send(updatedBooking);
-      } catch (error) {
+
+        return reply.send(result);
+
+      } catch (error: any) {
         const prismaError = error as any;
-        if (prismaError.code === 'P2025') {
+        // Обрабатываем ошибки, которые могли возникнуть в транзакции
+        if (prismaError.code === 'P2025' || error.message === 'Booking not found') {
           return reply.code(404).send({ detail: 'Booking not found' });
         }
+        if (error.message === 'The room is already booked for this time.') {
+          return reply.code(409).send({ detail: error.message });
+        }
+        console.error(error);
         return reply.code(500).send({ detail: 'Internal Server Error' });
       }
     }

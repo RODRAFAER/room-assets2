@@ -1,5 +1,5 @@
 // frontend/src/components/RoomsTable/RoomsTable.tsx
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import {
   Paper, Table, TableHead, TableRow, TableCell, TableBody,
   Chip, CircularProgress, Box, IconButton, Stack, Typography
@@ -7,7 +7,7 @@ import {
 import { VisibilityOutlined, EditOutlined, DeleteOutline, Groups2Outlined, BookmarkBorderOutlined } from '@mui/icons-material';
 import { fetchRooms, type RoomDto } from '@/api/roomsApi';
 import { BookingModal } from '@/components/BookingModal/BookingModal';
-import { ViewBookingsModal } from '@/components/ViewBookingsModal/ViewBookingsModal';
+import { ViewBookingsModal, type ViewBookingsModalRef } from '@/components/ViewBookingsModal/ViewBookingsModal';
 import type { Booking } from '@/types/api';
 
 // Этот объект теперь должен соответствовать вашим статусам в БД (AVAILABLE, BOOKED, MAINTENANCE)
@@ -41,6 +41,7 @@ export function RoomsTable() {
 
   const [isViewBookingsModalOpen, setIsViewBookingsModalOpen] = useState(false);
   const [selectedRoomForView, setSelectedRoomForView] = useState<{ id: string; name: string } | null>(null);
+  const viewBookingsModalRef = useRef<ViewBookingsModalRef>(null);
 
   useEffect(() => {
     let mounted = true;
@@ -98,10 +99,13 @@ export function RoomsTable() {
   };
 
   const handleBookingSaved = () => {
-    // Здесь можно добавить логику для обновления данных, если это потребуется
-    // Например, обновить статус комнаты в таблице, если он меняется при бронировании
     console.log('Booking saved!');
     handleCloseBookingModal();
+    
+    // --- НОВЫЙ КОД: Обновляем список в ViewBookingsModal ---
+    if (isViewBookingsModalOpen && viewBookingsModalRef.current) {
+      viewBookingsModalRef.current.refreshBookings();
+    }
   }
 
   if (loading) return <Box sx={{ p: 3, display: 'grid', placeItems: 'center' }}><CircularProgress /></Box>;
@@ -189,6 +193,7 @@ export function RoomsTable() {
 
       {selectedRoomForView && (
         <ViewBookingsModal
+          ref={viewBookingsModalRef}
           open={isViewBookingsModalOpen}
           onClose={handleCloseViewBookingsModal}
           roomId={selectedRoomForView.id}
