@@ -1,4 +1,3 @@
-// frontend/src/api/http.ts
 import axios from 'axios';
 
 const getApiUrl = () => {

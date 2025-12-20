@@ -37,8 +37,8 @@ export function BookingModal({ open, onClose, onBookingSaved, mode, roomId, room
       setEndTime(end);
     } else {
       setStartDate(dayjs());
-      setStartTime(dayjs().add(1, 'hour'));
-      setEndTime(dayjs().add(2, 'hour'));
+      setStartTime(dayjs().add(0, 'hour'));
+      setEndTime(dayjs().add(1, 'hour'));
     }
   }, [mode, initialData, open]);
 
