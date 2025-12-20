@@ -103,8 +103,8 @@ export function RoomsTable() {
           <TableHead>
             <TableRow>
               <TableCell width={100}>Номер</TableCell>
-              <TableCell>Название</TableCell>
-              <TableCell width={160} align="center">Вместимость</TableCell>
+              <TableCell width={300}>Название</TableCell>
+              <TableCell width={250} align="center">Вместимость</TableCell>
               <TableCell>Оборудование</TableCell>
               <TableCell width={160} align="center">Действия</TableCell>
             </TableRow>
