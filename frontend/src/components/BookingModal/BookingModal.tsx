@@ -7,6 +7,7 @@ import { DatePicker, TimePicker } from '@mui/x-date-pickers';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import dayjs, { Dayjs } from 'dayjs';
+import 'dayjs/locale/ru';
 import { createBooking, updateBooking, type BookingFormData } from '@/api/bookingsApi';
 import type { Booking } from '@/types/api';
 
@@ -78,7 +79,7 @@ export function BookingModal({ open, onClose, onBookingSaved, mode, roomId, room
   };
 
   return (
-    <LocalizationProvider dateAdapter={AdapterDayjs}>
+    <LocalizationProvider dateAdapter={AdapterDayjs} adapterLocale="ru"> 
       <Dialog open={open} onClose={onClose} maxWidth="sm" fullWidth>
         <DialogTitle>{mode === 'edit' ? 'Редактирование' : 'Бронирование'}: {roomName}</DialogTitle>
         <form onSubmit={handleSubmit}>
